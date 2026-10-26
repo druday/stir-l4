@@ -35,8 +35,10 @@ def build():
     v10 = open(os.path.join(REPO, "prompt/versions/STIR-L4_prompt_v1.0.txt"), encoding="utf-8").read()
     sec = lambda t: t[t.index("\n## 1"):t.index("\n## 2")]
     # the model section differs from v1.0 only in the planning boundary (Review Universe definition and boundary line)
+    # and in what the reviewer certifies at Methodology (methods and protocol; registration is not certified)
     changed = [l for l in sec(p).split("\n") if l not in sec(v10).split("\n")]
-    assert len(changed) == 2 and all("Review Universe" in l or "Planning boundary" in l for l in changed), changed
+    assert len(changed) == 3 and all("Review Universe" in l or "Planning boundary" in l
+                                     or l.endswith("| Methods and protocol") for l in changed), changed
     kit = read("kit")
     kit = sub(kit, '__version__ = "1.1.9"', '__version__ = "1.0.0"', 1)
     kit = sub(kit, '"""STIR-L4 helper kit, version 1.1.9 (for STIR-L4 prompt version 1.5).',

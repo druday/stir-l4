@@ -114,7 +114,7 @@ elements:
       asked: "Type of review; rigor; whether to pool"
       retrieved: "Guidance for the question type (eg, PROBAST, CHARMS)"
       drafted: "The methods section of the protocol"
-      certified: "Methods, protocol, registration"
+      certified: "Methods and protocol"
 flows:
   - {id: 1, from: IM, to: TP, type: feed-forward, class: influence, strength: strong, meaning: "Members' motivations and expertise shape the team's shared purpose."}
   - {id: 2, from: TP, to: IM, type: feedback, class: influence, strength: moderate, meaning: "When an undisclosed individual motivation conflicts with the team's purpose, the purpose pushes back on it; unresolved, the conflict delays early planning."}

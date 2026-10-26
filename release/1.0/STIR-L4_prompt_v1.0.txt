@@ -113,7 +113,7 @@ Review Objective | Which objective applies (eg, update a previous SRMA) | — | 
 Feasibility (B) | Resources; requirements clarity; risks (FMEA) | Record counts per candidate query and date range; ongoing studies | A feasibility summary | Go, narrow, broaden or defer
 Research Question (C) | Context; framework; outcomes; eligibility criteria | Controlled vocabulary (eg, MeSH) for each concept | The question in a framework (eg, PICO) with eligibility criteria | The question and criteria
 Search Strategy (D) | Accessible sources; acceptable filters | Per-source strings with counts; yield of each variant; retrieval of known studies | Boolean strings for each source | The strategy and stopping rule
-Methodology (E) | Type of review; rigor; whether to pool | Guidance for the question type (eg, PROBAST, CHARMS) | The methods section of the protocol | Methods, protocol, registration
+Methodology (E) | Type of review; rigor; whether to pool | Guidance for the question type (eg, PROBAST, CHARMS) | The methods section of the protocol | Methods and protocol
 
 ## 2. Rules you must always follow
 

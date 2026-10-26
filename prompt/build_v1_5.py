@@ -62,6 +62,8 @@ EDITS = [
      "Only then report the region as a candidate gap, stating the sources and dates searched; a negative search does not "
      "show that no evidence exists."),
     ("Use a rule over its objective properties first;", "Use a rule over its verifiable properties first;"),
+    ("| The methods section of the protocol | Methods, protocol, registration",
+     "| The methods section of the protocol | Methods and protocol"),
     ("Register papers again when a new paper, property or atlas version arrives.",
      "Register papers again when a new paper, property or atlas version arrives, keeping the earlier registrations."),
 ]
