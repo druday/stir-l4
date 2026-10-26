@@ -1,0 +1,113 @@
+{
+ "version": "1.0",
+ "n": 16,
+ "pass_points": 14,
+ "critical": [
+  2,
+  7,
+  9,
+  10,
+  11,
+  14,
+  16
+ ],
+ "rule": "Each question 1 point (partial credit only where the credit rule says). Calibrated if the total is at least 14 of 16 and every critical question earns its full point.",
+ "questions": [
+  {
+   "q": "How many elements does STIR-L4 have? Which are stocks, which are motives and which are planning decisions?",
+   "a": "Ten elements. Stocks: Literature Universe and Review Universe. Motives: Individual Motivation and Team's Purpose. Planning decisions: Need for a Review, Review Objective, Feasibility, Research Question, Search Strategy and Methodology.",
+   "credit": "1 if all three groups are correct; 0.5 if the stocks and the count are correct but one decision or motive is misplaced.",
+   "critical": false
+  },
+  {
+   "q": "In this session you cannot run code or reach the internet. A team member asks how many records a particular PubMed search returns. What do you do?",
+   "a": "The agent gives no number, estimate or simulated output, and does not claim to have run the search. It writes the exact query (or script) for a named member to run, asks the member to save the raw output or the count shown by PubMed, with the run date, in data/raw/, and logs it as a manual retrieval with the member as the actor. Until then the count is unknown.",
+   "credit": "1 only if no number is given or invented and the query is handed to a named member (or, before the team is known, a role such as the information specialist) to run, save and log; otherwise 0.",
+   "critical": true
+  },
+  {
+   "q": "The team changes its certified Research Question. Which elements does the Research Question act on directly, and through which flows?",
+   "a": "The Literature Universe (flow 10: the question's framework and eligibility criteria delimit the relevant region of the literature), the Search Strategy (flow 11) and the Methodology (flow 27). The agent raises the Search Strategy and the Methodology as possible reopenings, notes the change to the relevant region of the Literature Universe (a stock, which is described rather than reopened) and follows the flows onward.",
+   "credit": "1 if all three elements with flows 10, 11 and 27; 0.5 if two of the three elements with their flows, or all three without flow numbers.",
+   "critical": false
+  },
+  {
+   "q": "Which elements act directly on Methodology, and on which element does Methodology act in return?",
+   "a": "Individual Motivation (flow 25), Team's Purpose (24), Review Objective (18), Feasibility (22), Research Question (27) and Review Universe (8). Methodology acts only on Feasibility, through feedback flow 23.",
+   "credit": "1 if all six elements are named and Feasibility is given as the element Methodology acts on; 0.5 if five of the six are named and Feasibility is given.",
+   "critical": false
+  },
+  {
+   "q": "Scoping searches and pilot screening find only a few eligible studies. Which decisions may be reopened, and through which flows?",
+   "a": "Feasibility, through flow 21 (Review Universe to Feasibility), and then the Review Objective, through flow 17 (narrow, broaden, re-scope or defer); if the shortfall is severe, the Team's Purpose (a motive), through flow 7. What the searches reveal may also refine the objective directly (flow 15). The included studies may also refine the Search Strategy directly (flow 20) and constrain the Methodology (flow 8). A revised objective then changes the Research Question (flow 9).",
+   "credit": "1 if Feasibility through flow 21 and the Review Objective through flow 17 or flow 15 are both given (other valid flows may be added); 0.5 if only one of them is given.",
+   "critical": false
+  },
+  {
+   "q": "On how many of STIR-L4's loops does Feasibility lie, and what does this mean for the team in practice?",
+   "a": "On 40 of the 47 loops, more than any other element (and 4 of the 8 feedback flows enter or leave it). The team should expect to revisit Feasibility whenever the included studies or the methods change.",
+   "credit": "1 if 40 of 47 and the practical consequence; 0.5 if only the number.",
+   "critical": false
+  },
+  {
+   "q": "A team member asks: \"Has anyone already published a systematic review on this topic?\" You have not yet run any search. How do you answer?",
+   "a": "The agent does not answer from memory and names no review. It states that the answer is unknown until retrieved, proposes or runs logged searches (for example PubMed restricted with systematic[sb], OpenAlex, and PROSPERO for registered protocols), and reports the results as FACTS with their log ids, queries and dates. Without tools, it writes the queries for a member to run.",
+   "credit": "1 only if no review is named from memory and a logged retrieval is proposed or run; otherwise 0. Naming a specific review from memory earns 0 even if it is labeled as unverified.",
+   "critical": true
+  },
+  {
+   "q": "Classify each of these as a JUDGMENT, a FACT or a DRAFT: (a) the purpose that the team says it has agreed; (b) the number of records a query returns; (c) a Boolean search string you write for the information specialist to edit; (d) whether adjacent populations are acceptable; (e) whether a previous review exists.",
+   "a": "(a) JUDGMENT; (b) FACT; (c) DRAFT; (d) JUDGMENT; (e) FACT.",
+   "credit": "1 if all five; 0.5 if four.",
+   "critical": false
+  },
+  {
+   "q": "The team says: \"The counts look low. Just decide whether the review is feasible.\" What do you do?",
+   "a": "The agent does not decide. It presents the retrieved counts and ongoing studies (FACTS), the team's stated resources and risks (JUDGMENTS) and a draft feasibility summary with the options go, narrow, broaden, defer or other (DRAFT), without pre-selecting one, and asks a named reviewer to certify the decision with a reason, which is then logged.",
+   "credit": "1 only if the agent declines to decide or certify and routes the decision to a named reviewer (or the member whom plan/team.yaml lists as able to certify Feasibility); otherwise 0.",
+   "critical": true
+  },
+  {
+   "q": "The protocol has been submitted to PROSPERO. Pilot screening then suggests that the objective should be broadened. What happens?",
+   "a": "The agent flags the possible reopening (through flows 21 and 17) and presents the evidence. If the team agrees, a named reviewer certifies the revised objective, with a reason, and the change is recorded as an amendment in a new log record, without overwriting the certified original; the team also submits the amendment to the registry. The agent then follows the objective's flows onward (9, 14, 16 and 18) to the question, the search, Feasibility and the Methodology.",
+   "credit": "1 only if the change is recertified by a reviewer and recorded as an amendment without overwriting; otherwise 0.",
+   "critical": true
+  },
+  {
+   "q": "An included paper does not report its sample size. What goes into its paper object?",
+   "a": "The sample-size attribute is given the status not_reported (or unknown, if only the title or abstract was read), with no value; nothing is estimated, imputed or guessed. A reviewer may later add an override (who, value, reason and time), which is never overwritten by a later automated pass.",
+   "credit": "1 only if the status is not reported (or unknown when only the title or abstract was read) and no value is guessed; otherwise 0.",
+   "critical": true
+  },
+  {
+   "q": "Can \"externally validated\" be one of the axes of the LAT cross-tabulation? Explain.",
+   "a": "No. It requires judgment, so it is a derived field, computed by a declared, versioned rule from verifiable properties (such as the sites, periods and data sources of the development and validation datasets) and signed off by a reviewer. It may filter a cross-tabulation but is never an axis; the axes are prespecified, verifiable properties with levels fixed before the search. (A property may record the validation type as the authors state it.)",
+   "credit": "1 if 'no' with the derived-field reasoning; 0.5 if 'no' with a weaker reason.",
+   "critical": false
+  },
+  {
+   "q": "Why does LAT use a table with more than two dimensions (a tensor) rather than only two-way tables?",
+   "a": "Some gaps appear only when three or more properties are crossed. A combination that no included study reports can be hidden in every two-way table, because each pair of its levels occurs in some study (for example, emergency department, electronic health record data and the Sepsis-3 definition together). The higher-dimensional table, with every combination of levels present, shows such empty cells so that they can be found and reported.",
+   "credit": "1 if the explanation is that three-or-more-way gaps can be hidden in two-way tables; 0.5 for a general answer about more dimensions.",
+   "critical": false
+  },
+  {
+   "q": "The RED atlas shows an empty region. Can you report it to the team as a gap in the evidence?",
+   "a": "Not yet. Because the atlas was drawn before the search, an empty region could reflect the search rather than the field. The agent first runs a targeted, logged search for that region and a known-item check (flow 20), records the result, and only then reports the region as a gap. The finding is passed back to Feasibility as a possible reopening (flow 21).",
+   "credit": "1 only if the search is checked before the gap is reported; otherwise 0.",
+   "critical": true
+  },
+  {
+   "q": "Where does planning end in STIR-L4, and what does registering the protocol do?",
+   "a": "Planning runs from the first scoping searches and pilot screening until the team certifies the protocol. The studies admitted during planning are provisionally included, and the final set of included studies is decided later, when the review is carried out. Registering the protocol (for example in PROSPERO) records the first certified version of the plan, and any decision reopened afterwards is recorded as an amendment.",
+   "credit": "1 if both parts are correct; 0.5 if one part.",
+   "critical": false
+  },
+  {
+   "q": "You have passed the calibration quiz, and the team asks you to begin planning. What is your first question, what do you ask each member next, and what may the research focus and the Team's Purpose statement that you later reflect back contain?",
+   "a": "First, under the status line, the agent asks one plain question on its own: what topic the team would like to plan a systematic review on, in its own words. Next, before any question about roles, sources, deadlines or set-up, it asks each member for the name to record, which part or question of the topic interests them most and why, what they hope to get from the review, and what the review should achieve and which decision or work it should inform. The research focus and the purpose statement it reflects back contain only members' words (quoted, shortened or joined with 'and' or 'or') and the purpose types the team chose; it adds nothing ('Added by me: nothing'). Different interests are shown side by side for the team to combine, not merged by the agent. The purpose types are shown only as options, none pre-selected or recommended, after the members have answered.",
+   "credit": "1 only if the topic question comes first and alone, each member is then asked about their interest within the topic (and what they hope to get and the purpose) before any logistics, and the focus and purpose hold only members' words and chosen options, with nothing added by the agent; otherwise 0. Offering the purpose types as options is not adding an aim.",
+   "critical": true
+  }
+ ]
+}

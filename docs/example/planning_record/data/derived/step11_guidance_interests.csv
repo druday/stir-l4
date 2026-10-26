@@ -1,0 +1,397 @@
+row,pmid,year,title,tier,passage,passage_found,bears_on,source_log_id,blocks
+1,41230118,2025,"Position Statement on Artificial Intelligence (AI) Use in Evidence Synthesis Across Cochrane, the Campbell Collaboration, JBI, and the Collaboration for Environmental Evidence 2025.",full text,Any financial and non‐financial interests the evidence synthesists have in the AI system or tool,True,interests in the AI tools,L000665,2;5
+,40115985,2026,A New Gold Standard? Impact of Broad-spectrum Penicillin-based Antibiotic Prophylaxis on Outcome After Pancreatoduodenectomy: Results of a Systematic Review and Meta-analysis (PROSPERO CRD42024559197).,,,,,L000663,4;5
+,40847741,2026,Rare kidney disease registries: A scoping review on characteristics and lessons learnt.,,,,,L000663,3;5
+,41029786,2026,Barriers and Enablers to Pre-Registration Nurses Providing Safe Care for Individuals Experiencing Suicidal Distress: A Scoping Review.,,,,,L000663,3;5
+,41106277,2026,Teaching approaches to delivering pharmacy law content to pre-registration pharmacy students: a global systematic scoping review.,,,,,L000663,3;5
+,41204647,2026,Common data elements of cerebral palsy registries in Arabic-speaking countries: A scoping review.,,,,,L000663,3;5
+,41235983,2026,Toward transparent and accountable artificial intelligence in systematic review appraisal.,,,,,L000663,2;5
+,41305871,2026,Common data elements of cerebral palsy registries in Arabic-speaking countries: A scoping review.,,,,,L000663,3;5
+,41544346,2026,"Implementing patient-reported outcome measures: A scoping review of existing guidance across clinical trials, practice and registries.",,,,,L000663,3;5
+,41571781,2026,A systematic review of AI for predicting glaucoma progression: challenges and recommendations towards clinical implementation.,,,,,L000663,2;5
+,41589022,2026,Pre-Registration Nursing Student Experiences of International Mental Health Clinical Placement: A Scoping Review With Relevance to the Australian Context.,,,,,L000663,3;5
+,41593798,2026,Correction: Prognostic relevance of prospero homeobox 1 and metastasis tumor antigen 1 in patients with malignant salivary gland tumors: a clinicopathological study.,,,,,L000663,4;5
+,41606678,2026,Casein kinase 2 maintains the self-renewal of neural stem cells via prospero phosphorylation in Drosophila.,,,,,L000663,4;5
+,41630071,2026,Machine learning-based COVID-19 prognostic models lag behind in reporting quality: findings from a TRIPOD/TRIPOD + AI systematic review.,,,,,L000663,2;5
+,41635946,2026,Guidance for manuscript submissions testing the use of generative AI for systematic review and meta-analysis.,,,,,L000663,2;5
+,41650069,2026,Evaluating the role of ChatGPT in structured radiology reporting: A systematic review.,,,,,L000663,2;5
+,41667957,2026,"Bibliometric, methodological and reporting characteristics of systematic reviews with explicit AI disclosure statements: an exploratory meta-research study.",,,,,L000663,2;5
+,41747878,2026,Clinical Literature Analysis and Review using Interpretive Transparency (CLARITY): An Exploratory Scaffold for Educational Engagement With Artificial Assistance (AI)-Assisted Evidence Synthesis in Rehabilitation.,,,,,L000663,2;5
+,41847079,2026,"What evidence syntheses reveal about PROSPERO, INPLASY, OSF, the Research Registry, and protocols.io: a meta-research study.",,,,,L000663,4;5
+,41878580,2026,Registries and surveillance models used to screen neonates for congenital anomalies in LMIC settings: a scoping review.,,,,,L000663,3;5
+,41895175,2026,Domestic and family violence simulation-based experiences within the pre-registration nursing curricula: A scoping review.,,,,,L000663,3;5
+,41996662,2026,"Updating Neurology® Journals' Policies on AI Use, Reporting of Genetic Studies, and Protocols for Systematic Review.",,,,,L000663,2;5
+,42007431,2026,"Mapping and Quality Appraisal of Artificial Intelligence Preferential Reporting Checklists, Items, Guidelines, and Consensus in Healthcare: An Altmetric, Bibliometric, and Systematic Review.",,,,,L000663,2;5
+,42079877,2026,Systematic Review of Explainable Artificial Intelligence for Epileptic Seizure Onset Early Warning: Towards Responsible Artificial Intelligence.,,,,,L000663,2;5
+,42112961,2026,Cancer registry criteria and standards: A scoping review for adoption in low- and middle-income countries (LMICs).,,,,,L000663,3;5
+,42134128,2026,Pre-registration nursing students' experiences with debriefing in simulation: A scoping review.,,,,,L000663,3;5
+,42141253,2026,Concordance of Large Language Model Recommendations with Multidisciplinary Heart Team Decisions in Coronary Revascularization and Aortic Valve Intervention: A Systematic Review and Pooled Analysis.,,,,,L000663,2;5
+,42144195,2026,"Response to Kahn et al, ""Artificial intelligence in evidence synthesis: Benefits, limitations, and the importance of transparent reporting"".",,,,,L000663,2;5
+,42164279,2026,"When news is ""written by artificial intelligence"": a systematic review of provenance and disclosure cues in journalism and their effects on credibility and trust.",,,,,L000663,2;5
+,42184342,2026,Exploring Technological Solutions for Interoperability Between Patient Electronic Medical Records and Clinical Registries: Scoping Review.,,,,,L000663,3;5
+,42202982,2026,"The Costs, Cost-Effectiveness, and Methods for Evaluating Clinical Registries: A Systematic Scoping Review.",,,,,L000663,3;5
+,42208924,2026,"Progression of bicuspid-related aortopathy in patients undergoing transcatheter aortic valve implantation: Rationale and design of the international, multicenter PROSPERO-TAVI registry.",,,,,L000663,4;5
+,42214644,2026,Author adherence and experiences with PRISMA-P 2015: a cross-sectional study.,,,,,L000663,1;5
+,42238193,2026,"Systematic review of artificial intelligence use in behavioral analysis of invertebrate and larval model organisms: methods, applications and future recommendations.",,,,,L000663,2;5
+,42242734,2026,Mapping the current landscape of Klinefelter Syndrome registries: a scoping review.,,,,,L000663,3;5
+,42309527,2026,Use of population-based cancer registry data to evaluate organized breast cancer screening programmes in Europe by mode of detection: a scoping review.,,,,,L000663,3;5
+,42310541,2026,Contemporary practices in scoping review protocol registration: a meta-research analysis of high-impact health journals (2024-2025).,,,,,L000663,3;5
+,42325142,2026,Facilitator development for pre-registration health professions simulation: a scoping review.,,,,,L000663,3;5
+,42367118,2026,Explainable Artificial Intelligence in Pharmacovigilance and Drug Safety: A Systematic Review of Enhancing Transparency and Regulatory Acceptance.,,,,,L000663,2;5
+,42375689,2026,A Scoping Review of Toolkits Addressing Ethical Issues in Health Registry and Clinical Research Enrollment Among African Americans With CKD.,,,,,L000663,3;5
+,42388334,2026,Overview of methodology and characteristics of national acute coronary syndrome registries in high-income countries: a scoping review.,,,,,L000663,3;5
+,42389163,2026,Protocol: Effects of Organizational Transparency Interventions on Trust in AI-Assisted Decision-Making and Human Decision-Makers: A Systematic Review of Enabling Mechanisms.,,,,,L000663,2;5
+,42419598,2026,"Artificial intelligence in evidence synthesis: Benefits, limitations, and the importance of transparent reporting.",,,,,L000663,2;5
+,42422387,2026,"The AI recommendation paradox: a systematic review evaluating the promise, peril, and path forward for large language models in exercise recommendation.",,,,,L000663,2;5
+,42454361,2026,Artificial Intelligence and Multidisciplinary Oncology Decision-Making: A Systematic Review of LLM Concordance with MDT Recommendations and Implications for Clinical Reasoning Education.,,,,,L000663,2;5
+,42485733,2026,Public involvement in pre-registration nursing education: A scoping review of educational activities and their conceptual underpinnings.,,,,,L000663,3;5
+,42506705,2026,A Comprehensive Chemical-Biological Investigation of the Moderately Toxic Plant Prospero autumnale: Insights into Its Bioactive Potential Using In Vitro and In Vivo Models.,,,,,L000663,4;5
+,42531806,2026,A scoping review of national subarachnoid haemorrhage registries.,,,,,L000663,3;5
+,42535035,2026,Responsible artificial intelligence in medical imaging: a systematic review.,,,,,L000663,2;5
+,42537858,2026,Incomplete reporting persists in orthopedic machine learning models: a systematic review of TRIPOD and TRIPOD+AI reporting completeness.,,,,,L000663,2;5
+,42573981,2026,Preferences for AI-Enabled Health Care Technologies: Systematic Review of Discrete Choice Experiments and Reporting Quality Assessment Using the DIRECT Checklist.,,,,,L000663,2;5
+,42598346,2026,"A Locally Executed Agentic Artificial Intelligence Framework for Deduplication, Screening, and Structured Data Extraction in Spine Surgery Systematic Reviews: A PRISMA-Transparent Reporting of Artificial Intelligence in Comprehensive Evidence Synthesis-Compliant Evaluation.",,,,,L000663,2;5
+,42610168,2026,A scoping review on the characteristics of chronic pain registries.,,,,,L000663,3;5
+,42623595,2026,Exploring the Use and Reporting of Cancer Registry Data by the Caribbean Region: A Scoping Review.,,,,,L000663,3;5
+,42625530,2026,Rights-Based Involvement of People With Lived Experience in Pre-Registration Occupational Therapy Education: A Scoping Review Protocol.,,,,,L000663,3;5
+,42631868,2026,Distribution of B chromosomes in Prospero autumnale associates with higher reproductive performance in southern Iberia.,,,,,L000663,4;5
+,42647856,2026,"Improvement of Clinical Practice Guideline Appraisal by Human Experts and AI Agents by Using Structured Guidance: Systematic Review, Meta-Analysis, and Validation Study.",,,,,L000663,2;5
+,42648240,2026,Education programs on emerging and reemerging infectious disease outbreak management for pre-registration Nursing and Medical Students: A scoping review.,,,,,L000663,3;5
+,42787644,2026,Reporting of National Cancer Registry statistics in Europe: a scoping review.,,,,,L000663,3;5
+,42790715,2026,"ESIC Series, Paper 5: Safe and responsible use of AI in evidence synthesis: Recommendations from the Evidence Synthesis Infrastructure Collaborative (ESIC) Working Group 3.",,,,,L000663,2;5
+,42793839,2026,Artificial Intelligence Reporting Guidelines in Radiology: A Systematic Review.,,,,,L000663,2;5
+,42834335,2026,Algorithmic fairness reporting in artificial intelligence for spinal deformity: a systematic review.,,,,,L000663,2;5
+,42844402,2026,Prospero prevents lineage-specific loss and gain by regulating cyclin E and mitosis during Drosophila neurogenesis.,,,,,L000663,4;5
+,42869550,2026,Reporting completeness of clinical trials evaluating large language model interventions in medicine: systematic review.,,,,,L000663,2;5
+,42872714,2026,AI Model Reporting Standards in Health Care: Systematic Review and Consolidation.,,,,,L000663,2;5
+,42897463,2026,A pragmatic workflow for handling missing PROM data in registry studies: a methodological scoping review and simulated worked example.,,,,,L000663,3;5
+,42907264,2026,Reporting of Fairness and Equity in Studies of Regulator-cleared Commercial AI for Acute Stroke CT: A Systematic Review.,,,,,L000663,2;5
+,39340236,2025,Global certification of visual impairment registries: A scoping review.,,,,,L000663,3;5
+,39428992,2025,"Barriers and facilitators to designing, maintaining, and utilizing rare disease patient registries: a scoping review protocol.",,,,,L000663,3;5
+,39501677,2025,Variables included in cerebral palsy registries globally: A scoping review.,,,,,L000663,3;5
+,39763376,2025,Facilitator development for pre-registration health professions simulation: a scoping review protocol.,,,,,L000663,3;5
+,39818025,2025,Expanding the practice placement capacity in pre-registration midwifery education: A scoping review.,,,,,L000663,3;5
+,39839486,2025,Understanding Patient Registries for Diabetes: A Scoping Review of Published Literature.,,,,,L000663,3;5
+,39855634,2025,"Cytotoxic Stilbenoids, Hetero- and Homodimers of Homoisoflavonoids from Prospero autumnale.",,,,,L000663,4;5
+,39862933,2025,"Scoping review of registration of observational studies finds inadequate registration policies, increased registration, and a debate converging toward proregistration.",,,,,L000663,3;5
+,39998876,2025,Reporting Quality of AI Intervention in Randomized Controlled Trials in Primary Care: Systematic Review and Meta-Epidemiological Study.,,,,,L000663,2;5
+,40040929,2025,A systematic review on the integration of explainable artificial intelligence in intrusion detection systems to enhancing transparency and interpretability in cybersecurity.,,,,,L000663,2;5
+,40099668,2025,Artificial Intelligence in Facial Palsy Treatment: A Systematic Review and Recommendations.,,,,,L000663,2;5
+,40107391,2025,A scoping review identifies comments suggesting modifications to PRISMA-P 2015.,,,,,L000663,1;5
+,40110115,2025,Artificial intelligence in clinical medicine: a state-of-the-art overview of systematic reviews with methodological recommendations for improved reporting.,,,,,L000663,2;5
+,40210575,2025,Current situation of clinical trial registration in acupuncture anesthesia: A scoping review.,,,,,L000663,3;5
+,40361801,2025,Emergency Department Clinical Quality Registries: A Scoping Review.,,,,,L000663,3;5
+,40380462,2025,What to Report? A Systematic Review of Medical AI Reporting Guidelines: Preliminary Results.,,,,,L000663,2;5
+,40414990,2025,Where are the chiropractic clinical outcomes registries? A scoping review.,,,,,L000663,3;5
+,40421957,2025,Concordance with SPIRIT-AI guidelines in reporting of randomized controlled trial protocols investigating artificial intelligence in oncology: a systematic review.,,,,,L000663,2;5
+,40441388,2025,"Response to Luo et al, ""Transparent Reporting of Generative AI Use in Systematic Reviews"".",,,,,L000663,2;5
+,40446965,2025,Transparent reporting of generative artificial intelligence use in systematic reviews.,,,,,L000663,2;5
+,40466809,2025,Challenges and solutions of cancer registries: A scoping review.,,,,,L000663,3;5
+,40478410,2025,Delirium and cognitive assessment in national hip fracture registries: a scoping review.,,,,,L000663,3;5
+,40504403,2025,Large Language Models and the Analyses of Adherence to Reporting Guidelines in Systematic Reviews and Overviews of Reviews (PRISMA 2020 and PRIOR).,,,,,L000663,2;5
+,40521709,2025,Protocols for systematic and scoping reviews: why is my registration not enough?,,,,,L000663,3;5
+,40554204,2025,Exploring the approaches and impacts of education interventions for transgender and gender diverse health on pre-registration healthcare students: A scoping review.,,,,,L000663,3;5
+,40555451,2025,The emerging economic evidence and methods used to evaluate clinical registries: a systematic scoping review protocol.,,,,,L000663,3;5
+,40565444,2025,Artificial Intelligence Applications to Personalized Dietary Recommendations: A Systematic Review.,,,,,L000663,2;5
+,40584692,2025,Cancer registries in Pakistan: a scoping review.,,,,,L000663,3;5
+,40625957,2025,Lifestyle Medicine Pillars and Pedagogies in Pre-registration Health Profession Degrees: A Scoping Review.,,,,,L000663,3;5
+,40660330,2025,Prognostic relevance of prospero homeobox 1 and metastasis tumor antigen 1 in patients with malignant salivary gland tumors: a clinicopathological study.,,,,,L000663,4;5
+,40679584,2025,Exploring thromboembolic risk factors in polycythemia vera: from current evidence to PROSPERO study design.,,,,,L000663,4;5
+,40691568,2025,Educational interventions promoting modifiable lifestyle behaviours for cardiovascular disease in pre-registration nursing students: a scoping review.,,,,,L000663,3;5
+,40722654,2025,Obstructive Sleep Apnea and Outcomes in Cardiac Surgery: A Systematic Review with Meta-Analytic Synthesis (PROSPERO CRD420251049574).,,,,,L000663,4;5
+,40791708,2025,Artificial Intelligence for Surgical Scene Understanding: A Systematic Review and Reporting Quality Meta-Analysis.,,,,,L000663,2;5
+,40875232,2025,Large Language Model Analysis of Reporting Quality of Randomized Clinical Trial Articles: A Systematic Review.,,,,,L000663,2;5
+,40893885,2025,Place-based rural health professional pre-registration education programs: a scoping review.,,,,,L000663,3;5
+,40895926,2025,Transparency and Validity of Artificial Intelligence Applications in Pediatric Diabetes: A Systematic Review.,,,,,L000663,2;5
+,40923022,2025,Concordance with CONSORT-AI guidelines in reporting of randomised controlled trials investigating artificial intelligence in oncology: a systematic review.,,,,,L000663,2;5
+,40933878,2025,Artificial Intelligence Search Tools for Evidence Synthesis: Comparative Analysis and Implementation Recommendations.,,,,,L000663,2;5
+,41001264,2025,Patient- and Family-Centered Care Recommendations in Cardiology Guidelines: An AI-Driven Systematic Review.,,,,,L000663,2;5
+,41049459,2025,Human Readers versus AI-Based Systems in ASPECTS Scoring for Acute Ischemic Stroke: A Systematic Review and Meta-Analysis with Region-Specific Guidance.,,,,,L000663,2;5
+,41078399,2025,Prospero-related homeobox protein 1 (Prox1) enhances myelin sheath regeneration in injured sciatic nerve.,,,,,L000663,4;5
+,41161849,2025,Landscape analysis of pregnancy exposure registries in low- and middle-income countries: a scoping review.,,,,,L000663,3;5
+,41174758,2025,"Position statement on artificial intelligence (AI) use in evidence synthesis across Cochrane, the Campbell Collaboration, JBI and the Collaboration for Environmental Evidence 2025.",,,,,L000663,2;5
+,41215474,2025,Challenges and strategies for international medical graduates in registration and integration into the Australian healthcare system: a systematic scoping review.,,,,,L000663,3;5
+,41220062,2025,"Position statement on artificial intelligence (AI) use in evidence synthesis across Cochrane, the Campbell Collaboration, JBI, and the Collaboration for Environmental Evidence 2025.",,,,,L000663,2;5
+,41231840,2025,Processes for creating an interprofessional mental health identity among pre-registration healthcare students: A scoping review protocol.,,,,,L000663,3;5
+,41311279,2025,"A scoping review of population-based dementia registries: advancing research, care, and policy.",,,,,L000663,3;5
+,41325093,2025,Barriers and facilitators of trauma registries in low- and middle-income countries: A scoping review.,,,,,L000663,3;5
+,41341404,2025,Optimizing data linkage for maximizing the potential of Luxembourg's national cancer registry: a comprehensive scoping review.,,,,,L000663,3;5
+,41407878,2025,Artificial intelligence for surgical scene understanding: a systematic review and reporting quality meta-analysis.,,,,,L000663,2;5
+,41451176,2025,Evidence-Based Recommendations for Geriatric Trauma Care: Systematic Review and AI-Assisted Consolidation of Clinical Practice Guidelines Between 2016 and 2021.,,,,,L000663,2;5
+,41463660,2025,Translating AI to the Bedside with Physician Buy-In: Recommendations from a Meta-Analysis and Systematic Review of the Literature.,,,,,L000663,2;5
+,42712331,2025,Responsible artificial intelligence in healthcare: a systematic review on the use of ethical principles in the development and deployment of artificial intelligence.,,,,,L000663,2;5
+,37740080,2024,Self-reporting with checklists in artificial intelligence research on medical imaging: a systematic review based on citations of CLAIM.,,,,,L000663,2;5
+,37749068,2024,A comparison of machine learning methods to find clinical trials for inclusion in new systematic reviews from their PROSPERO registrations prior to searching and screening.,,,,,L000663,4;5
+,37768398,2024,Global mapping of institutional and hospital-based (Level II-IV) arthroplasty registries: a scoping review.,,,,,L000663,3;5
+,37867430,2024,Prospero Homeobox 1 and Doublecortin Correlate with Neural Damage after Ischemic Stroke.,,,,,L000663,4;5
+,38355824,2024,"Objective clinical registration of tremor, bradykinesia, and rigidity during awake stereotactic neurosurgery: a scoping review.",,,,,L000663,3;5
+,38414120,2024,Performance reporting design in artificial intelligence studies using image-based TNM staging and prognostic parameters in rectal cancer: a systematic review.,,,,,L000663,2;5
+,38418989,2024,External quality assessment to support the WHO ProSPeRo study for the evaluation of two dual HIV/syphilis point-of-care tests in seven countries.,,,,,L000663,4;5
+,38421736,2024,Language tests and tests of competence for registration purposes - a scoping review of the experiences of overseas nurses.,,,,,L000663,3;5
+,38429164,2024,Laparoscopic application of sodium hyaluronate-carboxymethylcellulose barrier in abdominopelvic surgery: A Preferred Reporting Items for Systematic Reviews and Meta-Analyses for Systematic Review Protocols-compliant systematic review and meta-analysis.,,,,,L000663,1;5
+,38472341,2024,Techniques for Registration of Myoelectric Activity of Women's Pelvic Floor Muscles: A Scoping Review.,,,,,L000663,3;5
+,38530807,2024,Variables included in cerebral palsy registries globally: A scoping review.,,,,,L000663,3;5
+,38605106,2024,Reporting guidelines in medical artificial intelligence: a systematic review and meta-analysis.,,,,,L000663,2;5
+,38650972,2024,Patient-Reported Outcome Measures in High-Risk Medical Device Registries: A Scoping Review.,,,,,L000663,3;5
+,38656461,2024,Role of the STING pathway in myeloid neoplasms: a prospero-registered systematic review of principal hurdles of STING on the road to the clinical practice.,,,,,L000663,4;5
+,38670585,2024,Impact of Prospero Homeobox-1 (PROX-1) οn the Oncogenic Phenotypes of Hepatocellular Carcinoma Cells.,,,,,L000663,4;5
+,38697257,2024,Editor's Choice - Vascular Registries Contributing to VASCUNET Collaborative Abdominal Aortic Aneurysm Outcome Projects: A Scoping Review.,,,,,L000663,3;5
+,38697349,2024,PROSPERO - Reasons for its existence and why a systematic review and/or meta-analysis should be registered.,,,,,L000663,4;5
+,38711103,2024,Scoping review of the recommendations and guidance for improving the quality of rare disease registries.,,,,,L000663,3;5
+,38761466,2024,The concept of capability in pre-registration nursing education: A scoping review.,,,,,L000663,3;5
+,38828964,2024,Reconstructive surgery after distal fibular resection due to bone tumors: a technical report on surgical strategies and results from the PROSPERO international register of systematic reviews.,,,,,L000663,4;5
+,38990628,2024,AI as a Medical Device Adverse Event Reporting in Regulatory Databases: Protocol for a Systematic Review.,,,,,L000663,2;5
+,39004580,2024,ChatGPT and assistive AI in structured radiology reporting: A systematic review.,,,,,L000663,2;5
+,39157851,2024,Molecular expression of Forkhead Box C2 gene (FOXC2) and Prospero homeobox gene (PROX-1) in oral squamous carcinoma and their correlation with clinicopathological parameters: A prospective cohort study.,,,,,L000663,4;5
+,39175499,2024,The role of Hospital-Based Cancer Registries (HBCRs) as information systems in the delivery of evidence-based integrated cancer care: a scoping review.,,,,,L000663,3;5
+,39382635,2024,"Letter to the editor regarding ""Global mapping of institutional and hospital-based (level II-IV) arthroplasty registries: a scoping review"". Eur J Orthop Surg Traumatol. 2024 Feb; 34(2):1219-1251. doi: 10.1007/s00590-023-03691-y. Epub 2023 Sep 28. PMID: 37768398; PMCID: PMC10858160.",,,,,L000663,3;5
+,39455195,2024,Revealing transparency gaps in publicly available COVID-19 datasets used for medical artificial intelligence development-a systematic review.,,,,,L000663,2;5
+,39629347,2024,A Meta-analysis of the Utility of Red Cell Distribution Width as a Biomarker to Predict Outcomes in Pediatric Illness (PROSPERO CRD42020208777).,,,,,L000663,4;5
+,39633438,2024,Barriers and facilitators to using feedback from clinical quality registries: a scoping review protocol.,,,,,L000663,3;5
+,39692185,2024,Methodological Challenges for the Responsible Use of AI in Systematic Reviews: Risk of Bias Assessment.,,,,,L000663,2;5
+,39877697,2024,Delirium and Cognitive Screening in National Hip Fracture Registries: Scoping Review Protocol.,,,,,L000663,3;5
+,40474875,2024,Meta-epidemiological study on the publication rate of South American countries' systematic reviews of interventions registered in PROSPERO.,,,,,L000663,4;5
+,36028976,2023,"Neurotrauma Registries in Low- and Middle-Income Countries for Building Organized Neurotrauma Care: The LATINO Registry Experience Comment on ""Neurotrauma Surveillance in National Registries of Low- and Middle-Income Countries: A Scoping Review and Comparative Analysis of Data Dictionaries"".",,,,,L000663,3;5
+,36383194,2023,Carer-reported measures for a dementia registry: A systematic scoping review and a qualitative study.,,,,,L000663,3;5
+,36427453,2023,The impact of care experience prior to commencing pre-registration nurse education and training: A scoping review.,,,,,L000663,3;5
+,36526532,2023,Transparency in Artificial Intelligence Research: a Systematic Review of Availability Items Related to Open Science in Radiology and Nuclear Medicine.,,,,,L000663,2;5
+,36646804,2023,PRISMA AI reporting guidelines for systematic reviews and meta-analyses on AI in healthcare.,,,,,L000663,2;5
+,36688587,2023,"Characteristics, completion and publication of PROSPERO records in regional anesthesia for acute perioperative pain.",,,,,L000663,4;5
+,36773292,2023,Apical-basal polarity precisely determines intestinal stem cell number by regulating Prospero threshold.,,,,,L000663,4;5
+,36811940,2023,Identifying and Categorizing Adverse Events in Trials of Digital Mental Health Interventions: Narrative Scoping Review of Trials in the International Standard Randomized Controlled Trial Number Registry.,,,,,L000663,3;5
+,36890554,2023,"Airway registries in primarily adult, emergent endotracheal intubation: a scoping review.",,,,,L000663,3;5
+,36926511,2023,Determining cancer stage at diagnosis in population-based cancer registries: A rapid scoping review.,,,,,L000663,3;5
+,36949237,2023,Carbapenem Antibiotics Versus Other Antibiotics for Complicated Intra-abdominal Infections: a Systematic Review and Patient-Level Meta-analysis of Randomized Controlled Trials (PROSPERO CRD42018108854).,,,,,L000663,4;5
+,36951435,2023,Effects of Aspirin on Kidney Biopsy Bleeding Complications: A Systematic Review and Meta-Analysis (PROSPERO 2021 CRD42021261005).,,,,,L000663,4;5
+,37067611,2023,Hip fracture registries in low- and middle-income countries: a scoping review.,,,,,L000663,3;5
+,37146658,2023,Paper I: Heterogeneous use of registry data for participant identification and primary outcome ascertainment is found in registry-based randomized controlled trials: A scoping review.,,,,,L000663,3;5
+,37156596,2023,Pregnancy exposure registries for drugs and vaccines in low-income and middle-income countries: scoping review protocol.,,,,,L000663,3;5
+,37334808,2023,[Let's not forget about PRISMA-P].,,,,,L000663,1;5
+,37386985,2023,"Evaluation of Completeness, Comparability, Validity, and Timeliness in Cancer Registries: A Scoping Review.",,,,,L000663,3;5
+,37434146,2023,Response rates in clinical quality registries and databases that collect patient reported outcome measures: a scoping review.,,,,,L000663,3;5
+,37501152,2023,Current state of rare disease registries and databases in Australia: a scoping review.,,,,,L000663,3;5
+,37579401,2023,"National Trauma Registries in LMICs: Long-Overdue Priority Comment on ""Neurotrauma Surveillance in National Registries of Low- and Middle-Income Countries: A Scoping Review and Comparative Analysis of Data Dictionaries"".",,,,,L000663,3;5
+,37579402,2023,"National Neurotrauma Registry Data in Low- and Middle-Income Countries - Current Status and Future Requirements Comment on ""Neurotrauma Surveillance in National Registries of Low- and Middle-Income Countries: A Scoping Review and Comparative Analysis of Data Dictionaries"".",,,,,L000663,3;5
+,37579434,2023,"The Role of Registries in Neurotrauma Research: Translating Data Into Health Policy That Enhances Patient Care Comment on ""Neurotrauma Surveillance in National Registries of Low- and Middle-Income Countries: A Scoping Review and Comparative Analysis of Data Dictionaries"".",,,,,L000663,3;5
+,37579459,2023,"Global Neurotrauma Surveillance: Are National Databases Overrated? Comment on ""Neurotrauma Surveillance in National Registries of Low- and Middle-Income Countries: A Scoping Review and Comparative Analysis of Data Dictionaries"".",,,,,L000663,3;5
+,37579475,2023,"Towards Improved Organizational Governance of Neurotrauma Surveillance Comment on ""Neurotrauma Surveillance in National Registries of Low- and Middle-Income Countries: A Scoping Review and Comparative Analysis of Data Dictionaries"".",,,,,L000663,3;5
+,37644614,2023,Proximal gastrectomy and double-tract reconstruction vs total gastrectomy in gastric and gastro-esophageal junction cancer patients - a systematic review and meta-analysis protocol (PROSPERO registration number: CRD42021291500).,,,,,L000663,4;5
+,37715871,2023,National spine surgery registries' characteristics and aims: globally accepted standards have yet to be met. Results of a scoping review and a complementary survey.,,,,,L000663,3;5
+,37721783,2023,Assessment of activities and participation of people by rehabilitation-focused clinical registries: a systematic scoping review.,,,,,L000663,3;5
+,37775189,2023,"FAIR, ethical, and coordinated data sharing for COVID-19 response: a scoping review and cross-sectional survey of COVID-19 data sharing platforms and registries.",,,,,L000663,3;5
+,38097923,2023,Evolution of appraisal tool usage preferences in PROSPERO records: a study of non-Cochrane systematic reviews.,,,,,L000663,4;5
+,38274539,2023,Effects of home-based interventions using exergames on physical and cognitive functions in community-dwelling older adults: a PRISMA-P-compliant protocol for a systematic review.,,,,,L000663,1;5
+,33609258,2022,Systematic review and meta-analysis of lingual foramina anatomy and surgical-related aspects on cone-beam computed tomography: a PROSPERO-registered study.,,,,,L000663,4;5
+,34347157,2022,Deep learning in knee imaging: a systematic review utilizing a Checklist for Artificial Intelligence in Medical Imaging (CLAIM).,,,,,L000663,2;5
+,34772497,2022,"Artificial intelligence for mechanical ventilation: systematic review of design, reporting standards, and bias.",,,,,L000663,2;5
+,34961401,2022,Effect of Whey Protein Supplementation on Perioperative Outcomes in Patients with Cancer-A Systematic Review and Meta-Analysis (PROSPERO 2020: CRD42020188666).,,,,,L000663,4;5
+,35021612,2022,Neurotrauma Surveillance in National Registries of Low- and Middle-Income Countries: A Scoping Review and Comparative Analysis of Data Dictionaries.,,,,,L000663,3;5
+,35030967,2022,"Prospero homeobox 1 promotes proliferation, migration, and invasion of osteosarcoma cells and its clinical significance.",,,,,L000663,4;5
+,35033886,2022,Forming and shaping of professional identity within pre-registration physiotherapy curricular: A scoping review.,,,,,L000663,3;5
+,35152047,2022,SHIFTing artificial intelligence to be responsible in healthcare: A systematic review.,,,,,L000663,2;5
+,35327499,2022,Reporting on the Value of Artificial Intelligence in Predicting the Optimal Embryo for Transfer: A Systematic Review including Data Synthesis.,,,,,L000663,2;5
+,35328017,2022,A Clinical Investigation on the Theragnostic Effect of MicroRNA Biomarkers for Survival Outcome in Cervical Cancer: A PRISMA-P Compliant Protocol for Systematic Review and Comprehensive Meta-Analysis.,,,,,L000663,1;5
+,35488198,2022,Health outcomes and implementation barriers and facilitators of comprehensive geriatric assessment in community settings: a systematic integrative review [PROSPERO registration no.: CRD42021229953].,,,,,L000663,4;5
+,35538882,2022,The role of Australian clinical quality registries in pregnancy care: A scoping review.,,,,,L000663,3;5
+,35609495,2022,"Artificial intelligence for prediction of treatment outcomes in breast cancer: Systematic review of design, reporting standards, and bias.",,,,,L000663,2;5
+,35766390,2022,Burn Registries State of Affairs: A Scoping review.,,,,,L000663,3;5
+,35792338,2022,Clinical registries data quality attributes to support registry-based randomised controlled trials: A scoping review.,,,,,L000663,3;5
+,35798527,2022,Cognitive prehabilitation for geriatric patients undergoing elective surgery: a PRISMA-P-compliant protocol for a systematic review.,,,,,L000663,1;5
+,35820587,2022,Adherence to the PRISMA-P 2015 reporting guideline was inadequate in systematic review protocols.,,,,,L000663,1;5
+,35829892,2022,Scoping Review on ACL Surgery and Registry Data.,,,,,L000663,3;5
+,35858506,2022,Estimating medical image registration error and confidence: A taxonomy and scoping review.,,,,,L000663,3;5
+,35911553,2022,Quality of reporting in AI cardiac MRI segmentation studies - A systematic review and recommendations for future studies.,,,,,L000663,2;5
+,35939521,2022,Nuclear Prospero allows one-division potential to neural precursors and post-mitotic status to neurons via opposite regulation of Cyclin E.,,,,,L000663,4;5
+,35942638,2022,Overview of registries for anaphylaxis: a scoping review.,,,,,L000663,3;5
+,36230534,2022,Role of Sirtuins in the Pathobiology of Onco-Hematological Diseases: A PROSPERO-Registered Study and In Silico Analysis.,,,,,L000663,4;5
+,36301904,2022,Mitochondrial disease registries worldwide: A scoping review.,,,,,L000663,3;5
+,36456005,2022,Extent and nature of duplication in PROSPERO using COVID-19-related registrations: a retrospective investigation and survey.,,,,,L000663,4;5
+,36691151,2022,Quality of reporting of randomised controlled trials of artificial intelligence in healthcare: a systematic review.,,,,,L000663,2;5
+,38504852,2022,Proportion of Systematic Review Protocols Registered Outside of the International Prospective Register of Systematic Reviews (PROSPERO): A Short Report.,,,,,L000663,4;5
+,32054725,2021,Does the PROSPERO registration prevent double review on the same topic?,,,,,L000663,4;5
+,32665222,2021,Delays in publishing systematic review registrations in PROSPERO are hindering transparency and may lead to research waste.,,,,,L000663,4;5
+,33165169,2021,Overview of registries for anaphylaxis: a scoping review protocol.,,,,,L000663,3;5
+,33230013,2021,Techniques for registration of myoelectric activity of women's pelvic floor muscles: a scoping review protocol.,,,,,L000663,3;5
+,33341591,2021,"Salivary immunoglobulins (A, G, and M) in type 1 diabetes mellitus patients: A PROSPERO-registered systematic review and meta-analysis.",,,,,L000663,4;5
+,33358129,2021,'Continuity of Care Experiences' within pre-registration midwifery education programs: A scoping review.,,,,,L000663,3;5
+,33522101,2021,Inconsistencies in study eligibility criteria are common between non-Cochrane systematic reviews and their protocols registered in PROSPERO.,,,,,L000663,4;5
+,33595200,2021,The mass production of systematic reviews about COVID-19: An analysis of PROSPERO records.,,,,,L000663,4;5
+,33729157,2021,A KDM5-Prospero transcriptional axis functions during early neurodevelopment to regulate mushroom body formation.,,,,,L000663,4;5
+,34037813,2021,Outcomes collected in female pelvic floor surgical procedure registries and databases: a scoping review.,,,,,L000663,3;5
+,34130770,2021,Characteristics of systematic reviews evaluating treatments for COVID-19 registered in PROSPERO.,,,,,L000663,4;5
+,34282762,2021,Artificial Intelligence Compared to Radiologists for the Initial Diagnosis of Prostate Cancer on Magnetic Resonance Imaging: A Systematic Review and Recommendations for Future Studies.,,,,,L000663,2;5
+,34353360,2021,A scoping review of registry captured indicators for evaluating quality of critical care in ICU.,,,,,L000663,3;5
+,34459092,2021,Live long and PROSPERO: A comment on Chiu and coworkers.,,,,,L000663,4;5
+,34518798,2021,PROSPERO's systematic review protocols of traditional Chinese medicine for COVID-19: An overview.,,,,,L000663,4;5
+,34519094,2021,An information-based framework for development national twin registry: Scoping review and focus group discussion.,,,,,L000663,3;5
+,34884024,2021,Overview of Explainable Artificial Intelligence for Prognostic and Health Management of Industrial Assets Based on Preferred Reporting Items for Systematic Reviews and Meta-Analyses.,,,,,L000663,2;5
+,34964712,2021,"Delilah, prospero, and D-Pax2 constitute a gene regulatory network essential for the development of functional proprioceptors.",,,,,L000663,4;5
+,36713608,2021,Applications of artificial intelligence/machine learning approaches in cardiovascular medicine: a systematic review with recommendations.,,,,,L000663,2;5
+,31228083,2020,A Systematic Review and Meta-analysis of Physical Exercise Prehabilitation in Major Abdominal Surgery (PROSPERO 2017 CRD42017080366).,,,,,L000663,4;5
+,31307803,2020,Techniques for retrievability and for registering screw access holes in cement-retained implant-supported prostheses: A scoping review of the literature.,,,,,L000663,3;5
+,31589953,2020,"More systematic reviews were registered in PROSPERO each year, but few records' status was up-to-date.",,,,,L000663,4;5
+,31784773,2020,The fate of urological systematic reviews registered in PROSPERO.,,,,,L000663,4;5
+,31866201,2020,Mitotic Implantation of the Transcription Factor Prospero via Phase Separation Drives Terminal Neuronal Differentiation.,,,,,L000663,4;5
+,32049033,2020,Prospero Phase-Separating the Way to Neuronal Differentiation.,,,,,L000663,4;5
+,32055724,2020,Anthelminthic medicinal plants in veterinary ethnopharmacology: A network meta-analysis following the PRISMA-P and PROSPERO recommendations.,,,,,L000663,1;4;5
+,32205310,2020,Neuronal upregulation of Prospero protein is driven by alternative mRNA polyadenylation and Syncrip-mediated mRNA stabilisation.,,,,,L000663,4;5
+,32213531,2020,"Artificial intelligence versus clinicians: systematic review of design, reporting standards, and claims of deep learning studies.",,,,,L000663,2;5
+,32247200,2020,Blended learning via distance in pre-registration nursing education: A scoping review.,,,,,L000663,3;5
+,32370142,2020,The Impact of Transcription Factor Prospero Homeobox 1 on the Regulation of Thyroid Cancer Malignancy.,,,,,L000663,4;5
+,32571382,2020,Defining key design elements of registry-based randomised controlled trials: a scoping review.,,,,,L000663,3;5
+,32850123,2020,An assessment of the extent to which the contents of PROSPERO records meet the systematic review protocol reporting items in PRISMA-P.,,,,,L000663,1;4;5
+,32960663,2020,"Artificial Intelligence in Renal Mass Characterization: A Systematic Review of Methodologic Items Related to Modeling, Performance Evaluation, Clinical Utility, and Transparency.",,,,,L000663,2;5
+,29021246,2019,Zombie reviews taking over the PROSPERO systematic review registry. It's time to fight back!,,,,,L000663,4;5
+,29800752,2019,"Omalizumab Effectiveness by Biomarker Status in Patients with Asthma: Evidence From PROSPERO, A Prospective Real-World Study.",,,,,L000663,4;5
+,30282085,2019,Imaging Aspects of the Mandibular Incisive Canal: A PROSPERO-Registered Systematic Review and Meta-Analysis of Cone Beam Computed Tomography Studies.,,,,,L000663,4;5
+,30549175,2019,RanGAP-mediated nucleocytoplasmic transport of Prospero regulates neural stem cell lifespan in Drosophila larval central brain.,,,,,L000663,4;5
+,30576755,2019,Omalizumab effectiveness in asthma-COPD overlap: Post hoc analysis of PROSPERO.,,,,,L000663,4;5
+,30604496,2019,"Building a Global, Pediatric Vascular Access Registry: A Scoping Review of Trial Outcomes and Quality Indicators to Inform Evidence-Based Practice.",,,,,L000663,3;5
+,30866140,2019,Quality of urological systematic reviews registered in PROSPERO.,,,,,L000663,4;5
+,30898481,2019,Does surgically assisted rapid maxillary expansion associated with pterygomaxillary disjunction result in changes in mandibular position? A PROSPERO-compliant systematic review of the literature.,,,,,L000663,4;5
+,31060342,2019,Molecular Signature of Prospero Homeobox 1 (PROX1) in Follicular Thyroid Carcinoma Cells.,,,,,L000663,4;5
+,31173570,2019,PROSPERO: An International Register of Systematic Review Protocols.,,,,,L000663,4;5
+,31232227,2019,Trauma registry implementation and operation in low and middle income countries: A scoping review.,,,,,L000663,3;5
+,31476376,2019,Half of systematic reviews about pain registered in PROSPERO were not published and the majority had inaccurate status.,,,,,L000663,4;5
+,31717665,2019,Transcription Factor Prospero Homeobox 1 (PROX1) as a Potential Angiogenic Regulator of Follicular Thyroid Cancer Dissemination.,,,,,L000663,4;5
+,31730014,2019,Risk of bias tools in systematic reviews of health interventions: an analysis of PROSPERO-registered protocols.,,,,,L000663,4;5
+,29339215,2018,Registration in the international prospective register of systematic reviews (PROSPERO) of systematic review protocols was associated with increased review quality.,,,,,L000663,4;5
+,29357929,2018,Addition of platinum derivatives to neoadjuvant single-agent fluoropyrimidine chemoradiotherapy in patients with stage II/III rectal cancer: protocol for a systematic review and meta-analysis (PROSPERO CRD42017073064).,,,,,L000663,4;5
+,29406257,2018,High Expression of Prospero-Related Homeobox-1 (PROX1) Is Associated With Poor Prognosis in Patients With Salivary Adenoid Cystic Carcinoma.,,,,,L000663,4;5
+,29421314,2018,"Baseline asthma burden, comorbidities, and biomarkers in omalizumab-treated patients in PROSPERO.",,,,,L000663,4;5
+,29463298,2018,"Registration of systematic reviews in PROSPERO: 30,000 records and counting.",,,,,L000663,4;5
+,29523200,2018,Evaluating characteristics of PROSPERO records as predictors of eventual publication of non-Cochrane systematic reviews: a meta-epidemiological study protocol.,,,,,L000663,4;5
+,29741266,2018,Long-term monitoring of B-chromosome invasion and neutralization in a population of Prospero autumnale (Asparagaceae).,,,,,L000663,4;5
+,29749639,2018,The transcription factor prospero homeobox protein 1 is a direct target of SoxC proteins during developmental vertebrate neurogenesis.,,,,,L000663,4;5
+,29755483,2018,Multiple Origins and Nested Cycles of Hybridization Result in High Tetraploid Diversity in the Monocot Prospero.,,,,,L000663,4;5
+,29894397,2018,Allied health and nursing pre-registration student tracking studies: a scoping review protocol.,,,,,L000663,3;5
+,30052574,2018,Twenty-five years of pain education research-what have we learned? Findings from a comprehensive scoping review of research into pre-registration pain education for health professionals.,,,,,L000663,3;5
+,30262745,2018,Euchromatic Supernumerary Chromosomal Segments-Remnants of Ongoing Karyotype Restructuring in the Prospero autumnale Complex?,,,,,L000663,4;5
+,30341263,2018,Preemptive analgesia-related gene and protein expression in third molar surgeries under non steroidal anti-inflammatory drug protocols: A PROSPERO-registered systematic review of clinical studies.,,,,,L000663,4;5
+,26759228,2017,Prospero homeobox 1 mediates the progression of gastric cancer by inducing tumor cell proliferation and lymphangiogenesis.,,,,,L000663,4;5
+,27759621,2017,Antibiotics Versus Surgical Therapy for Uncomplicated Appendicitis: Systematic Review and Meta-analysis of Controlled Trials (PROSPERO 2015: CRD42015016882).,,,,,L000663,4;5
+,28213601,2017,Protocol for a scoping review of post-trial extensions of randomised controlled trials using individually linked administrative and registry data.,,,,,L000663,3;5
+,28242767,2017,Analysis of the time and workers needed to conduct systematic reviews of medical interventions using data from the PROSPERO registry.,,,,,L000663,4;5
+,28520335,2017,PRISMA statement and PROSPERO.,,,,,L000663,4;5
+,28646551,2017,Prospero-related homeobox 1 drives angiogenesis of hepatocellular carcinoma through selectively activating interleukin-8 expression.,,,,,L000663,4;5
+,28722203,2017,Interaction of Spoonbill with Prospero in Drosophila: Implications in neuroblast development.,,,,,L000663,4;5
+,28881169,2017,Are orthodontic systematic reviews registered a priori in PROSPERO?,,,,,L000663,4;5
+,29054589,2017,"Baseline asthma burden, comorbidities, and biomarkers in omalizumab-treated patients in PROSPERO.",,,,,L000663,4;5
+,29223296,2017,"Baseline asthma burden, comorbidities, and biomarkers in omalizumab-treated patients in PROSPERO.",,,,,L000663,4;5
+,29371975,2017,The role of prospero homeobox 1 (PROX1) expression in follicular thyroid carcinoma cells.,,,,,L000663,4;5
+,26643365,2016,Structural polymorphisms and distinct genomic composition suggest recurrent origin and ongoing evolution of B chromosomes in the Prospero autumnale complex (Hyacinthaceae).,,,,,L000663,4;5
+,26822481,2016,Implementing PRISMA-P: recommendations for prospective authors.,,,,,L000663,1;5
+,26893340,2016,"Drosophila astrocytes cover specific territories of the CNS neuropil and are instructed to differentiate by Prospero, a key effector of Notch.",,,,,L000663,4;5
+,26913897,2016,"Disease of the kidney and of the urinary tract in De Medicina Methodica (Padua, 1611) of Prospero Alpini (1563-1616).",,,,,L000663,4;5
+,27043718,2016,Prediction of occult lymph node metastasis in squamous cell carcinoma of the oral cavity and the oropharynx using peritumoral Prospero homeobox protein 1 lymphatic nuclear quantification.,,,,,L000663,4;5
+,27068465,2016,PROS-1/Prospero Is a Major Regulator of the Glia-Specific Secretome Controlling Sensory-Neuron Shape and Function in C. elegans.,,,,,L000663,4;5
+,27079845,2016,A third of systematic reviews changed or did not specify the primary outcome: a PROSPERO register study.,,,,,L000663,4;5
+,27188047,2016,Pre-registration paid employment practices of undergraduate nursing students: A scoping review.,,,,,L000663,3;5
+,27402188,2016,Caenorhabditis elegans homologue of Prox1/Prospero is expressed in the glia and is required for sensory behavior and cold tolerance.,,,,,L000663,4;5
+,27431903,2016,Pain education in pre-registration professional health courses: a protocol for a scoping review.,,,,,L000663,3;5
+,27444514,2016,Preferred reporting items for systematic review and meta-analysis protocols (PRISMA-P) 2015: elaboration and explanation.,,,,,L000663,1;5
+,27510975,2016,Minibrain drives the Dacapo-dependent cell cycle exit of neurons in the Drosophila brain by promoting asense and prospero expression.,,,,,L000663,4;5
+,25312250,2015,The RanGEF Bj1 promotes prospero nuclear export and neuroblast self-renewal.,,,,,L000663,4;5
+,25554246,2015,Preferred reporting items for systematic review and meta-analysis protocols (PRISMA-P) 2015 statement.,,,,,L000663,1;5
+,25555855,2015,Preferred reporting items for systematic review and meta-analysis protocols (PRISMA-P) 2015: elaboration and explanation.,,,,,L000663,1;5
+,25573115,2015,MicroRNA miR-466 inhibits Lymphangiogenesis by targeting prospero-related homeobox 1 in the alkali burn corneal injury model.,,,,,L000663,4;5
+,25854028,2015,[Acupuncture status analysis in PROSPERO systematic review registry platform].,,,,,L000663,4;5
+,26807311,2015,Impact of prospero homeobox-1 on tumor cell behavior and prognosis in colorectal cancer.,,,,,L000663,4;5
+,24629162,2014,How to reduce unnecessary duplication: use PROSPERO.,,,,,L000663,4;5
+,25169019,2014,Differential amplification of satellite PaB6 in chromosomally hypervariable Prospero autumnale complex (Hyacinthaceae).,,,,,L000663,4;5
+,25354199,2014,Transient nuclear Prospero induces neural progenitor quiescence.,,,,,L000663,4;5
+,25674048,2014,Prospero-related homeobox 1 (Prox1) at the crossroads of diverse pathways during adult neural fate specification.,,,,,L000663,4;5
+,23320413,2013,PROSPERO at one year: an evaluation of its utility.,,,,,L000663,4;5
+,23723244,2013,Prospero-related homeobox 1 (Prox1) functions as a novel modulator of retinoic acid-related orphan receptors α- and γ-mediated transactivation.,,,,,L000663,4;5
+,23819574,2013,Chromosomal diversification and karyotype evolution of diploids in the cytologically diverse genus Prospero (Hyacinthaceae).,,,,,L000663,4;5
+,24022042,2013,Misgivings about PROSPERO in solving the problem of duplicate systematic reviews.,,,,,L000663,4;5
+,24088555,2013,Trusting researchers to use open trial registers such as PROSPERO responsibly.,,,,,L000663,4;5
+,24330739,2013,PROSPERO's progress and activities 2012/13.,,,,,L000663,4;5
+,24375345,2013,Prognosis of life and death and disease duration from urine examination according to Prospero Alpini (1563-1616).,,,,,L000663,4;5
+,24375355,2013,"De Medicina Aegyptiorum by Prospero Alpini (Venice, Franciscus de Franciscis, 1591).",,,,,L000663,4;5
+,24375366,2013,Some useful plants for renal therapy listed in De Plantis Aegypti Liber by Prospero Alpini in the 16th century: modern considerations.,,,,,L000663,4;5
+,22483995,2012,Global trauma registry mapping: a scoping review.,,,,,L000663,3;5
+,22587842,2012,The nuts and bolts of PROSPERO: an international prospective register of systematic reviews.,,,,,L000663,4;5
+,22587962,2012,The importance of PROSPERO to the National Institute for Health Research.,,,,,L000663,4;5
+,22647876,2012,Epistatic rescue of Nkx2.5 adult cardiac conduction disease phenotypes by prospero-related homeobox protein 1 and HDAC3.,,,,,L000663,4;5
+,22675232,2012,PROSPERO: online prediction of crystallographic success from experimental results and sequence.,,,,,L000663,4;5
+,22703418,2012,Registration of systematic reviews: PROSPERO.,,,,,L000663,4;5
+,22982861,2012,Transcriptional repression of TWIST1 gene by Prospero-related homeobox 1 inhibits invasiveness of hepatocellular carcinoma cells.,,,,,L000663,4;5
+,23045246,2012,Prospero homeobox 1 promotes epithelial-mesenchymal transition in colon cancer cells by inhibiting E-cadherin via miR-9.,,,,,L000663,4;5
+,21436036,2011,Prospero-related homeobox 1 gene (Prox1) is regulated by canonical Wnt signaling and has a stage-specific role in adult hippocampal neurogenesis.,,,,,L000663,4;5
+,21539742,2011,Prospero and Pax2 combinatorially control neural cell fate decisions by modulating Ras- and Notch-dependent signaling.,,,,,L000663,4;5
+,21552484,2011,A transient expression of Prospero promotes cell cycle exit of Drosophila postembryonic neurons through the regulation of Dacapo.,,,,,L000663,4;5
+,22046223,2011,Open Medicine endorses PROSPERO.,,,,,L000663,4;5
+,22049409,2011,A new Prospero and microRNA-279 pathway restricts CO2 receptor neuron formation.,,,,,L000663,4;5
+,22156909,2011,Endocrinology and art. A noblewoman with goiter - Ritratto di gentildonna Prospero Fontana (1512-1597).,,,,,L000663,4;5
+,19914234,2010,Cell cycle independent role of Cyclin E during neural cell fate specification in Drosophila is mediated by its regulation of Prospero function.,,,,,L000663,4;5
+,20085633,2010,Expression profiling of prospero in the Drosophila larval chemosensory organ: Between growth and outgrowth.,,,,,L000663,4;5
+,20660276,2010,Histone deacetylase Rpd3 regulates olfactory projection neuron dendrite targeting via the transcription factor Prospero.,,,,,L000663,4;5
+,20920301,2010,Drosophila type II neuroblast lineages keep Prospero levels low to generate large clones that contribute to the adult brain central complex.,,,,,L000663,4;5
+,19196985,2009,Drosophila hnRNP A1 homologs Hrp36/Hrp38 enhance U2-type versus U12-type splicing to regulate alternative splicing of the prospero twintron.,,,,,L000663,4;5
+,19264593,2009,Prospero-related homeobox protein (Prox1) inhibits hepatitis B virus replication through repressing multiple cis regulatory elements.,,,,,L000663,4;5
+,19662164,2009,Notch and Prospero repress proliferation following cyclin E overexpression in the Drosophila bristle lineage.,,,,,L000663,4;5
+,19948062,2009,The zebrafish prospero homolog prox1 is required for mechanosensory hair cell differentiation and functionality in the lateral line.,,,,,L000663,4;5
+,18571787,2008,Prospero-related homeobox 1 and liver receptor homolog 1 coordinately regulate long-term proliferation of murine fetal hepatoblasts.,,,,,L000663,4;5
+,18635611,2008,Cell-type-specific transcription of prospero is controlled by combinatorial signaling in the Drosophila eye.,,,,,L000663,4;5
+,18948102,2008,Modulation of transcriptional corepressor activity of prospero-related homeobox protein (Prox1) by SUMO modification.,,,,,L000663,4;5
+,19160541,2008,Repression of interferon-gamma expression in T cells by Prospero-related homeobox protein.,,,,,L000663,4;5
+,17069925,2007,Prospero-related homeobox 1 (PROX1) is frequently inactivated by genomic deletions and epigenetic silencing in carcinomas of the bilary system.,,,,,L000663,4;5
+,17223099,2007,Spatio-temporal expression of Prospero is finely tuned to allow the correct development and function of the nervous system in Drosophila melanogaster.,,,,,L000663,4;5
+,17368742,2007,A prospero-related homeobox gene Prox-1 is expressed during postnatal brain development as well as in the adult rodent brain.,,,,,L000663,4;5
+,17436071,2007,Prospero mutants induce precocious sexual behavior in Drosophila males.,,,,,L000663,4;5
+,18634579,2007,Two distinct mechanisms segregate Prospero in the longitudinal glia underlying the timing of interactions with axons.,,,,,L000663,4;5
+,16396905,2006,Timing of identity: spatiotemporal regulation of hunchback in neuroblast lineages of Drosophila by Seven-up and Prospero.,,,,,L000663,4;5
+,16470382,2006,"Characterization of a novel prospero-related homeobox gene, Prox2.",,,,,L000663,4;5
+,16488887,2006,A Prospero-related homeodomain protein is a novel co-regulator of hepatocyte nuclear factor 4alpha that regulates the cholesterol 7alpha-hydroxylase gene.,,,,,L000663,4;5
+,16770575,2006,"Prospero-related homeobox 1 (Prox1) is a stable hepatocyte marker during liver development, injury and regeneration, and is absent from ""oval cells"".",,,,,L000663,4;5
+,17139248,2006,Drosophila homologs of mammalian TNF/TNFR-related molecules regulate segregation of Miranda/Prospero in neuroblasts.,,,,,L000663,4;5
+,17141154,2006,Prospero acts as a binary switch between self-renewal and differentiation in Drosophila neural stem cells.,,,,,L000663,4;5
+,15837198,2005,Structural basis of Prospero-DNA interaction: implications for transcription regulation in developing cells.,,,,,L000663,4;5
+,14744542,2004,Mild mutations in the pan neural gene prospero affect male-specific behaviour in Drosophila melanogaster.,,,,,L000663,4;5
+,14966268,2004,An intronic enhancer regulates splicing of the twintron of Drosophila melanogaster prospero pre-mRNA by two different spliceosomes.,,,,,L000663,4;5
+,15167898,2004,Prospero maintains the mitotic potential of glial precursors enabling them to respond to neurons.,,,,,L000663,4;5
+,15205472,2004,Prospero-related homeobox (Prox1) is a corepressor of human liver receptor homolog-1 and suppresses the transcription of the cholesterol 7-alpha-hydroxylase gene.,,,,,L000663,4;5
+,12529405,2003,The carboxy terminus of Prospero regulates its subcellular localization.,,,,,L000663,4;5
+,12605454,2003,"Taste, movement, and death: varying effects of new prospero mutants during Drosophila development.",,,,,L000663,4;5
+,12606283,2003,"Combinatorial expression of Prospero, Seven-up, and Elav identifies progenitor cell types during sense-organ differentiation in the Drosophila antenna.",,,,,L000663,4;5
+,12791270,2003,Distinction between color photoreceptor cell fates is controlled by Prospero in Drosophila.,,,,,L000663,4;5
+,14593479,2003,Prospero and Snail expression during spider neurogenesis.,,,,,L000663,4;5
+,12429095,2002,Structure of the DNA binding region of prospero reveals a novel homeo-prospero domain.,,,,,L000663,4;5
+,12609338,2002,Prospero Lambertini: miraculous cure of epilepsy and canonization of Vatican saints.,,,,,L000663,4;5
+,11262236,2001,Regulated nuclear export of the homeodomain transcription factor Prospero.,,,,,L000663,4;5
+,11641232,2001,Asymmetric Prospero localization is required to generate mixed neuronal/glial lineages in the Drosophila CNS.,,,,,L000663,4;5
+,11802693,2001,Prospero's paper.,,,,,L000663,4;5
+,10652268,2000,Pan-neural Prospero terminates cell proliferation during Drosophila neurogenesis.,,,,,L000663,4;5
+,12156674,2000,Reflections on Prospero: questions on theology with respect to cloning.,,,,,L000663,4;5
+,10207132,1999,Prospero distinguishes sibling cell fate without asymmetric localization in the Drosophila adult external sense organ lineage.,,,,,L000663,4;5
+,10207134,1999,"Sibling cell fate in the Drosophila adult external sense organ lineage is specified by prospero function, which is regulated by Numb and Notch.",,,,,L000663,4;5
+,11471237,1999,Threading analysis of prospero-type homeodomains.,,,,,L000663,4;5
+,9486649,1998,Staufen-dependent localization of prospero mRNA contributes to neuroblast daughter-cell fate.,,,,,L000663,4;5
+,9631770,1998,The United States and worldwide tuberculosis control: a second chance for Prince Prospero.,,,,,L000663,4;5
+,9637685,1998,Miranda as a multidomain adapter linking apically localized Inscuteable and basally localized Staufen and Prospero during asymmetric cell division in Drosophila.,,,,,L000663,4;5
+,9735369,1998,miranda localizes staufen and prospero asymmetrically in mitotic neuroblasts and epithelial cells in early Drosophila embryogenesis.,,,,,L000663,4;5
+,9882484,1998,Biochemical analysis of ++Prospero protein during asymmetric cell division: cortical Prospero is highly phosphorylated relative to nuclear Prospero.,,,,,L000663,4;5
+,9267024,1997,Inscuteable and Staufen mediate asymmetric localization and segregation of prospero RNA during Drosophila neuroblast cell divisions.,,,,,L000663,4;5
+,9267025,1997,Miranda is required for the asymmetric localization of Prospero during mitosis in Drosophila.,,,,,L000663,4;5
+,9380747,1997,Prospero is a panneural transcription factor that modulates homeodomain protein activity.,,,,,L000663,4;5
+,9403694,1997,Miranda directs Prospero to a daughter cell during Drosophila asymmetric divisions.,,,,,L000663,4;5
+,8853985,1996,Chicken homeobox gene Prox 1 related to Drosophila prospero is expressed in the developing lens and retina.,,,,,L000663,4;5
+,7566172,1995,Asymmetric segregation of Numb and Prospero during cell division.,,,,,L000663,4;5
+,7566173,1995,Asymmetric segregation of the homeodomain protein Prospero during Drosophila development.,,,,,L000663,4;5
+,7588053,1995,The prospero transcription factor is asymmetrically localized to the cell cortex during neuroblast mitosis in Drosophila.,,,,,L000663,4;5
+,8575299,1995,Evolution of neuroblast identity: seven-up and prospero expression reveal homologous and divergent neuroblast fates in Drosophila and Schistocerca.,,,,,L000663,4;5
+,8809728,1995,Prospero's Books: the unconscious visualized.,,,,,L000663,4;5
+,7909177,1994,A Caenorhabditis elegans prospero homologue defines a novel domain.,,,,,L000663,4;5
+,7680635,1993,"Dosage-sensitive modifiers of Drosophila abl tyrosine kinase function: prospero, a regulator of axonal outgrowth, and disabled, a novel tyrosine kinase substrate.",,,,,L000663,4;5
+,7908825,1993,"Prox 1, a prospero-related homeobox gene expressed during mouse development.",,,,,L000663,4;5
+,1540176,1992,Cloning of the Drosophila prospero gene and its expression in ganglion mother cells.,,,,,L000663,4;5
+,1673362,1991,The prospero gene specifies cell fates in the Drosophila central nervous system.,,,,,L000663,4;5
+,1720353,1991,prospero is expressed in neuronal precursors and encodes a nuclear protein that is involved in the control of axonal outgrowth in Drosophila.,,,,,L000663,4;5
+,1842358,1991,The prospero gene encodes a divergent homeodomain protein that controls neuronal identity in Drosophila.,,,,,L000663,4;5
+,11608472,1987,"Prospero, as a Renaissance therapist.",,,,,L000663,4;5
+,11610744,1977,Another look at Prospero and Caliban: magic and magical thinking in British India.,,,,,L000663,4;5
+,5325052,1966,"Prospero Maria Oreta, F.P.C.S. 22 October 1913--3 February 1966.",,,,,L000663,4;5
+,5326025,1966,[The manuscripts of Prospero Alpini].,,,,,L000663,4;5
+,14108841,1963,[ASPECTS AND PROBLEMS IN THE CLINICAL THOUGHT OF PROSPERO ALPINI].,,,,,L000663,4;5
+,14777431,1950,[A medical work of Giuseppe Franco and the Prospero Alpino original; a typical case of plagiarism].,,,,,L000663,4;5

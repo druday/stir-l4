@@ -1,0 +1,76 @@
+{
+  "changed": [
+    "FE"
+  ],
+  "steps": [
+    [
+      {
+        "element": "TP",
+        "flow": 7,
+        "strength": "moderate",
+        "meaning": "A severe feasibility shortfall can force the team to revisit its purpose.",
+        "status": "certified"
+      },
+      {
+        "element": "RO",
+        "flow": 17,
+        "strength": "weak",
+        "meaning": "Feasibility constraints reshape the objective (narrow, broaden, re-scope or defer).",
+        "status": "certified"
+      },
+      {
+        "element": "ME",
+        "flow": 22,
+        "strength": "weak",
+        "meaning": "Time, resources and access constrain methodological choices (eg, rapid-review shortcuts).",
+        "status": "certified"
+      }
+    ],
+    [
+      {
+        "element": "RQ",
+        "flow": 9,
+        "strength": "strong",
+        "meaning": "The objective is made answerable as a research question.",
+        "status": "certified"
+      },
+      {
+        "element": "SS",
+        "flow": 14,
+        "strength": "moderate",
+        "meaning": "The objective sets the breadth of the search (eg, new review or update; systematic or scoping).",
+        "status": "certified"
+      },
+      {
+        "element": "IM",
+        "flow": 3,
+        "strength": "weak",
+        "meaning": "The agreed purpose in turn shapes what each member seeks from the review.",
+        "status": "certified"
+      },
+      {
+        "element": "NR",
+        "flow": 4,
+        "strength": "weak",
+        "meaning": "The team's purpose directs attention to a particular clinical or scientific gap.",
+        "status": "certified"
+      }
+    ],
+    [
+      {
+        "element": "LU",
+        "flow": 10,
+        "strength": "strong",
+        "meaning": "Through its framework and eligibility criteria, the question delimits the relevant region of the Literature Universe, bounding what the Review Universe can hold.",
+        "status": null
+      },
+      {
+        "element": "RU",
+        "flow": 19,
+        "strength": "strong",
+        "meaning": "Executing the strategy and applying eligibility criteria move selected records into the Review Universe.",
+        "status": null
+      }
+    ]
+  ]
+}

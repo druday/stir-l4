@@ -1,0 +1,147 @@
+pmid,year,blocks,pub_types,title,shown,passage,passage_found,bears_on,log_id
+30453902,2018,1,Journal Article,Systematic review or scoping review? Guidance for authors when choosing between a systematic or scoping review approach.,1,"where the purpose of the review is to identify knowledge gaps, scope a body of literature",True,question 1,L000575
+42702311,2026,1,Journal Article,Using scoping reviews as precursors to systematic reviews: a typology and practical guidance derived from eight worked examples.,1,a complementary scoping review run alongside an SR to contextualize sparse evidence,True,question 1,L000575
+29504289,2018,2,Journal Article,Methods for evidence synthesis in the case of very few studies.,1,heterogeneity cannot be reliably estimated if only very few studies are available,True,question 2,L000575
+34550585,2022,2,Journal Article,Performing Meta-analyses with Very Few Studies.,1,it might be the best solution to refrain from a quantitative meta-analysis,True,question 2,L000575
+31948937,2020,4,"Guideline;Journal Article;Research Support, Non-U.S. Gov't",Synthesis without meta-analysis (SWiM) in systematic reviews: reporting guideline.,1,in which alternative synthesis methods to meta-analysis of effect estimates are used,True,question 2,L000579
+31972274,2020,3,"Journal Article;Research Support, Non-U.S. Gov't","Single-reviewer abstract screening missed 13 percent of relevant studies: a crowd-based, randomized controlled trial.",1,single-reviewer abstract screening missed 13% of relevant studies … dual-reviewer abstract screening missed 3% of relevant studies,True,question 3,L000575
+31253092,2019,3,Journal Article,Single screening versus conventional double screening for study selection in systematic reviews: a methodological systematic review.,1,3% for the 6 experienced reviewers … 13% for the 3 reviewers with less experience,True,question 3,L000575
+41942890,2026,3,Journal Article;Meta-Analysis,Characteristics of studies falsely excluded during single-reviewer abstract screening: a meta-epidemiological analysis.,1,nonrandomized studies of interventions (NRSI) constituted the highest proportion of false exclusions,True,question 3,L000575
+41484785,2026,3,Journal Article,Detecting false exclusions in single-reviewer literature screening by using AI tools as secondary reviewers: a study protocol for an evaluation study.,1,yet empirical evidence comparing their performance is limited,True,question 3,L000575
+42508317,2027,3,Journal Article,ASCA-SHAP dual screening of PMI-related corneal ATR-FTIR spectral bands under temperature-dependent variation.,0,,,,L000575
+40728440,2026,4,English Abstract;Journal Article,[Methodological reflections on systematic reviews: from meta-analysis to the application of the SWiM guideline].,0,,,,L000579
+40878121,2026,3,Journal Article,Development of a Noble On-Site Dual Screening System for Male Fertility of Sperm Count and Hyaluronidase Activity.,0,,,,L000575
+41251755,2026,4,Journal Article;Systematic Review,What is the association between physical activity and fracture risk in middle-aged adults (aged 30-60): a systematic review and synthesis without meta-analysis (SWIM).,0,,,,L000579
+41330518,2026,4,Journal Article;Systematic Review,Systematic review and synthesis without meta-analysis (SWiM) reveals lack of clinical studies and weak preclinical evidence for interaction between glucose regulating drugs and environmental contaminant exposure.,0,,,,L000579
+41591786,2026,3,Journal Article,Designing in situ nanostructured MWCNT-phloroglucinol modified webs for electrochemical-based dual screening of stress biomarkers.,0,,,,L000575
+41683016,2026,3,Journal Article,Probiotics Lactobacillus acidophilus LA4 and Lacticaseibacillus paracasei F5 Alleviate Cognitive Dysfunction in Alzheimer's Disease Models: A Dual-Screening Study in Drosophila and Mice.,0,,,,L000575
+41699496,2026,2,Published Erratum,Correction: Performance of several types of beta-binomial models in comparison to standard approaches for meta-analyses with very few studies.,0,,,,L000575
+41705096,2026,4,Journal Article;Review,Ketogenic dietary interventions for autosomal-dominant polycystic kidney disease (ADPKD): a systematic review and synthesis without meta-analysis (SWiM) of observational and interventional studies.,0,,,,L000579
+41815969,2026,4,Journal Article;Systematic Review,"Implementation effectiveness, barriers, and real-world outcomes of neuromuscular training programs for ACL injury prevention in female athletes: systematic review with narrative synthesis using SWiM framework.",0,,,,L000579
+41827937,2026,3,Journal Article,Plasma RNA-Based Dual Screening for Early/Extreme Spontaneous Preterm Birth and Early Onset Preeclampsia to Enable Prevention.,0,,,,L000575
+42184272,2026,4,Journal Article;Systematic Review,The effect of probiotic and synbiotic supplementation on sleep parameters in exercised population: a systematic review and synthesis without meta-analysis (SWiM) of randomized controlled trials.,0,,,,L000579
+42262658,2026,4,Journal Article;Systematic Review,Neurophobia in health profession students and practitioners: a systematic review and synthesis without meta-analysis (SWiM).,0,,,,L000579
+42281452,2026,4,Journal Article;Review,Systematic review of non-pharmacological non-psychological augmentation strategies for the treatment of unipolar depression: Synthesis without meta-analysis (SWiM).,0,,,,L000579
+42287469,2026,4,Journal Article,Characterization of the ctgf Promoter from Nibea coibor and its Response to TGF-β1 During Collagen Synthesis in Swim Bladder Cells.,0,,,,L000579
+42288032,2026,3,Journal Article,An in-silico and experimental dual-screening strategy for robust lyoprotection of restriction endonucleases.,0,,,,L000575
+42333897,2026,3,Journal Article,Smart double-screening system of propagating male-sterile lines for maize hybrid seed production.,0,,,,L000575
+42398800,2026,4,Journal Article,Characterization of Sma- and mad-related protein 3 (Smad3) of Chu's croaker (Nibea coibor) and its role in collagen synthesis in the swim bladder.,0,,,,L000579
+42414635,2026,4,Journal Article;Systematic Review,Predictors of Recurrence Following Bronchial Artery Embolisation (BAE) for Haemoptysis: A Systematic Review and Evidence Synthesis Analyses Using SWiM Guidelines.,0,,,,L000579
+42491436,2026,4,Journal Article;Review,Digital gamification and serious games for preventing e-cigarette use in adolescents: A systematic review without meta-analysis (SWiM).,0,,,,L000579
+42551807,2026,3,Journal Article,Single-reviewer assessments of certainty of evidence in network meta-analyses probably do not mislead decision-makers: a case study.,0,,,,L000575
+42613049,2026,2,Journal Article,Random-effects meta-analysis via generalized linear mixed models: A Bartlett-corrected approach for few studies.,0,,,,L000575
+42667061,2026,2,Journal Article,Refined trial sequential analysis for meta-analyses with few studies.,0,,,,L000575
+42734439,2026,1,Journal Article,"Identifying methodological guidance used for systematic reviews, clinical practice guidelines, and health technology assessment for rare diseases: a scoping review protocol.",0,,,,L000575
+42812280,2026,4,Journal Article;Systematic Review,Perioperative FLOT chemotherapy versus neoadjuvant chemoradiotherapy (CROSS protocol) in locally advanced adenocarcinoma of the lower oesophagus and oesophagogastric junction (Siewert types I-II): systematic review and narrative synthesis (SWiM).,0,,,,L000579
+42834097,2026,4,Journal Article;Review,Patient harms during delayed access to clinical genetics services. A systematic literature review and synthesis without meta-analysis (SWiM).,0,,,,L000579
+39444091,2025,2,Journal Article;Comparative Study,Comparison of Prior Distributions for the Heterogeneity Parameter in a Rare Events Meta-Analysis of a Few Studies.,0,,,,L000575
+40306868,2025,3,Letter,Two is better than one: A potential pitfall of single-reviewer systematic reviews.,0,,,,L000575
+40478415,2025,3,Journal Article,Evaluation of the potential agricultural biocontrol of chitin-degrading Paenibacillus alvei FS1 through dual screening approaches and poison food agar assay.,0,,,,L000575
+40676508,2025,4,Journal Article;Systematic Review;Meta-Analysis,A change of heart: the effect of high flow arteriovenous fistulas on cardiovascular outcomes - a systematic review and synthesis without meta-analysis (SWiM).,0,,,,L000579
+41030879,2025,4,Journal Article;Review,Assessing the impact of a second IVIG dose on patients with Guillain-Barré Syndrome: A synthesis without meta-analysis (SWiM).,0,,,,L000579
+41251903,2025,4,"Journal Article;Systematic Review;Research Support, Non-U.S. Gov't",Surgical interventions for endodontic-periodontal lesions: A Systematic Review without Meta-analysis (SWiM).,0,,,,L000579
+36908086,2024,4,Journal Article;Systematic Review,Self-awareness and quality of relationships after acquired brain injury: Systematic review without meta-analysis (SWiM).,0,,,,L000579
+38152969,2024,2,Meta-Analysis;Journal Article,Bayesian random-effects meta-analysis with empirical heterogeneity priors for application in health technology assessment with very few studies.,0,,,,L000575
+38259198,2024,3,"Journal Article;Research Support, N.I.H., Extramural;Research Support, Non-U.S. Gov't",Predictive High-Throughput Platform for Dual Screening of mRNA Lipid Nanoparticle Blood-Brain Barrier Transfection and Crossing.,0,,,,L000575
+38534991,2024,3,Journal Article,Evaluation of Two-Assay Serological Testing Strategies for Anti-HCV Screening in Italian Populations: A Dual Screening Approach.,0,,,,L000575
+39277109,2024,3,"Journal Article;Research Support, Non-U.S. Gov't","Fluoxetine attenuates the anxiolytic effects of the probiotic VSL#3 in a stress-vulnerable genetic line of aves in the chick social-separation stress test, a dual screening assay.",0,,,,L000575
+39559047,2024,3,Journal Article,Estimation of the Risk of Hearing Loss in Neonates with Hyperbilirubinemia in the Mysuru District Using Double Stage Double Screening Method.,0,,,,L000575
+42548410,2024,3,Journal Article,Maximizing Lung Cancer Screening Uptake: An Evaluation of Predictors of Dual Screening.,0,,,,L000575
+36473534,2023,4,Journal Article,Characterization and role of connective tissue growth factor gene in collagen synthesis in swim bladder of chu's croaker (Nibea coibor).,0,,,,L000579
+36510849,2023,3,"Journal Article;Research Support, Non-U.S. Gov't","Double screening for syphilis and HIV in pregnant women in a priority municipality for the elimination of vertical transmission in Brazil: incidence, risk factors and spatial analysis.",0,,,,L000575
+36933856,2023,3,"Journal Article;Research Support, Non-U.S. Gov't",Retinopathy of Prematurity Outcomes of Neonates Meeting Only a Single Screening Criterion: Proposal of the TWO-ROP Algorithm.,0,,,,L000575
+37201465,2023,3,Journal Article,Multigene germline testing usefulness instead of BRCA1/2 single screening in triple negative breast cancer cases.,0,,,,L000575
+37242776,2023,4,Journal Article;Review,Maximizing Postoperative Recovery: The Role of Functional Biomaterials as Nasal Packs-A Comprehensive Systematic Review without Meta-Analysis (SWiM).,0,,,,L000579
+37344572,2023,4,"Journal Article;Review;Research Support, Non-U.S. Gov't",Interventions to support patients with sharing genetic test results with at-risk relatives: a synthesis without meta-analysis (SWiM).,0,,,,L000579
+37705060,2023,3,"Journal Article;Research Support, Non-U.S. Gov't",Increasing the efficiency of study selection for systematic reviews using prioritization tools and a single-screening approach.,0,,,,L000575
+37792704,2023,3,Journal Article,The best of two worlds: Combining the DSM-5 and ICD-11 clusters of symptoms for posttraumatic stress disorder in a single screening scale.,0,,,,L000575
+38098023,2023,1,Journal Article;Scoping Review,"Methods and guidance on conducting, reporting, publishing, and appraising living systematic reviews: a scoping review.",0,,,,L000575
+35203635,2022,3,Journal Article,Cell-Based Double-Screening Method to Identify a Reliable Candidate for Osteogenesis-Targeting Compounds.,0,,,,L000575
+36514000,2022,2,"Meta-Analysis;Journal Article;Research Support, Non-U.S. Gov't",Performance of several types of beta-binomial models in comparison to standard approaches for meta-analyses with very few studies.,0,,,,L000575
+33031706,2021,3,Journal Article,Breast-iRRISC: a novel model for predicting the individualised lifetime risk of radiation-induced breast cancer from a single screening event.,0,,,,L000575
+33576574,2021,2,Journal Article;Meta-Analysis,A confidence interval robust to publication bias for random-effects meta-analysis of few studies.,0,,,,L000575
+33820560,2021,3,Journal Article,Successful incorporation of single reviewer assessments during systematic review screening: development and validation of sensitivity and work-saved of an algorithm that considers exclusion criteria and count.,0,,,,L000575
+34103047,2021,3,Journal Article,"Acceptability of single screening and treatment policy for the control of malaria in pregnancy: perceptions of providers and pregnant women from selected health facilities in Lindi region, Tanzania.",0,,,,L000575
+34959826,2021,4,Journal Article;Systematic Review,"Effect of Crocus sativus (Saffron) Intake on Top of Standard Treatment, on Disease Outcomes and Comorbidities in Patients with Rheumatic Diseases: Synthesis without Meta-Analysis (SWiM) and Level of Adherence to the CONSORT Statement for Randomized Controlled Trials Delivering Herbal Medicine Interventions.",0,,,,L000579
+35186269,2021,1,"Journal Article;Research Support, Non-U.S. Gov't","Methods and guidance on conducting, reporting, publishing and appraising living systematic reviews: a scoping review protocol.",0,,,,L000575
+31348846,2020,2,Journal Article,Random-effects meta-analysis of few studies involving rare events.,0,,,,L000575
+31705708,2020,3,"Journal Article;Research Support, Non-U.S. Gov't",DualWMDR: Detecting epistatic interaction with dual screening and multifactor dimensionality reduction.,0,,,,L000575
+31722997,2020,3,"Journal Article;Research Support, Non-U.S. Gov't",Single screening or double screening for study selection in systematic reviews?,0,,,,L000575
+32531677,2020,3,Journal Article,Dual-screening of anti-inflammatory and antioxidant active ingredients of shenxiang suhe pill and its potential multi-target therapy for coronary heart disease.,0,,,,L000575
+32682442,2020,3,"Journal Article;Research Support, Non-U.S. Gov't",Combining abbreviated literature searches with single-reviewer screening: three case studies of rapid reviews.,0,,,,L000575
+33220216,2020,3,"Comparative Study;Journal Article;Randomized Controlled Trial;Research Support, Non-U.S. Gov't","Cost-effectiveness of intermittent preventive treatment with dihydroartemisinin-piperaquine versus single screening and treatment for the control of malaria in pregnancy in Papua, Indonesia: a provider perspective analysis from a cluster-randomised trial.",0,,,,L000575
+33273509,2020,3,"Journal Article;Research Support, Non-U.S. Gov't",Repurposing of FDA approved ring systems through bi-directional target-ring system dual screening.,0,,,,L000575
+30430540,2019,2,"Journal Article;Research Support, N.I.H., Extramural;Research Support, U.S. Gov't, Non-P.H.S.",Exact inference on the random-effects model for meta-analyses with few studies.,0,,,,L000575
+30634920,2019,2,Journal Article,Likelihood-based random-effects meta-analysis with few studies: empirical and simulation studies.,0,,,,L000575
+30946858,2019,3,"Evaluation Study;Journal Article;Research Support, Non-U.S. Gov't","Trends in colonoscopy and fecal occult blood test use after the introduction of dual screening offers in Germany: Results from a large population-based study, 2003-2016.",0,,,,L000575
+31353217,2019,3,"Equivalence Trial;Journal Article;Research Support, Non-U.S. Gov't","Efficacy and safety of intermittent preventive treatment and intermittent screening and treatment versus single screening and treatment with dihydroartemisinin-piperaquine for the control of malaria in pregnancy in Indonesia: a cluster-randomised, open-label, superiority trial.",0,,,,L000575
+28914465,2018,3,Journal Article,Exploring avenues for best use of cytotechnologists in non-gynaecological cytology: Double screening or independent sign-out.,0,,,,L000575
+29086218,2018,4,Journal Article;Meta-Analysis;Systematic Review,Chronic Physiological Effects of Swim Training Interventions in Non-Elite Swimmers: A Systematic Review and Meta-Analysis.,0,,,,L000579
+29128579,2018,4,Journal Article;Meta-Analysis;Systematic Review,Revisiting the validity of the mouse forced swim test: Systematic review and meta-analysis of the effects of prototypic antidepressants.,0,,,,L000579
+30080397,2018,4,"Journal Article;Meta-Analysis;Research Support, Non-U.S. Gov't;Systematic Review","Can We Swim Yet? Systematic Review, Meta-Analysis, and Risk Assessment of Aging Sewage in Surface Waters.",0,,,,L000579
+30143041,2018,3,Journal Article,Evaluation of the national policy of single screening and treatment for the prevention of malaria in pregnancy in two districts in Eastern Indonesia: health provider perceptions.,0,,,,L000575
+30143047,2018,3,Journal Article,Evaluation of the implementation of single screening and treatment for the control of malaria in pregnancy in Eastern Indonesia: a systems effectiveness analysis.,0,,,,L000575
+30261877,2018,3,Comparative Study;Journal Article;Randomized Controlled Trial,Intermittent screening and treatment or intermittent preventive treatment compared to current policy of single screening and treatment for the prevention of malaria in pregnancy in Eastern Indonesia: acceptability among health providers and pregnant women.,0,,,,L000575
+30326431,2018,3,Journal Article,"Double screening for dual disorder, alcoholism and depression.",0,,,,L000575
+30340633,2018,3,Comparative Study;Journal Article,Effective study selection using text mining or a single-screening approach: a study protocol.,0,,,,L000575
+26116616,2017,2,Journal Article,Performance of methods for meta-analysis of diagnostic test accuracy with few studies or sparse data.,0,,,,L000575
+27780906,2017,2,Journal Article,Synthesizing Evidence in Public Policy Contexts: The Challenge of Synthesis When There Are Only a Few Studies.,0,,,,L000575
+27956265,2017,3,Journal Article,Single-reviewer electronic phenotyping validation in operational settings: Comparison of strategies and recommendations.,0,,,,L000575
+28318223,2017,3,"Journal Article;Research Support, Non-U.S. Gov't",High-Throughput Dual Screening Method for Ras Activities and Inhibitors.,0,,,,L000575
+28400703,2017,3,Journal Article,New methods for isolation of keratolytic bacteria inducing intractable hoof wall cavity (Gidoh) in a horse; double screening procedures of the horn powder agar-translucency test and horn zymography.,0,,,,L000575
+28561801,2017,3,Journal Article,Is Erythrocyte Protoporphyrin a Better Single Screening Test for Iron Deficiency Compared to Hemoglobin or Mean Cell Volume in Children and Women?,0,,,,L000575
+26891949,2016,2,Journal Article;Scoping Review,"A scoping review identifies multiple emerging knowledge synthesis methods, but few studies operationalize the method.",0,,,,L000575
+27057156,2016,4,"Journal Article;Research Support, Non-U.S. Gov't",Two-Swim Operators in the Modified Bacterial Foraging Algorithm for the Optimal Synthesis of Four-Bar Mechanisms.,0,,,,L000579
+27261557,2016,4,Journal Article;Meta-Analysis,A meta-analysis synthesizing the effects of pesticides on swim speed and activity of aquatic vertebrates.,0,,,,L000579
+27723788,2016,3,Clinical Trial;Comparative Study;Journal Article,Comparing Breast Screening Protocols: Inserting Catch Trials Does Not Improve Sensitivity over Double Screening.,0,,,,L000575
+25385272,2015,3,Journal Article;Systematic Review,Single screening questions for cognitive impairment in older people: a systematic review.,0,,,,L000575
+25589143,2015,4,"Journal Article;Research Support, Non-U.S. Gov't",Antidepressant-like effects induced by NMDA receptor blockade and NO synthesis inhibition in the ventral medial prefrontal cortex of rats exposed to the forced swim test.,0,,,,L000579
+25872932,2015,3,Journal Article,"Antenatal screening for Down's syndrome, trisomy 18, and trisomy 13: Reporting a single screening result for all three.",0,,,,L000575
+25885022,2015,3,Journal Article,Informant single screening questions for delirium and dementia in acute care--a cross-sectional test accuracy pilot study.,0,,,,L000575
+26158404,2015,3,"Journal Article;Research Support, N.I.H., Extramural;Research Support, Non-U.S. Gov't;Research Support, U.S. Gov't, Non-P.H.S.",Dual Screening of BPTF and Brd4 Using Protein-Observed Fluorine NMR Uncovers New Bromodomain Probe Molecules.,0,,,,L000575
+26513885,2015,3,"Journal Article;Research Support, Non-U.S. Gov't",Primary HPV test screening in cervical cancer: a two-year experience of a single screening center in Latina (Italy).,0,,,,L000575
+26573817,2015,2,"Journal Article;Research Support, Non-U.S. Gov't",Hartung-Knapp-Sidik-Jonkman approach and its modification for random-effects meta-analysis with few studies.,0,,,,L000575
+23635808,2014,3,"Journal Article;Research Support, N.I.H., Extramural",Using a single screening question for depressive symptoms in patients with acute coronary syndrome.,0,,,,L000575
+24411807,2014,3,"Journal Article;Research Support, N.I.H., Extramural",The ability of single screening questions for unhealthy alcohol and other drug use to identify substance dependence in primary care.,0,,,,L000575
+24625656,2014,3,"Journal Article;Research Support, Non-U.S. Gov't",Performance of blood pressure-to-height ratio at a single screening visit for the identification of hypertension in children.,0,,,,L000575
+25343663,2014,3,"Journal Article;Research Support, Non-U.S. Gov't","""Do you think you have mental health problems?"": advantages and disadvantages of a single screening question for mental disorder in substance use disorder treatment.",0,,,,L000575
+23318338,2013,3,Comment;Journal Article,ACP Journal Club. A single screening for type 2 diabetes in high-risk adults did not reduce mortality over 10 years.,0,,,,L000575
+24041292,2013,3,Journal Article,Diagnosis of depression in patients receiving specialist community palliative care: does using a single screening question identify depression otherwise diagnosed by clinical interview?,0,,,,L000575
+21243377,2012,3,Journal Article;Validation Study,The Beck Depression Inventory (BDI-II) and a single screening question as screening tools for depressive disorder in Dutch advanced cancer patients.,0,,,,L000575
+22474203,2012,3,"Journal Article;Multicenter Study;Randomized Controlled Trial;Research Support, N.I.H., Extramural;Research Support, Non-U.S. Gov't",Detection of breast cancer with addition of annual screening ultrasound or a single screening MRI to mammography in women with elevated breast cancer risk.,0,,,,L000575
+22581452,2012,3,Journal Article,A mathematical model of utility for single screening of asymptomatic unruptured intracranial aneurysms at the age of 50 years.,0,,,,L000575
+23180291,2012,3,"Journal Article;Research Support, Non-U.S. Gov't",A new anti-c-Met antibody selected by a mechanism-based dual-screening method: therapeutic potential in cancer.,0,,,,L000575
+21777719,2011,3,Journal Article,Identifying harmful drinking using a single screening question in a psychiatric consultation-liaison population.,0,,,,L000575
+22006153,2011,3,Case Reports;Letter,Double screening for latent tuberculosis infection in patients treated with anti-tumor necrosis factor α.,0,,,,L000575
+22390102,2011,3,Journal Article,Sensitivity and specificity of waist circumference as a single screening tool for identification of overweight and obesity among Malaysian adults.,0,,,,L000575
+23016470,2011,3,Journal Article,Diagnostic dilemma of the single screening test used in the diagnosis of syphilis in Nepal.,0,,,,L000575
+20014355,2010,2,"Journal Article;Research Support, Non-U.S. Gov't",Estimation of the effect size in meta-analysis with few studies.,0,,,,L000575
+19441238,2009,3,"Journal Article;Research Support, Non-U.S. Gov't",Dual screening for targeted gene replacement mutant in Magnaporthe oryzae with GUS as negative marker.,0,,,,L000575
+18664298,2008,3,"Comparative Study;Journal Article;Research Support, Non-U.S. Gov't",Association between invasive cancer of the cervix and HIV-1 infection in Tanzania: the need for dual screening.,0,,,,L000575
+16847548,2006,3,"Journal Article;Research Support, Non-U.S. Gov't;Validation Study",Primary care validation of a single screening question for drinkers.,0,,,,L000575
+17028964,2006,3,"Journal Article;Research Support, Non-U.S. Gov't",High efficiency of a double-screening method on single P-element insertion lines to identify quantitative trait mutants in Drosophila melanogaster.,0,,,,L000575
+16649269,2005,3,"Comparative Study;Journal Article;Research Support, Non-U.S. Gov't",Towards single screening tests for brucellosis.,0,,,,L000575
+12873212,2003,3,"Comparative Study;Journal Article;Research Support, U.S. Gov't, Non-P.H.S.",A double-screening method to identify reliable candidate non-synonymous SNPs from chicken EST data.,0,,,,L000575
+14701892,2003,3,"Journal Article;Research Support, Non-U.S. Gov't",Performance of a single screening question for depression in a representative sample of 13 670 people aged 75 and over in the UK: results from the MRC trial of assessment and management of older people in the community.,0,,,,L000575
+12036936,2002,3,"Journal Article;Research Support, Non-U.S. Gov't;Research Support, U.S. Gov't, P.H.S.",Expressed CpG island sequence tag microarray for dual screening of DNA hypermethylation and gene silencing in cancer cells.,0,,,,L000575
+11300981,2001,3,"Evaluation Study;Journal Article;Research Support, Non-U.S. Gov't;Research Support, U.S. Gov't, P.H.S.",Validation of a single screening question for problem drinking.,0,,,,L000575
+11726385,2001,3,"Evaluation Study;Journal Article;Research Support, U.S. Gov't, P.H.S.",Limitations on the use of a single screening question to measure sedentary behavior.,0,,,,L000575
+10072643,1999,3,Journal Article,Detection of trisomy 18 by double screening in a low-risk pregnant population.,0,,,,L000575
+10454427,1999,3,Journal Article,Single screening test for neonatal cholestasis is not yet feasible from blood spots.,0,,,,L000575
+11315019,1999,3,Journal Article,Dual screening.,0,,,,L000575
+8937950,1996,3,Journal Article,Improving peer review: alternatives to unstructured judgments by a single reviewer.,0,,,,L000575
+7608978,1995,3,"Journal Article;Research Support, Non-U.S. Gov't",Rapid crystallization of chemically synthesized hammerhead RNAs using a double screening procedure.,0,,,,L000575
+8775843,1995,3,Journal Article,Testing medications for the treatment of addiction in pregnancy: one reviewer's opinion.,0,,,,L000575
+8207733,1994,3,Comment;Letter,MRI as a single screening procedure for acoustic neuroma.,0,,,,L000575
+8078042,1993,3,Comparative Study;Journal Article,MRI as a single screening procedure for acoustic neuroma: a cost effective protocol.,0,,,,L000575
+1330025,1992,3,"Journal Article;Research Support, U.S. Gov't, P.H.S.",Optimal administration of dual screening tests for detecting a characteristic with special reference to low prevalence diseases.,0,,,,L000575
+1359582,1992,4,"Journal Article;Research Support, Non-U.S. Gov't",Inhibition of catecholamine synthesis depresses behavior of rats in the holeboard and forced swim tests: influence of previous chronic stress.,0,,,,L000579
+1440880,1992,3,"Journal Article;Research Support, Non-U.S. Gov't",How many bloods will a 'HIVCHEK' check? Multiple tests for HIV antibody for a single screening kit.,0,,,,L000575
+1756511,1991,3,Comparative Study;Journal Article,Double screening of suramin derivatives on human colon cancer cells and on neural cells provides new therapeutic agents with reduced toxicity.,0,,,,L000575
+2702588,1989,3,"Journal Article;Research Support, Non-U.S. Gov't",Physical examination. Its role as a single screening modality in the Canadian National Breast Screening Study.,0,,,,L000575
+3884864,1985,3,Journal Article,A double screening trial for the development of drugs against Theileria sergenti in cattle using Babesia rodhaini and Plasmodium berghei in mice.,0,,,,L000575
+6224958,1983,3,English Abstract;Journal Article,[Clinico-epidemiological characteristics of ischemic heart disease in men of different age groups from the data of a single screening of a random population].,0,,,,L000575
+7319115,1981,3,Journal Article,Double screening test at 8th and 12th hour of overnight fasting for a better classification of idiopathic hyperlipidemias. Large scale study of 505 tests.,0,,,,L000575
+338148,1977,3,"Clinical Trial;Journal Article;Research Support, U.S. Gov't, Non-P.H.S.",Left axis deviation as a single screening criterion in acquired nonvalvulvar heart disease. Association with abnormal systolic time intervals in hypertensive subjects.,0,,,,L000575
+5650040,1968,3,Journal Article,Double screening for diabetes.,0,,,,L000575
+14108909,1963,3,Journal Article,EVALUATION OF MODIFIED LEAD I ELECTROCARDIOGRAM AS A SINGLE SCREENING LEAD FOR HEART DISEASE.,0,,,,L000575

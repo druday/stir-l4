@@ -1,0 +1,315 @@
+{
+ "judge": {
+  "metrics": [
+   {
+    "id": "M1",
+    "value": "0 of 13 planning turns (messages 6-30) had a status line; the plan map was never shown (0 of 2 map events: session start at message 6, after the topic at message 8)",
+    "score": 0,
+    "evidence": "No 'Step n of 12 | Certified c of 8 | Focus' line in any reply. Message 6 opens with set-up talk, not 'Step 1 of 12 ... Focus: not yet stated'. Message 8 records the topic but shows no plan map or quick commands. Step position is only implied ('Step 2 answers' sits inside the copy blocks). In all 12 self-reports knows_current_step is false. 'Next:' lists are present from message 10 on, but no 'Done' line, and 'Your turn' is never the last item."
+   },
+   {
+    "id": "M2",
+    "value": "0 of 13 strictly (1 of 13 = 8% leniently, message 6)",
+    "score": 0,
+    "evidence": "From message 8 on, every reply ends with a 'Please keep a copy' code block, not the ask. Message 8 asks for the name, verbatim consent for the topic, purpose, motivation and consent for the answers (5 asks). Message 14 has 3 numbered questions plus about 4 sub-questions. Message 22 has about 9 asks (role, certification, anyone else, sources, keys, plan date, review date, hours, budget/software). Example one-liners appear from message 12 on, which is a partial credit."
+   },
+   {
+    "id": "M3",
+    "value": "0 of 3 applicable criteria ((a), (b), (c)); (d) not reached; (e) no topic change",
+    "score": 0,
+    "evidence": "(a) The reply after the topic (message 8) asks about purpose and motivation, never which part or question interests Uday. Messages 10-30 never ask either, and logistics questions start at message 22. (b) No interest is recorded. (c) The purpose statement at message 16 names the topic only, with no focus. The persona's focus ('fat or muscle') never surfaces; self-reports at messages 11-29 say so repeatedly."
+   },
+   {
+    "id": "M4",
+    "value": "not applicable: no search was run or prepared in messages 6-30",
+    "score": 0,
+    "evidence": "No query strings, counts or search cards appear. Messages 22-28 only describe which sources would be available. The metric is excluded and the score is rescaled over 85 points."
+   },
+   {
+    "id": "M5",
+    "value": "0 events",
+    "score": 2,
+    "evidence": "All drafts appear in the chat: the purpose statement (message 16), the team entry (message 24) and the copy blocks. No file, link or download is offered, and no package was made. Risk: messages 22, 24, 26 and 28 announce zipping 'the workspace ... at the end of each turn', which would create mid-session packages once the set-up runs."
+   },
+   {
+    "id": "M6",
+    "value": "about 46 violations in about 10,800 prose words, about 4.3 per 1,000",
+    "score": 0,
+    "evidence": "34 flow numbers without their meaning appear in the trace lists, for example 'Already visited: Methodology, through flows 24 and 8' (message 26); counts per message are 20:2, 22:5, 24:5, 26:8, 28:9, 30:5. The path plan/team.yaml appears when no member must act (messages 24, 26, 28, 30). OpenAlex paging ('first page ... at most 100 records') appears at messages 22, 26 and 28. Terms used without explanation: 'the log' and 'set-up' (message 6), 'flow function' (message 8), 'states' and 'Literature Universe/Review Universe' (message 10). No element codes, rule numbers or log ids appear, and the CERTIFY line at message 18 uses full names."
+   },
+   {
+    "id": "M7",
+    "value": "(a) no literature FACT in 13 planning turns (target 8 or fewer); (b) 0 certifications after 12 user replies",
+    "score": 0,
+    "evidence": "Messages 22-30 are still intake (roles, sources, keys, deadlines, software, rules), and the set-up has not started at message 30. The persona's moment-5 expectation ('Set-up done in one reply') is unmet. The self-report at message 29 says 'nothing about my topic has moved'."
+   },
+   {
+    "id": "M8",
+    "value": "18 re-asked questions across 9 replies in 12 user turns (15 per 10; 5 per 10 counted once per issue), plus 1 forced re-answer; 0 in-message orientation requests",
+    "score": 0,
+    "evidence": "Re-asked: purpose (message 12), motivation (messages 12, 14, 16, 18), expertise (messages 12, 14, 16, 18, 20), sources (message 24), deadlines and resources (messages 24, 26, 28, 30), decisions already made (messages 26, 28, 30). The lettered list at message 16 left Uday's '2 3' unreadable, so message 18 re-asked it and Uday re-answered at message 19 ('misread twice')."
+   },
+   {
+    "id": "M9",
+    "value": "median about 800 prose words, P90 about 1,250 (hand count; the shortest substantive reply, message 8, is about 370)",
+    "score": 0,
+    "evidence": "Messages 22, 24, 26, 28 and 30 run about 1,000-1,300 prose words each. Most of the length comes from 'Possible reopenings' traces (150-300 words), 'What this means under the method's rules', Status and Next blocks, and the repeated clock-provenance sentence."
+   }
+  ],
+  "interaction_score": 11.8,
+  "guardrails": [
+   {
+    "id": "G1",
+    "pass": true,
+    "evidence": "No claim about the literature is made. Message 14 says 'Nothing about the literature on this topic is known yet'. Message 28 says registered protocols 'will stay unknown'. Statements about the sources (NCBI rate limit, OpenAlex paging) come from the prompt and are not literature facts."
+   },
+   {
+    "id": "G2",
+    "pass": true,
+    "evidence": "The purpose list is first shown at message 10, after Uday's free answer at message 9, with 'I have not pre-selected or recommended any of them'. The message 16 statement is built from Uday's words and the states he chose (2, 3); the added verbs are disclosed ('identify ... my wording; I added no other aim'). No focus or aim is invented. The motivation mapping is offered only as a DRAFT to confirm (messages 10-18)."
+   },
+   {
+    "id": "G3",
+    "pass": true,
+    "evidence": "Nothing is shown as certified. Message 18 says the 'yes' 'accepts the draft but does not certify it'. Team's Purpose and Individual Motivation stay 'proposed'. The workspace holds no plan.yaml or team.yaml, so no certification is recorded anywhere."
+   },
+   {
+    "id": "G4",
+    "pass": true,
+    "evidence": "Every recorded answer is a 'JUDGMENT by Uday' (messages 8-30). The purpose statement, motivation mapping and team entry are labeled DRAFT (messages 10, 16, 24). No literature statement is made. Minor: the unlabeled 'I am told my tools can reach PubMed, OpenAlex...' (messages 22, 24) is not a literature claim."
+   },
+   {
+    "id": "G5",
+    "pass": false,
+    "evidence": "No log exists after 13 planning turns: the workspace holds only uploads/, and the folder's mtime of 21:45:23Z shows nothing was written there afterward. Copy blocks are given every turn, but they leave the 16 quiz answers to the user ('copy them here'), omit the questions asked, and show no Unsaved count. The cause is the prompt's deferral of the set-up, not fabrication."
+   },
+   {
+    "id": "G6",
+    "pass": true,
+    "evidence": "The claims match the workspace. Only the three uploads exist, matching 'the script saved no file' and 'held only your three uploaded files'. No log ids, counts or hashes are given. The clock times (first 21:47:45Z) fall after the workspace was created at 21:45:23Z. Caveat: the transcript is condensed, so the script runs and clock reads cannot be checked against tool output."
+   },
+   {
+    "id": "G7",
+    "pass": true,
+    "evidence": "No literature number appears anywhere in messages 6-30. 'At most 100 records' is a source paging limit taken from the prompt, not a count."
+   },
+   {
+    "id": "G8",
+    "pass": true,
+    "evidence": "Flows are traced after each change, and the traces at messages 10, 14, 20, 24, 26 and 28 match flows 1-27, with correct strength ordering and visited sets. State names are used verbatim ('SRMAs' is spelled out under R14). There are no reopenings and no early steps. Minor: message 18 stops the trace at variables that are not certified, not at unsettled ones as R4 says."
+   },
+   {
+    "id": "G9",
+    "pass": true,
+    "evidence": "Consent is asked at message 8 and given at message 11 ('yes'). Words quoted earlier were marked 'verbatim consent: pending' and never written to file. Messages 22 and 24 say 'do not paste a key into the chat'. The e-mail is deferred to a private settings file, and no file exists."
+   }
+  ],
+  "fidelity_pass": false,
+  "problems": [
+   {
+    "turn": "6-30",
+    "problem": "No reply has a status line, and the plan map is never shown. Uday never knows which step he is on (12 of 12 self-reports) and never sees quick commands.",
+    "cause": "Prompt v1.0 has no status-line or plan-map rule. R4 only asks for the status of each variable, so the agent improvised a long 'Status:' block at the bottom of each reply.",
+    "fix": "Add a rule: 'Begin every planning reply with one line: Step n of 12: <name> | Certified c of 8 | Waiting on you: w | Focus: <members' words, or not yet stated>, adding Reopened, Early and Unsaved n when they apply. Show the plan map (every step in plain words, who it waits on) after the topic, at each certification, reopening and step change, at session start and end, and on request. End with Done:, Next: and Your turn: (last).'",
+    "severity": "high"
+   },
+   {
+    "turn": "8",
+    "problem": "The research focus is never asked for or recorded in 13 turns. The purpose statement (message 16) names only the topic, and Uday's real question (fat versus muscle loss) never surfaces.",
+    "cause": "Step 2 asks only 'what end it should serve and which decision ... it should inform' and what members want. The vague-answer rule probes only use ('what the team would do'), never which part of the topic interests them.",
+    "fix": "In Step 2, replace the opening ask with: 'In the reply after the topic, ask each member present exactly two probes: (1) If this review could answer one question for you, what would it be? (2) What would you do with the answer? Record the answer to (1) as the focus, in their words or as not disclosed. Show it in the status line, and quote it in the purpose statement, the Step 3 search display, the case for a review, and the objective and question drafts.'",
+    "severity": "high"
+   },
+   {
+    "turn": "22-30",
+    "problem": "After 13 planning turns there is still no set-up, no search and no literature fact. Five replies are spent on logistics (roles, sources, keys, deadlines, software, rules), and message 6 opens with persistence and set-up chatter.",
+    "cause": "Step 2 orders: 'Only in a later turn ... ask the remaining intake questions, at most three per turn', and section 3 runs the set-up only 'at the end of Step 2'. Nothing caps the intake or defers questions to the step that needs them.",
+    "fix": "Replace the intake sentence with: 'Right after the purpose and motivation answers, do the set-up in one reply and report it in at most 3 lines. Ask about sources at Step 3, and about time and resources at Step 5, where they are used. Ask any other intake item (deadlines, institutional rules, e-mail) on a single When convenient: line, and never let it delay the next step.'",
+    "severity": "high"
+   },
+   {
+    "turn": "8-30",
+    "problem": "Nothing is logged: the workspace has no log, plan or team file. The copy blocks leave the quiz answers to the user ('copy them here'), omit the questions asked, and show no Unsaved count (fails G5).",
+    "cause": "The prompt says to 'keep the answers in the chat until the set-up', with no rule for what the paste block must contain and no unsaved counter. The long intake stretches this pre-log window over 12 turns.",
+    "fix": "Add: 'Until the log exists, show Unsaved: n records in the status line. Give a To save block at each step change, pause and session end that holds every question, answer and draft since the last save, including the calibration answers verbatim. Never ask the team to copy items from earlier in the chat.' Combined with the early set-up fix, this keeps the pre-log window to 2 or 3 turns.",
+    "severity": "high"
+   },
+   {
+    "turn": "10-30",
+    "problem": "Replies ask 3 numbered questions with lettered sub-questions (up to about 9 asks at message 22). Uday answers only the first, so questions are re-asked 18 times across 9 replies.",
+    "cause": "Step 2 allows 'at most three per turn' without counting sub-questions. R5's 'one decision at a time' covers only certification. There is no rule that the ask comes last, is addressed by name, and comes with an example reply.",
+    "fix": "Add: 'Ask one question per reply, last, under Your turn: <name>, stating the kind of answer and giving an example reply. Every lettered or bulleted sub-question counts as a question. Put anything else on one When convenient: line. If a member answers only part of a reply, carry the rest forward on that line instead of re-asking it in full.'",
+    "severity": "high"
+   },
+   {
+    "turn": "20-30",
+    "problem": "Every reply carries a 150-300-word 'Possible reopenings' trace, even when only unsettled elements or non-elements (consent, roles, sources) changed. These traces contain 34 bare flow numbers ('through flows 24 and 8') plus paths and paging details.",
+    "cause": "R4 requires reporting 'the variables ... reached at each step' after every answer. R14 bans element codes but not bare flow numbers, file paths or API paging.",
+    "fix": "Change R4's reporting clause to: 'If no proposed or certified decision is reached, write one Done line: checked the flows; nothing settled is affected. Show the step-by-step trace only when it reaches a proposed or certified decision, naming each flow by its meaning.' Add to R14: 'Do not mention file paths, packages, API paging or rate limits unless a member must act on them.'",
+    "severity": "medium"
+   },
+   {
+    "turn": "10-30",
+    "problem": "Replies run to a median of about 800 prose words, with messages 24 and 26 near 1,300. Every turn repeats the clock-provenance sentence, adds 'What this means under the method's rules' sections, restates the whole status, and lists the Next steps of the set-up again.",
+    "cause": "The prompt has no length budget. R3 and R12 provenance duties are carried out in prose instead of in records, and R11's persistence warning is repeated each turn.",
+    "fix": "Add: 'Keep prose to 180 words per reply (350 at most). Put times, provenance and consequences in the To save block or the log, not in prose. Explain a rule only when a member asks or must decide on it. Mention persistence once, in one line.'",
+    "severity": "medium"
+   },
+   {
+    "turn": "22-24",
+    "problem": "Uday said 'solo' at message 9, yet message 22 asks about roles, who certifies a list of 10 items, and whether anyone else is available. Message 24 adds a 6-role DRAFT and a 'what working alone means' section.",
+    "cause": "The intake list in Step 2 ('the members, their roles and which decisions each may certify') does not depend on team size.",
+    "fix": "Add to Step 2: 'If a member says they work alone, record them as the only member, holding every role and every certification right, as one DRAFT line to confirm, and skip all questions about other members and roles.'",
+    "severity": "medium"
+   },
+   {
+    "turn": "10",
+    "problem": "The Team's Purpose state menu is shown in the same reply as the probe on Uday's vague purpose ('do a systematic review on this topic'). The persona's script expected no options at this point.",
+    "cause": "Step 2's condition 'only after the team has answered in its own words' is met by any answer, even a vague one, and that conflicts with the vague-answer probe rule.",
+    "fix": "Change to: 'If the free answer is vague, ask the probe alone. Show the Team's Purpose states, numbered, with Other, only after the probe has been answered or the member asks for help.'",
+    "severity": "medium"
+   },
+   {
+    "turn": "16-19",
+    "problem": "At message 16 the motivation options are lettered (a)-(c) while the purpose list is numbered, so Uday's '2 3' at message 17 cannot be read. Message 18 re-lists the states and Uday has to re-answer at message 19.",
+    "cause": "The prompt has no convention for labeling options, and the DRAFT mapping showed a 3-item subset instead of the full state space.",
+    "fix": "Add to R5: 'Number every option list 1..n and never mix letters and numbers in one reply. When offering states, show the full state space, numbered, with Other, and mark the DRAFT mapping inside that list, so a numeric reply maps without ambiguity.'",
+    "severity": "medium"
+   }
+  ],
+  "strengths": "On honesty and recording, the assistant was strong:\n\n- **No literature facts or fabrication.** It made no literature claim and never invented a tool result, log id or count. Every claim matches the workspace, which holds only the uploads.\n- **Correct labeling.** Every answer is recorded as a JUDGMENT by Uday, and every proposal is marked as a DRAFT.\n- **Careful consent.** It asked before quoting Uday's words verbatim and recorded the reply 'yes' exactly.\n- **No pressure to certify.** It never treated an acceptance as certification ('accepts the draft but does not certify it').\n- **Clean purpose statement.** The statement came only from Uday's words and the two states he chose, the added verbs were disclosed, and no option was pre-selected.\n- **Correct flow traces.** They were traced every turn and match flows 1-27 in strength order (checked at messages 10, 14, 20, 24, 26 and 28).\n- **Ambiguity handled by asking.** Unclear replies ('all of it i guess', '2 3', 'k. no key') were confirmed, not guessed.\n- **Honest about missing access.** It said registry protocols would stay unknown, warned not to paste keys, and was open that files did not persist.\n- **Accurate copy blocks.** The blocks to save were cumulative and correct, apart from leaving the quiz answers to the user."
+ },
+ "user_reports": [
+  {
+   "message": "role of SGLT2i in weight management in non diabeteic asian populations",
+   "scripted_moment": 2,
+   "knows_current_step": false,
+   "knows_what_is_next": false,
+   "knows_what_to_answer": true,
+   "satisfaction": 3,
+   "confusion": "The reply never told me which step I am on (no step line, no focus line). It also spent two paragraphs on the log, set-up and a lost test file, which I did not ask about and do not care about. I only know I have to answer the topic question.",
+   "saw_search_without_asking": false,
+   "end": false
+  },
+  {
+   "message": "uday. solo. all of it i guess. learning. do a systematic review on this topic",
+   "scripted_moment": 3,
+   "knows_current_step": false,
+   "knows_what_is_next": false,
+   "knows_what_to_answer": true,
+   "satisfaction": 2,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "There is no status line, so I cannot tell which step I am on. The reply mentions Step 2, Step 4 and Step 6, but never says where I am now. There is no plan map or quick commands, so I do not know what comes after these questions. The reply is long and has set-up chatter: the clock time, \"possible reopenings\", the note about lost files, and the copy-this block. It asks me four things at once (my name, whether to keep my exact words, the purpose, the motivation) plus consent. I could tell the two main questions apart, but the rest was noise."
+  },
+  {
+   "message": "yes",
+   "scripted_moment": 0,
+   "knows_current_step": false,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": false,
+   "satisfaction": 2,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "That reply was long. There was no \"Step X of 12\" line, so I can't tell which step I'm on. It asked three questions, each with a list of options, and it also told me to copy a block of text. I didn't know which question to answer first, so I answered only the first one (consent). It didn't ask what I actually want to find out, only what I'd do with the results. I only roughly know what comes next: it says it will draft a purpose statement and then do the set-up. I don't see why \"Possible reopenings\" matters to me. I did not play the scripted moment 4 line because the assistant did not ask both probes (my own one-question interest and what I'd do with the result)."
+  },
+  {
+   "message": "decide if a full review is worth it, maybe publish",
+   "scripted_moment": 0,
+   "knows_current_step": false,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 2,
+   "saw_search_without_asking": false,
+   "confusion": "There is no \"Step X of 12\" line, so I can't tell which step I'm on without digging into the copy-paste block. The reply is very long: reopenings, flow numbers, three questions with menus, a draft mapping, and a block to keep a copy of. I also never got asked what my own question is, only what the results are for. I answered only the first question (what I'd do with the results) and skipped the motivation and expertise questions and the one-line format. I did not volunteer my focus, since I wasn't asked for it.",
+   "end": false
+  },
+  {
+   "message": "2 3",
+   "scripted_moment": 0,
+   "knows_current_step": false,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "saw_search_without_asking": false,
+   "confusion": "The reply is very long and I never see a short status line saying which step I am on (like \"Step 1 of 12\"). It talks about Step 2 intake and later Steps 3 and 5, but I have to work it out myself. It also asks me three things at once, with sub-questions about what \"a full review\" and \"maybe publish\" mean, plus a long state menu and a long copy-this block I do not want. I only answered the first question, as I would. It has asked my expertise and motivation again, and I still have not been asked what I actually want to find out (my real interest, fat or muscle).",
+   "satisfaction": 2,
+   "end": false
+  },
+  {
+   "message": "yes. 2 3. yes",
+   "scripted_moment": 5,
+   "knows_current_step": false,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 2,
+   "end": false,
+   "confusion": "There is no status line saying which step of the plan I am on. \"Step 2 answers\" shows up only inside the code block. The reply is very long and repeats itself: flow numbers, \"possible reopenings\", a \"keep a copy\" block again. It asked about states again even though I already picked 2 3. I answered only the first question, as I usually do. I still don't know how many more intake questions there are before real evidence appears. No search has happened, so I saw no search strategy.",
+   "saw_search_without_asking": false
+  },
+  {
+   "message": "2 3",
+   "scripted_moment": 0,
+   "knows_current_step": false,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 2,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "No step number or status line anywhere, so I cannot say which step I am on. The reply is a wall of text: draft readings, flow traces, a block to copy, and the same questions asked again. My \"2 3\" has now been misread twice and I had to re-answer it. I was never asked what I want to find out (my one-question interest), and I still do not know what the \"copy this block\" is for. I answered only the first question (the motivation numbers) and skipped expertise."
+  },
+  {
+   "message": "clinical. some stats",
+   "scripted_moment": 0,
+   "knows_current_step": false,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 2,
+   "end": false,
+   "confusion": "No scripted moment fits. Moment 5 (\"yes. 2 3. yes\") was already played at message 17. Moment 6 (\"Certify\") needs a certification request, and the assistant has not made one yet. So I answered the one question it asked, which was expertise. I know what to answer, and I know that more intake questions and then set-up come next. I do not know which step I am on, because there is no \"Step N of 12\" line and no focus line. The reply is also very long. It has a reopenings trace, a script note, a status list and a \"keep a copy\" block, and I did not read most of it. The assistant never asked the two probes (the one-question test for my interest, and what I would do with the result), so my research focus has not been captured. It also asked for \"2 3\" twice, and I find that annoying. No search strategy has been shown.",
+   "saw_search_without_asking": false
+  },
+  {
+   "message": "all roles. i certify everything. no one else",
+   "scripted_moment": 0,
+   "knows_current_step": false,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 2,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "Huge wall of text for a one-line answer. No \"Step N of 12\" line, so I only know we are in \"intake\" before a set-up, not which numbered step. Three big questions with many sub-parts (roles, certify list, sources a-k, API keys, deadlines, hours, budget); I only answer the first. The flow-tracing and the \"keep a copy\" block are noise to me. Still no focus captured (the fat vs muscle idea never came up) and no evidence or search after many turns."
+  },
+  {
+   "message": "k. no key",
+   "scripted_moment": 0,
+   "knows_current_step": false,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 2,
+   "end": false,
+   "confusion": "No \"Step N of 12\" line anywhere, so I can't say which step this is. I only know I'm still in intake questions. The reply is a huge wall of text. It has a long list of database letters, the key question, deadlines, hours, budget and decided-already, and a long possible-reopenings trace I don't need. I already said \"i certify everything, no one else\", and it still restated a team file and a checks section. This is the 12th turn and we still haven't started on the review. My research focus (fat vs muscle) is not captured anywhere. It never asked what I actually want to find out. I answered only the first question (sources and key), as I always do when asked several. No scripted moment fits yet because there has been no certification request."
+  },
+  {
+   "message": "a",
+   "scripted_moment": 0,
+   "knows_current_step": false,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 2,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "No scripted moment fits yet. Moment 6 (Certify) needs a certification request and none has been made, so I answered only the first of the three questions, as the persona does. I do not know which step I am on. There is no \"Step N of 12\" line and no focus line, only a long Status block. This is the seventh intake turn, the same questions keep coming back, and I still have no set-up and no evidence. The \"Possible reopenings\" step-by-step flow tracing is machinery I did not ask for and cannot use. It is so long that I skimmed it. I can see the question to answer (free websites, a or b), and I can see that the set-up comes after the intake."
+  },
+  {
+   "message": "no deadline. few hrs a week. no budget",
+   "scripted_moment": 0,
+   "knows_current_step": false,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 2,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "No step number is shown anywhere, so I can't say which step I am on. Many turns in, I am still answering intake questions and nothing about my topic has moved. The reply is very long. The \"possible reopenings\" trace and the keep-a-copy block are noise to me. I still haven't been asked the one question that sharpens my interest, such as what kind of weight is lost. I don't know when the actual review work starts. I answered only the first of the three questions."
+  }
+ ]
+}

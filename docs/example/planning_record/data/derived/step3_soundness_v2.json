@@ -1,0 +1,238 @@
+{
+ "rule": "step3-sound-2",
+ "passages_all_found": true,
+ "passages": 11,
+ "trials": {
+  "n": 13,
+  "by_condition": {
+   "overweight or obesity": {
+    "records": 4,
+    "fat": 4,
+    "muscle_or_lean": 1,
+    "water": 0,
+    "combination_in_title": 3
+   },
+   "fatty liver": {
+    "records": 3,
+    "fat": 0,
+    "muscle_or_lean": 0,
+    "water": 0,
+    "combination_in_title": 0
+   },
+   "none of these": {
+    "records": 1,
+    "fat": 0,
+    "muscle_or_lean": 0,
+    "water": 0,
+    "combination_in_title": 0
+   },
+   "prediabetes or insulin resistance": {
+    "records": 2,
+    "fat": 1,
+    "muscle_or_lean": 2,
+    "water": 0,
+    "combination_in_title": 1
+   },
+   "kidney disease": {
+    "records": 1,
+    "fat": 0,
+    "muscle_or_lean": 0,
+    "water": 1,
+    "combination_in_title": 0
+   },
+   "heart failure": {
+    "records": 2,
+    "fat": 1,
+    "muscle_or_lean": 0,
+    "water": 1,
+    "combination_in_title": 0
+   },
+   "polycystic ovary syndrome": {
+    "records": 1,
+    "fat": 1,
+    "muscle_or_lean": 0,
+    "water": 0,
+    "combination_in_title": 0
+   }
+  },
+  "combination_pmids": [
+   "39361103",
+   "28345814",
+   "27550386"
+  ]
+ },
+ "trial_rows": [
+  {
+   "pmid": "42286641",
+   "year": "2026",
+   "conditions": [
+    "overweight or obesity"
+   ],
+   "fat": true,
+   "muscle_or_lean": false,
+   "water": false,
+   "combination_in_title": false,
+   "combination_words": null
+  },
+  {
+   "pmid": "39884573",
+   "year": "2025",
+   "conditions": [
+    "fatty liver"
+   ],
+   "fat": false,
+   "muscle_or_lean": false,
+   "water": false,
+   "combination_in_title": false,
+   "combination_words": null
+  },
+  {
+   "pmid": "39361103",
+   "year": "2024",
+   "conditions": [
+    "overweight or obesity"
+   ],
+   "fat": true,
+   "muscle_or_lean": false,
+   "water": false,
+   "combination_in_title": true,
+   "combination_words": "dual therapy"
+  },
+  {
+   "pmid": "38536017",
+   "year": "2024",
+   "conditions": [
+    "fatty liver"
+   ],
+   "fat": false,
+   "muscle_or_lean": false,
+   "water": false,
+   "combination_in_title": false,
+   "combination_words": null
+  },
+  {
+   "pmid": "38295394",
+   "year": "2024",
+   "conditions": [
+    "none of these"
+   ],
+   "fat": false,
+   "muscle_or_lean": false,
+   "water": false,
+   "combination_in_title": false,
+   "combination_words": null
+  },
+  {
+   "pmid": "36592688",
+   "year": "2023",
+   "conditions": [
+    "prediabetes or insulin resistance"
+   ],
+   "fat": false,
+   "muscle_or_lean": true,
+   "water": false,
+   "combination_in_title": false,
+   "combination_words": null
+  },
+  {
+   "pmid": "35478433",
+   "year": "2022",
+   "conditions": [
+    "kidney disease"
+   ],
+   "fat": false,
+   "muscle_or_lean": false,
+   "water": true,
+   "combination_in_title": false,
+   "combination_words": null
+  },
+  {
+   "pmid": "34325888",
+   "year": "2021",
+   "conditions": [
+    "heart failure"
+   ],
+   "fat": true,
+   "muscle_or_lean": false,
+   "water": false,
+   "combination_in_title": false,
+   "combination_words": null
+  },
+  {
+   "pmid": "34097062",
+   "year": "2021",
+   "conditions": [
+    "polycystic ovary syndrome"
+   ],
+   "fat": true,
+   "muscle_or_lean": false,
+   "water": false,
+   "combination_in_title": false,
+   "combination_words": null
+  },
+  {
+   "pmid": "33357505",
+   "year": "2021",
+   "conditions": [
+    "heart failure"
+   ],
+   "fat": false,
+   "muscle_or_lean": false,
+   "water": true,
+   "combination_in_title": false,
+   "combination_words": null
+  },
+  {
+   "pmid": "32975679",
+   "year": "2020",
+   "conditions": [
+    "fatty liver"
+   ],
+   "fat": false,
+   "muscle_or_lean": false,
+   "water": false,
+   "combination_in_title": false,
+   "combination_words": null
+  },
+  {
+   "pmid": "28345814",
+   "year": "2017",
+   "conditions": [
+    "overweight or obesity"
+   ],
+   "fat": true,
+   "muscle_or_lean": false,
+   "water": false,
+   "combination_in_title": true,
+   "combination_words": "plus"
+  },
+  {
+   "pmid": "27550386",
+   "year": "2017",
+   "conditions": [
+    "overweight or obesity",
+    "prediabetes or insulin resistance"
+   ],
+   "fat": true,
+   "muscle_or_lean": true,
+   "water": false,
+   "combination_in_title": true,
+   "combination_words": "dual therapy"
+  }
+ ],
+ "reviews_any_kind": {
+  "reviews": 51,
+  "systematic_tag": 6,
+  "names_muscle_or_lean": 5,
+  "muscle_systematic_tag": 0,
+  "names_water": 9,
+  "names_all_three": 0,
+  "muscle_pmids": [
+   "41908618",
+   "40707349",
+   "40537153",
+   "37486575",
+   "30467957"
+  ]
+ }
+}

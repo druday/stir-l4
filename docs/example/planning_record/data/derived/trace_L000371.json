@@ -1,0 +1,30 @@
+{
+  "changed": [
+    "RQ"
+  ],
+  "steps": [
+    [
+      {
+        "element": "LU",
+        "flow": 10,
+        "strength": "strong",
+        "meaning": "Through its framework and eligibility criteria, the question delimits the relevant region of the Literature Universe, bounding what the Review Universe can hold.",
+        "status": null
+      },
+      {
+        "element": "SS",
+        "flow": 11,
+        "strength": "strong",
+        "meaning": "The question drives the search (concepts, terms, filters).",
+        "status": "unsettled"
+      },
+      {
+        "element": "ME",
+        "flow": 27,
+        "strength": "strong",
+        "meaning": "The question type determines methods (eg, a prediction-model question calls for prediction-model appraisal tools).",
+        "status": "unsettled"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,243 @@
+version: 1
+topic:
+  text: the role of SGLT2 inhibitors in the weight lost by all adults without diabetes, whatever the drug is given
+    for, any country; Asian people as a subgroup
+  given_by: Uday
+  log_id: L000250
+focus:
+  text: 'which kind of weight is lost: fat, muscle or body water, within all adults without diabetes, whatever the
+    drug is given for, any country; Asian people as a subgroup'
+  by_member:
+    Uday: 'which kind of weight is lost: fat or muscle (summarized)'
+  log_ids:
+  - L000016
+  - L000021
+  - L000031
+  - L000062
+  - L000141
+  - L000243
+  proposed: null
+variables:
+  IM:
+    states:
+    - Learn the process
+    - personal or institutional curiosity
+    - academic activity
+    decision: 'Uday (summarized): interest — which kind of weight is lost: fat or muscle; seeks — to learn; kinds
+      of motivation — learn the process; personal or institutional curiosity; academic activity'
+    status: certified
+    provisional: false
+    certified_by: Uday, solo
+    certified_at: '2026-10-25T03:21:52Z'
+    reason: testing the workflow
+    log_ids:
+    - L000016
+    - L000021
+    - L000036
+    - L000058
+  TP:
+    states:
+    - research gaps
+    - finding the right question
+    decision: 'Uday (summarized): focus — which kind of weight is lost: fat, muscle or body water, within all adults
+      without diabetes, whatever the drug is given for, any country; Asian people as a subgroup; kinds of purpose
+      — research gaps; finding the right question; the review — a systematic review on this topic; with the results
+      — decide whether a full review is worth it; maybe publish'
+    status: certified
+    provisional: false
+    certified_by: Uday, solo
+    certified_at: '2026-10-25T06:59:42Z'
+    reason: broadened for feasibility
+    log_ids:
+    - L000034
+    - L000095
+    - L000142
+    - L000146
+    - L000234
+    - L000251
+  NR:
+    states:
+    - Previous reviews
+    - knowledge gaps
+    - clinical justification
+    - impact analysis
+    decision: 'Uday (summarized): case — new review: no review examined so far answers the focus, which kind of
+      weight is lost: fat, muscle or body water, within all adults without diabetes, whatever the drug is given
+      for, any country; Asian people as a subgroup; grounds — previous reviews; knowledge gaps; clinical justification
+      (used off label for weight in Asia; muscle or water loss matters for older and lean patients; it matters for
+      any adult without diabetes on these drugs); impact analysis (tell clinicians whether the weight lost is fat;
+      show where trials are missing); uncertainties — whether one answer fits every reason for treatment; the drug''s
+      own effect, when trials give it with another drug; whether body scans can measure each part of a small loss;
+      not searched — PROSPERO, OSF Registries, Cochrane, Epistemonikos; OpenAlex reviews past the first 100; full
+      texts'
+    status: certified
+    provisional: false
+    certified_by: Uday, solo
+    certified_at: '2026-10-25T07:26:23Z'
+    reason: broadened for feasibility
+    log_ids:
+    - L000173
+    - L000178
+    - L000235
+    - L000285
+    - L000292
+  RO:
+    states:
+    - Understand a topic
+    - identify new areas for research
+    decision: 'Uday (summarized): objectives — understand a topic; identify new areas for research; wording — to
+      understand which kind of weight is lost with SGLT2 inhibitors (fat, muscle or body water) within all adults
+      without diabetes, whatever the drug is given for, any country (Asian people as a subgroup), and to identify
+      new areas for research: where trials are missing'
+    status: certified
+    provisional: false
+    certified_by: Uday, solo
+    certified_at: '2026-10-25T07:34:02Z'
+    reason: broadened for feasibility
+    log_ids:
+    - L000184
+    - L000190
+    - L000236
+    - L000299
+    - L000304
+  FE:
+    states:
+    - literature availability
+    - FMEA
+    decision: 'Uday (summarized): decision — broaden: all adults without diabetes, any country; Asian people as
+      a subgroup; kinds of feasibility — literature availability; FMEA (very few trials)'
+    status: certified
+    provisional: false
+    certified_by: Uday, solo
+    certified_at: '2026-10-25T06:47:44Z'
+    reason: broaden is right
+    log_ids:
+    - L000226
+    - L000232
+  RQ:
+    states: []
+    decision: 'Uday (summarized): question — which kind of weight is lost with SGLT2 inhibitors, compared with placebo,
+      no treatment or usual care: fat, muscle or body water, in adults without diabetes (Asian people as a subgroup);
+      framework — PICO; context — any country, whatever the drug is given for; Asian people as a subgroup; population
+      — adults without diabetes; people with prediabetes count as without diabetes; intervention — any SGLT2 inhibitor,
+      no minimum treatment time; comparison — placebo, no treatment or usual care; outcomes — fat, muscle and body
+      water; muscle as lean or fat-free mass, muscle itself, and also strength or physical performance; fat, lean
+      mass, muscle itself, body water and strength each kept apart; the measuring method recorded for each study;
+      inclusion and exclusion criteria — randomized controlled trials and controlled cohort studies; another treatment
+      only when both groups get the same one; studies that also enrol people with diabetes only if they report those
+      without diabetes apart; a pair of groups within a larger trial counts if it meets these criteria'
+    status: certified
+    provisional: false
+    certified_by: Uday, solo
+    certified_at: '2026-10-25T08:13:50Z'
+    reason: this is the question
+    log_ids:
+    - L000370
+  SS:
+    states: []
+    decision: 'version 1: PubMed — search 4 as shown, records created up to 2026-10-25: SGLT2 inhibitors, by subject
+      heading and each drug''s name, AND fat, lean or muscle, body water, strength or performance, their measuring
+      methods or body weight, AND randomized trials or cohort studies, animal-only records left out; ClinicalTrials.gov
+      — search 5 as shown, any status: the drug names among treatments AND the parts of the weight among outcomes;
+      OpenAlex — search 3 as shown, in titles and abstracts only, with the four body-weight phrases added, published
+      up to the run date, run in the next session; WHO trial portal — the drug names of search 5, searched by Uday
+      by hand in the next session; not searched — Embase and CINAHL, which Uday cannot search, named in the protocol
+      with the reason, and other paid databases, out of reach; filters — no language, start-date or population limit,
+      with adults, the comparison, diabetes status and Asian people judged at screening; known studies — PubMed
+      29235586, 33879970, 39361103 and 42104798, checked in PubMed and OpenAlex; stopping rule — the strings stop
+      changing when every known study is found and none of the records added by the last change meets the question,
+      as Uday screens them; peer review — none, as there is no second searcher; the protocol says the strings were
+      not peer reviewed'
+    status: certified
+    provisional: false
+    certified_by: Uday, solo
+    certified_at: '2026-10-25T10:08:30Z'
+    reason: finds both known studies
+    log_ids:
+    - L000489
+  ME:
+    states: []
+    decision: 'protocol, version 2, with Uday''s three edits: version 1 as certified, written in full sentences
+      item by item in the order of the PRISMA-P 2015 checklist, with the searches reported as PRISMA-S asks, 38
+      numbered references and three closing sections (what planning found; how STIR-L4 and AI were used; gaps);
+      new in content — the AI model as Uday read it from the run settings (Anthropic Claude Opus 5.5, model id claude-opus-5-5,
+      sessions 1 to 5; settings not available), the prompt and helper kit versions and dates of each session, the
+      limitation that the model could not be given removed, and in the rationale what 6 reviews in people with type
+      2 diabetes found on fat and on lean mass or muscle, the nearest evidence; no source cited for the re-check
+      of a tenth, as no methods source was found; what planning found keeps the pilot screening only as a test of
+      the criteria, with the commitment, the conflict, the session 5 re-check and the line in item 16 on the included
+      studies left to the planning record; gaps — registration number and date (not submitted, a test); e-mail and
+      postal address; OpenAlex and WHO trial portal run dates and counts; the WHO trial portal string; piloting
+      the extraction form; summary measures and pooling method'
+    status: certified
+    provisional: false
+    certified_by: Uday, solo
+    certified_at: '2026-10-25T15:17:06Z'
+    reason: follows the standard template
+    log_ids:
+    - L000655
+    - L000700
+    - L000703
+    - L000779
+    - L000780
+stocks:
+  LU:
+    queries:
+    - L000068
+    - L000069
+    - L000070
+    - L000071
+    - L000072
+    - L000073
+    - L000074
+    - L000075
+    - L000097
+    - L000098
+    - L000099
+    - L000117
+    - L000118
+    - L000119
+    - L000120
+    - L000121
+    - L000122
+    - L000123
+    - L000124
+    - L000125
+    - L000126
+    - L000127
+    - L000128
+    - L000130
+    - L000131
+    - L000148
+    - L000149
+    - L000150
+    - L000192
+    - L000193
+    - L000194
+    - L000195
+    - L000199
+    - L000200
+    - L000254
+    - L000255
+    - L000420
+    - L000421
+    - L000422
+    - L000423
+    - L000424
+    - L000425
+    - L000426
+    - L000427
+    - L000428
+    - L000443
+    - L000444
+    - L000458
+    - L000459
+    - L000460
+  RU:
+    included: data/derived/screening.csv
+registration:
+  registry: OSF Registries
+  id: null
+  version: 2
+  status: not submitted
+  log_id: L000783

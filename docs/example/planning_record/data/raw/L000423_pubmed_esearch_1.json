@@ -1,0 +1,1 @@
+{"header":{"type":"esearch","version":"0.3"},"esearchresult":{"count":"5511444","retmax":"0","retstart":"0","idlist":[],"translationset":[],"querytranslation":"(\"Animals\"[MeSH Terms] NOT \"Humans\"[MeSH Terms]) AND 1800/01/01:2026/10/25[Date - Create]"}}

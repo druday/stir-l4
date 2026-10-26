@@ -1,0 +1,23 @@
+{
+  "changed": [
+    "IM"
+  ],
+  "steps": [
+    [
+      {
+        "element": "TP",
+        "flow": 1,
+        "strength": "strong",
+        "meaning": "Members' motivations and expertise shape the team's shared purpose.",
+        "status": "unsettled"
+      },
+      {
+        "element": "ME",
+        "flow": 25,
+        "strength": "strong",
+        "meaning": "Members' expertise and incentives shape which methods are adopted (eg, meta-analytic skill).",
+        "status": "unsettled"
+      }
+    ]
+  ]
+}

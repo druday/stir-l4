@@ -1,0 +1,105 @@
+# Atlas (Registering Evidence Dynamically), version 1 - DRAFT, before the search
+# STATUS: DRAFT written by the assistant on 2026-10-25 (session S3, Step 7) for Uday to edit and certify. Two items are
+# open and asked of Uday: whether the optional facet C (Asian results) is used, and the thresholds for empty, thin and
+# crowded regions. Built from the certified Research Question (L000370), data-extraction form (L000380) and property
+# registry (L000392), and from theory and earlier reviews (facts cited by log id). Anything marked "my suggestion" came
+# from neither Uday nor a FACT. Once certified, changes make version 2; this file is then not edited.
+version: 1
+date: 2026-10-25
+status: draft shown to Uday (log L000399); open items asked of Uday (log L000400)
+based_on: {research_question: L000370, extraction_form: L000380, property_registry: L000392,
+           facts: [L000394, L000395, L000396, L000129, L000196, L000387, L000237]}
+grain: studies (one key per study, linking all its reports), as in the property registry (B1)
+scope: adults without diabetes given an SGLT2 inhibitor against placebo, no treatment or usual care (certified question)
+
+facets:
+  - id: A
+    name: Part of the weight
+    order: as in the focus (fat, muscle or body water), with the parts the form keeps apart
+    from_property: O1
+    levels:
+      - level: body fat (whole-body fat mass or percent body fat)
+        from_levels: [whole-body fat]
+        theory_and_earlier_evidence:
+          - {says: "Glycosuria provides an energy and osmotic drain that could alter body composition", pmid: "29235586", log: L000129}
+          - {says: "compensatory hyperphagia limits the degree of weight loss", pmid: "42730799", log: L000129}
+          - {says: "earlier reviews, any population: named in 14 of 73 records; 2 of these also name people without diabetes, one: 'There were no significant changes in fat mass'", log: L000394}
+      - level: lean or fat-free mass
+        from_levels: [lean or fat-free mass]
+        theory_and_earlier_evidence:
+          - {says: "lean-mass estimates may be influenced by alterations in body water (2026 review, shown in session S3)", log: L000129}
+          - {says: "earlier reviews, any population: named in 6 of 73 records; none also names people without diabetes", log: L000394}
+      - level: muscle itself (muscle mass, area or volume)
+        from_levels: [muscle itself]
+        theory_and_earlier_evidence:
+          - {says: "Controversial data are reported for muscle-mass, which decreased in 15 and remained unchanged in 6 studies", pmid: "40707349", log: L000129}
+          - {says: "earlier reviews, any population: named in 6 of 73 records; none also names people without diabetes", log: L000394}
+      - level: body water (total, outside or inside cells, plasma volume)
+        from_levels: ["body water: total", "body water: outside cells", "body water: inside cells", "body water: plasma volume"]
+        theory_and_earlier_evidence:
+          - {says: "transiently promotes osmotic diuresis and natriuresis", pmid: "42730799", log: L000129}
+          - {says: "There was a reduction in TBW measured by D2O dilution in the RE group that was significantly greater than placebo", pmid: "29235586", log: L000129,
+             note: "obese adults without diabetes; not tagged by PubMed as a randomized controlled trial (L000395), so not among the 13 trial records"}
+          - {says: "earlier reviews, any population: named in 2 of 73 records; none also names people without diabetes", log: L000394}
+      - level: strength or physical performance
+        from_levels: [strength, physical performance]
+        theory_and_earlier_evidence:
+          - {says: "Physical-performance-tests remained unchanged under SGLT2i (2025 review, shown in session S3)", pmid: "40707349", log: L000129}
+          - {says: "earlier reviews, any population: strength named in 2 and physical performance in 2 of 73 records; none also names people without diabetes; one: 'muscle strength and physical performance outcomes were rarely reported'", log: L000394}
+    placement_rule: "a study is placed in each part it reports; 'share of the loss that is fat, lean or water' places it in
+      each part it gives; total weight alone places it in no region (my suggestion)"
+  - id: B
+    name: What the drug was given for
+    order: as in the property registry (P4)
+    from_property: P4
+    levels:
+      - {level: overweight or obesity}
+      - {level: fatty liver}
+      - {level: heart failure}
+      - {level: prediabetes or insulin resistance}
+      - {level: kidney disease}
+      - {level: polycystic ovary syndrome}
+      - {level: other}
+      - {level: not reported}
+    theory_and_earlier_evidence:
+      - {says: "Fluid volume changes might be an important mechanism underlying the beneficial clinical effects of SGLT2 inhibitors", pmid: "33357505", log: L000196, note: heart failure}
+      - {says: "dapagliflozin decreased BP but did not increase 24-hour sodium and volume excretion", pmid: "35478433", log: L000196, note: kidney disease without diabetes}
+      - {says: "so the share of the loss that is water may differ by reason for treatment (DRAFT, my reading)"}
+  - id: C
+    name: Asian results
+    optional: true
+    open: "asked of Uday: use this facet or not"
+    from_property: [P5, P6]
+    levels:
+      - {level: "Asian results: results for Asian participants given apart, or done only in listed countries",
+         rule: "P5 = results for Asian participants given apart, or P6 Asian-country mark = yes (my suggestion)"}
+      - {level: other, rule: "every other study, including 'partly', 'share given, no separate results' and 'not reported'"}
+    theory_and_earlier_evidence:
+      - {says: "with diabetes-mellitus (68 %) and Japanese (53 %)", pmid: "40707349", log: L000129, note: "who the earlier muscle studies enrolled"}
+      - {says: "There is an urgent need for research, especially in nondiabetic, non-Japanese and HF-patients", pmid: "40707349", log: L000129}
+      - {says: "none of the 13 trial records names Asian people or a listed country in title or abstract", log: L000387}
+
+regions:
+  rule: every combination of the levels of the facets used (pandas MultiIndex.from_product), empty ones kept
+  base: A x B (listed with descriptions in data/derived/step7_atlas_regions.csv)
+  optional: if facet C is used, each region of A x B splits into two
+region_description: "{A}, with an SGLT2 inhibitor against placebo, no treatment or usual care, in adults without diabetes; given for: {B}"
+
+thresholds:
+  grain: studies per region
+  empty: null   # open: asked of Uday
+  thin: null    # open: asked of Uday
+  crowded: null # open: asked of Uday
+  declared_by: null
+
+registration:
+  # how each included study is placed in regions (red/registration.csv), each placement with a confidence and a basis
+  - "1. by rule over the study's counted features (A from O1, B from P4, C from P5 and P6), confidence high"
+  - "2. only for a study the rule cannot place: likeness of its text to the region descriptions, with the matching tool
+     and its version recorded in env/embedding.json and the threshold logged before use (none chosen yet)"
+  - "3. then the assistant's own judgment, labelled as such"
+  - "4. a study that fits no region goes to Uday"
+gaps:
+  - "an empty region is reported as a gap only after a targeted, logged search for that region and a known-item check,
+     recorded in red/regions.csv with the log ids"
+  - "what the atlas shows goes back to Feasibility as a possible reopening (the evidence found revises feasibility; flow 21)"

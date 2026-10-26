@@ -1,0 +1,11 @@
+STIR-L4 prompt kit: licensing
+
+- Code (kit/, eval/*.py, prompt/*.py, docs/example/*.py): MIT License, see LICENSE-CODE.
+- Content (prompt/versions/, quiz/, data/, docs/, eval/ rubric, personas, transcripts and results, example PDFs):
+  Creative Commons Attribution 4.0 International (CC BY 4.0), see LICENSE-CONTENT.
+
+Requests from the authors (not conditions of either license):
+- If you use STIR-L4, the prompt or the kit in research, teaching or a tool, please cite the STIR-L4 paper
+  (see CITATION.cff and "How to cite" in README.md).
+- Please report refinements to the authors: valid suggestions and specific improvements to the framework, the prompt
+  or its architecture, with the LLM name and version and, where possible, a transcript (see "Feedback" in README.md).

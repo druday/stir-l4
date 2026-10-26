@@ -1,0 +1,9 @@
+answers,facets,regions
+"1 a, 2 a, 3 a",A (4) x B (8) x C (2),64
+"1 a, 2 a, 3 b",A (4) x C (2),8
+"1 a, 2 b, 3 a",A (4) x B (8) x C (3),96
+"1 a, 2 b, 3 b",A (4) x C (3),12
+"1 b, 2 a, 3 a",A (5) x B (8) x C (2),80
+"1 b, 2 a, 3 b",A (5) x C (2),10
+"1 b, 2 b, 3 a",A (5) x B (8) x C (3),120
+"1 b, 2 b, 3 b",A (5) x C (3),15

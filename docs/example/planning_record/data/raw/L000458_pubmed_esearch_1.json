@@ -1,0 +1,1 @@
+{"header":{"type":"esearch","version":"0.3"},"esearchresult":{"count":"405014","retmax":"0","retstart":"0","idlist":[],"translationset":[],"querytranslation":"(\"body weight\"[Title/Abstract] OR \"weight loss\"[Title/Abstract] OR \"weight reduction\"[Title/Abstract] OR \"weight change\"[Title/Abstract]) AND 1800/01/01:2026/10/25[Date - Create]"}}

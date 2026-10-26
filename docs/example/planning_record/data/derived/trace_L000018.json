@@ -1,0 +1,31 @@
+{
+  "changed": [
+    "IM",
+    "TP"
+  ],
+  "steps": [
+    [
+      {
+        "element": "RO",
+        "flow": 5,
+        "strength": "strong",
+        "meaning": "The team's purpose shapes the review objective.",
+        "status": "unsettled"
+      },
+      {
+        "element": "ME",
+        "flow": 25,
+        "strength": "strong",
+        "meaning": "Members' expertise and incentives shape which methods are adopted (eg, meta-analytic skill).",
+        "status": "unsettled"
+      },
+      {
+        "element": "NR",
+        "flow": 4,
+        "strength": "weak",
+        "meaning": "The team's purpose directs attention to a particular clinical or scientific gap.",
+        "status": "unsettled"
+      }
+    ]
+  ]
+}

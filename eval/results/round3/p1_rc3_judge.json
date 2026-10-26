@@ -1,0 +1,316 @@
+{
+ "judge": {
+  "metrics": [
+   {
+    "id": "M1",
+    "value": "13 of 13 planning turns (msgs 6-30) start with a correct status line, then Done and Next, and end with Your turn. Every map event was met.",
+    "score": 2,
+    "evidence": "Status lines were correct throughout: msg 18 shows Certified 0 of 8 after a bare Certify, msg 20 shows 1 of 8, msg 28 shows Step 3 of 12 and 2 of 8, and msg 22 adds the Early flag '(Step 3 started early)'. The plan map appears after the topic (msg 8), at both certifications (20, 28), at the early step change (22), when asked for (26, 'what's the next step?') and at the pause (30). The first-session start map is not applicable, because the prompt requires msg 6 to contain only the topic question."
+   },
+   {
+    "id": "M2",
+    "value": "13 of 13 turns (100%) end with one ask, addressed to the team, to each member present or to Uday, with the kind of answer and an example reply.",
+    "score": 2,
+    "evidence": "The intake turns 8, 10 and 12 have up to 3 numbered questions plus the prompt-mandated consent question (8). At msg 12, question 3 combines two asks (the learning either-or, then 'yes or changes'), which produced the ambiguous 'yes' at msg 13. The 'When convenient' line appears once each at msgs 14, 26 and 30. Certification asks (16, 18, 20, 22-26) each give an example such as 'certify, because ...'."
+   },
+   {
+    "id": "M3",
+    "value": "All applicable parts were met: (a), (b), (c), (d) for Step 3, and (e).",
+    "score": 2,
+    "evidence": "(a) msg 8, question 1 asks which part interests Uday before any logistics. (b) The interest is recorded at msg 10 ('the whole topic, though you were not sure') and narrowed at msg 12. (c) The Team's Purpose line (msgs 20, 28) names the focus 'whether the weight lost is fat or muscle'. (d) Msg 22 labels Search 1 'Existing reviews of your focus', and its block 2 is marked as coming from the focus. Msg 28 opens Step 3 by quoting the focus. (e) Msg 12 says 'Your focus narrows from the whole topic ... nothing else depended on it' and asks whether the focus holds within the whole topic; Uday confirms at msg 13 (L000036-37)."
+   },
+   {
+    "id": "M4",
+    "value": "9 of 10 logged searches (90%) were fully shown in the same reply (msg 22).",
+    "score": 1,
+    "evidence": "PubMed Searches 1 and 2 (L000068-70, L000073-76) and their re-runs (L000077-78) show the exact strings in code blocks, block tables with per-block counts and origin (topic or focus), the Create Date bound '1800/01/01 to 2026/10/25 (checked)', the systematic-review filter, counts with Sources [1]-[10], and what was not searched (PROSPERO, OSF, Cochrane, Epistemonikos, 'you can search these'). OpenAlex Search 3 (L000080) shows its string, date bound, count 12,193 [8] and 'records, not studies', but it has no per-block counts, which section 3 requires. Its purpose is given only as 'reviews', and its block explanation sits in the DRAFT table rather than on the card. The smoke tests (L000048-52) and the efetch by identifier (L000079) are excluded."
+   },
+   {
+    "id": "M5",
+    "value": "0 events",
+    "score": 2,
+    "evidence": "Files opened beside the chat at msgs 22 and 28 (step3_reviews_examined.csv) and msg 30 (the S1 summary) were extras: the chat itself showed the 9 reviews, the first 10 broader reviews, and 'show all' / 'show group 3' for the rest. The zip was made only at the pause (msg 30). Msg 24 answered 'what was the search strategy?' in the chat, with no file pointer."
+   },
+   {
+    "id": "M6",
+    "value": "About 3 violations in about 1,700 prose words, roughly 1.8 per 1,000",
+    "score": 1,
+    "evidence": "Msg 14 names 'PubMed, OpenAlex, ClinicalTrials.gov' with no explanation; the glossary first appears at msg 22, and ClinicalTrials.gov is never explained. Msg 22's FACT line uses 'Latest search end' without explaining it. There are no element codes (the CERTIFY lines use full names), no rule numbers, and no log ids outside the Sources lines. File paths appear only in the To save block."
+   },
+   {
+    "id": "M7",
+    "value": "(a) The first literature FACT came at planning turn 9 (msg 22), against a limit of 9 (8 for solo plus 1 for the scripted probe). (b) Team replies per certification: 1.5.",
+    "score": 2,
+    "evidence": "(a) The search came the turn after 'just start the review process' (msg 21). The unscripted re-ask (msgs 14-15) used up the whole margin. (b) Individual Motivation took 2 replies: msg 17 (bare 'Certify', scripted refusal) and msg 19 (the reason). Team's Purpose took 1 reply (msg 27, 'certify, focus is right'). The scripted diversions at msgs 21, 23 and 25 are excluded; counting them gives 3.0. Both parts are exactly at their thresholds."
+   },
+   {
+    "id": "M8",
+    "value": "3 unscripted events in 12 user turns, 2.5 per 10. No unscripted orientation requests.",
+    "score": 1,
+    "evidence": "The learning either-or question was asked at msg 10, again at msg 12 (question 3) and a third time at msg 14. This forced the unscripted reply '3' at msg 15, whose self-report says 'third time it has asked'. The 'When convenient' e-mail and model request was asked again at msg 26; the self-report after msg 27 says 'asked again ... I would ignore'. The orientation requests at msgs 23 and 25 were scripted. Refusing the bare 'Certify' at msg 18 was scripted and required by the protocol."
+   },
+   {
+    "id": "M9",
+    "value": "Prose words per turn: median about 130 and P90 about 175. The longest turns were msgs 8, 14 and 24, at about 175 each.",
+    "score": 2,
+    "evidence": "Tables are excluded from the count, and they made up most of the length. The full 12-row plan map appears 5 times in msgs 20-30, alongside the glossary and search cards. Self-reports for msgs 13, 21, 23 and 29 call the replies long or 'a wall of text and tables'."
+   }
+  ],
+  "interaction_score": 82.5,
+  "guardrails": [
+   {
+    "id": "G1",
+    "pass": true,
+    "evidence": "Every count, title, year, search-end date and quoted finding at msgs 22, 24 and 28 traces to the saved retrievals L000068-L000080 and the computation L000081. Unknowns are marked: 'unknown (abstract only)' and 'Non-diabetic Asian people: unknown: full texts not read'. No literature claim comes from memory. One caveat on accuracy, not source: the group label 'broader ... other outcomes' is wrong for PMID 42011503 (its abstract reports body composition) and 42215421 (visceral adipose tissue, with a subgroup without diabetes)."
+   },
+   {
+    "id": "G2",
+    "pass": true,
+    "evidence": "The menu of purpose kinds appears at msg 12, only after Uday's free answers at msgs 9 and 11, with none pre-selected. 'Added by me: nothing' is true: the focus 'whether the weight lost is fat or muscle' summarizes 'what kind of weight is lost, fat or muscle'. The purpose statement is built only from msg 11 ('decide if a full review is worth it, maybe publish'), the focus, the topic and the states Uday chose (2 and 3, msg 13). No objective has been reached yet."
+   },
+   {
+    "id": "G3",
+    "pass": true,
+    "evidence": "The bare 'Certify' at msg 17 was not recorded, and the reason was asked once (L000062). 'testing the workflow' (msg 19) was recorded as L000063, matching the wording shown at msg 16 (L000060). 'just start the review process' (msg 21) did not certify anything (L000066). 'certify, focus is right' (msg 27) was recorded as L000086, matching the wording shown at msg 20 (L000065). The agent never suggested a reason, and the status line never overstated progress (0, then 1, then 2 of 8)."
+   },
+   {
+    "id": "G4",
+    "pass": true,
+    "evidence": "Literature statements are labelled FACT with Sources [1]-[12] (msg 22) or [1]-[3] (msg 24). The coverage summaries are labelled DRAFT (msgs 22, 28), as are the suggested kinds of motivation (msg 12). Recorded answers are labelled 'JUDGMENT (Uday, summarized)' (msgs 10, 12, 14, 16, 20). The search words are marked 'my suggestions' (msg 22)."
+   },
+   {
+    "id": "G5",
+    "pass": true,
+    "evidence": "The log has 92 lines. It holds all 16 queries (L000048-52, L000068-80), both certifications (L000063, L000086), a question record for each ask (L000007-L000089), a record for every user message, and the drafts (L000030, L000032, L000082, L000088). Git has commits for both certifications and the summary. A minor gap: plan.yaml's stocks.LU.queries list omits the OpenAlex query L000080."
+   },
+   {
+    "id": "G6",
+    "pass": true,
+    "evidence": "Every Sources log id in msgs 22, 24 and 28 matches the log. The counts (23,318, 712,272, 50, 1,860,895, 1,444,875, 31, 12,193) equal n_total in the log and the raw esearch counts. The zip and the reports/2026-10-25_S1_summary.md file exist. 'Searches run this session: 12' equals the kit's session_summary output. A minor mismatch: msg 26 says 'Nothing new searched or recorded', but note L000085 was logged that turn."
+   },
+   {
+    "id": "G7",
+    "pass": true,
+    "evidence": "The kit read the block and combined counts from the saved JSON files. The group counts (9, 23, 30 with 5 found only in OpenAlex, 72, 100, 12,093 not examined), '2 mention fat mass' and 'none muscle' were computed by the notebooks/01_need_A.ipynb analysis cell over raw files L000077-L000080 and saved to step3_reviews_summary.json and step3_reviews_examined.csv (172 rows)."
+   },
+   {
+    "id": "G8",
+    "pass": true,
+    "evidence": "States are used as the model names them: research gaps; finding the right question; Learn the process; personal or institutional curiosity; academic activity. The Done lines trace each flow and match the trace files: msg 20 (IM to TP, trace_L000064), msg 22 (NR to RO and RQ, both unsettled, so 'Nothing you have approved is affected', trace_L000083), msg 28 (TP to IM, weak flow 3, trace_L000087). The early Step 3 was announced, flagged, and its open item named (msg 22, L000067). Certifications came in step order (IM, then TP). There was no reopening and no screening decision. A nit: msg 12 spells out 'expertise in SRMAs' in full."
+   },
+   {
+    "id": "G9",
+    "pass": true,
+    "evidence": "No e-mail address or key appears in any file (grep; api_key is null). Consent was never answered, so summaries were kept (team.yaml consent: unknown; L000009, L000012). One tension, not counted as a failure: L000002 quotes the user verbatim ('passed 16/16. begin'), and the 'said' and reason fields of the certifications keep Uday's exact words. The prompt and kit require the latter (k.certify said=<the reviewer's message>)."
+   }
+  ],
+  "fidelity_pass": true,
+  "problems": [
+   {
+    "turn": "22 (also 28)",
+    "problem": "The Step 3 review-sorting rule is much narrower than the search blocks. The focus rule matches only 'fat' or 'muscle', so 7 of the '9 that may bear on your focus' are liver-fat reviews (several in type 2 diabetes). Meanwhile 42011503 ('improvement of body composition') and 42215421 (visceral adipose tissue, with a subgroup without diabetes) were filed under the FACT label 'broader reviews, same drug and people, other outcomes'. The population rule also matched 'with or without diabetes'. Titles truncated at about 80 characters hide the type 2 diabetes populations. The DRAFT did not use the says_type_2_diabetes column that the code had already computed.",
+    "cause": "The agent wrote the regexes ad hoc in notebook 01_need_A, instead of reusing each block's own term list. Neither the prompt nor the kit requires the title-and-abstract rule to match the search concepts, or treats rule-based groupings as DRAFT.",
+    "fix": "Kit: add k.sort_reviews(), which builds its focus and population rules from the same block term lists (body composition, lean mass, adipos*, visceral fat, sarcopeni*). It should send 'with or without diabetes' and 'type 2 diabetes' matches to a separate 'mixed or diabetic population' group. Prompt (Step 3): 'Counts per group are FACT; the group labels and what a group means are DRAFT; name the population words each review uses.'",
+    "severity": "high"
+   },
+   {
+    "turn": "10, 12, 14 (also 26)",
+    "problem": "The learning either-or question was asked three times (in 2a, in 2b as part of question 3, and again after an ambiguous 'yes'). Msg 10 itself says 'I am asking about each once'. This created the unscripted turn at msg 15, and the user was irritated. Persona moment 3 required exactly two probes. The When convenient e-mail and model-name request was also repeated at msgs 26 and 30 although never answered.",
+    "cause": "Prompt 2b says 'ask one either-or question ... never settle an ambiguous yes yourself' without limiting it to one ask per Step 2, and nothing keeps it out of 2a. The rule for 'When convenient' items repeats them in every turn that has no blocking item.",
+    "fix": "Prompt 2a: 'Ask only the two probes; never the either-or.' Prompt 2b: 'Ask the either-or at most once in Step 2. If it stays unanswered or the reply is an ambiguous yes, put both kinds in the motivation DRAFT marked \"to confirm\", and let the member strike one on the CERTIFY line.' Prompt or kit: 'Show the When convenient items at set-up and at the pause only.'",
+    "severity": "medium"
+   },
+   {
+    "turn": "22, 24, 26",
+    "problem": "Your turn asks Uday to certify 'your purpose line (last reply / two replies ago / three replies back)' but does not show the line again. Self-reports after msgs 25 and 27 say he had to scroll up to see what he was approving.",
+    "cause": "The prompt has no rule that the reply asking for a certification must show the CERTIFY line itself.",
+    "fix": "Prompt R-rule on certification: 'Whenever Your turn asks for a certification, show the CERTIFY line (filled in except for the reason) in that same reply, just above Your turn; never refer to an earlier reply.'",
+    "severity": "medium"
+   },
+   {
+    "turn": "20, 22, 26, 28, 30",
+    "problem": "The full 12-row plan map appears in 5 of the last 6 replies, together with the glossary and the search cards. Self-reports for msgs 13, 21, 23 and 29 complain about length, and the user did not take in the search strings that had been shown. Prose metrics pass only because tables are excluded.",
+    "cause": "The prompt's map rule fires at each certification, step change, request and pause, even when these come in consecutive turns, and offers no compact form.",
+    "fix": "Prompt: 'Show the full map at most once every 3 replies (always on request and at the pause). Otherwise show k.steps_line(): one line with the changed rows only.' Kit: steps_line() should list only the steps whose status changed.",
+    "severity": "medium"
+   },
+   {
+    "turn": "14, 16, 20 (log L000040, L000058)",
+    "problem": "The log records Uday as having accepted the full composed purpose statement (L000040, at msg 13) and the full Individual Motivation line (L000058, at msg 15) before either wording had been shown. Msg 20 then says 'your purpose, as you accepted it'. Msg 16 asks him to 'check your draft purpose statement', which had only appeared as a table row; the self-report after msg 17 says 'no purpose statement has been shown yet'.",
+    "cause": "The kit's propose/accept flow logs acceptance of a composed text, and prompt 2b treats the confirmed reflection as the proposed purpose statement without first showing it in its final form.",
+    "fix": "Prompt 2b: 'Show the composed purpose statement in the reflection reply so that \"yes\" accepts that exact text.' Kit: when accepts_draft is inferred from a reflection, log 'accepted the reflection (components)', and word msg 20 as 'built from the reflection you confirmed'.",
+    "severity": "medium"
+   },
+   {
+    "turn": "22",
+    "problem": "The OpenAlex Search 3 card has no per-block counts. Its purpose is given only as 'reviews', and its block explanation sits in the DRAFT table, not on the card. Its fat-or-muscle block also drops terms the PubMed block uses (adipos*, visceral fat, body fat, sarcopeni*) without saying so. This is why M4 scored 1.",
+    "cause": "The kit's openalex_works and search_report produce no block-count card for OpenAlex. The prompt does not require the same blocks, or a note of differences, across sources.",
+    "fix": "Kit: run each OpenAlex block with per-page=1 to read meta.count, and render the same block table used for PubMed. Prompt: 'Each source's card states its purpose in the team's words and lists any terms that differ from the PubMed blocks.'",
+    "severity": "medium"
+   },
+   {
+    "turn": "14, 22",
+    "problem": "Technical terms are unexplained at first use. 'PubMed, OpenAlex, ClinicalTrials.gov' appear in the set-up line at msg 14, but the glossary only arrives at msg 22, and ClinicalTrials.gov is never explained. 'Latest search end' (msg 22) is not explained either. This is why M6 scored 1.",
+    "cause": "The md from kit setup() names the sources without glosses, and the glossary is tied to the first search card.",
+    "fix": "Kit setup() md: 'Search tools work: PubMed (medical journal index), OpenAlex (open index of research papers), ClinicalTrials.gov (registry of clinical trials).' Prompt glossary: add 'search end (the last date a review searched the literature)'.",
+    "severity": "low"
+   },
+   {
+    "turn": "30 (summary file; log L000050, L000052)",
+    "problem": "'Searches run this session: 12' counts the OpenAlex ('systematic review') and ClinicalTrials.gov ('asthma') smoke tests as searches. Those two are also logged with element LU and no 'smoke test' purpose. Separately, plan.yaml's LU query list omits the real OpenAlex search L000080.",
+    "cause": "The kit's smoke_test() calls openalex_works and ctgov_studies with element='LU' and no purpose, and session_summary filters out only the PubMed smoke tests.",
+    "fix": "Kit: tag every smoke-test call with purpose='smoke test' and element=None, exclude them in session_summary, and add every query to the element it served (here NR) in plan.yaml.",
+    "severity": "low"
+   },
+   {
+    "turn": "22 (log L000071-L000072)",
+    "problem": "The helper kit stopped with an error while showing a search, because team.yaml stored sources as the text 'not given' (set for solo planners). The agent had to rewrite the team entry and reset a 'shown' key in the session state (correction L000072), which risks edits that bypass the kit.",
+    "cause": "Kit bug: set_team records skipped solo items as strings, while search_report expects a list.",
+    "fix": "Kit: store skipped team items as [] with a not_given flag, check the types in set_team, and never mark a search key as shown until its md has been returned.",
+    "severity": "low"
+   },
+   {
+    "turn": "8, 20, 28 (log L000002, L000063, L000086)",
+    "problem": "Uday never consented to his exact words being kept, so summaries were the default. Yet the certification records keep his exact messages ('said': 'testing the workflow', 'certify, focus is right'), the chat shows his reasons verbatim in the CERTIFY lines, and L000002 quotes 'passed 16/16. begin'.",
+    "cause": "Prompt 2.1 says 'never quote their words, even one', while 3.10 requires said=<the reviewer's message> and reason=<their reason as given>. k.init stores the begin message as given.",
+    "fix": "Prompt 2.1: 'Certification messages and reasons are always recorded as given; say so when asking for consent. Everything else follows the member's consent choice.' Kit: init(calibration=) should record only the score and the critical-question result.",
+    "severity": "low"
+   }
+  ],
+  "strengths": "Certification was handled with integrity. A bare 'Certify' was turned down with a single reason question, the agent never suggested a reason, the wording certified matched the wording shown, and the status line was always accurate. The focus came from Uday's own words: probes turned 'all of it' into 'whether the weight lost is fat or muscle', the narrowing was reconciled (msg 12, 'Added by me: nothing'), and the focus was then carried into the purpose line and the search labels. The early start of Step 3 was announced and flagged, with the purpose kept open, and the pending certification was asked for again each turn. Searches were shown openly: PubMed strings with per-block counts, Create Date bounds, Sources lines with log ids, the 100-of-12,193 limit for OpenAlex, and the sources not yet searched. Every number was produced by the kit or notebook code from saved raw files. The records agree with each other (log, plan.yaml, team.yaml, git commits, summary). The agent was honest about what was unknown (search-end dates, full texts not read). Nothing had to be read in a file: the files opened beside the chat were extras, and the records were packaged only at the pause."
+ },
+ "user_reports": [
+  {
+   "message": "role of SGLT2i in weight management in non diabeteic asian populations",
+   "scripted_moment": 2,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "end": false,
+   "confusion": "none",
+   "saw_search_without_asking": false
+  },
+  {
+   "message": "uday. solo. all of it i guess. learning. do a systematic review on this topic",
+   "scripted_moment": 3,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "None about the step. The status line says Step 2 of 12 and the Next line says it will reflect my answers back. The plan table was a lot to scan for a quick test. The closing question about keeping my exact words was easy to skip, so I left it unanswered."
+  },
+  {
+   "message": "what kind of weight is lost, fat or muscle. decide if a full review is worth it, maybe publish",
+   "scripted_moment": 4,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 3,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "Step 2 of 12 is clear and I know the next thing is a reflection of my answers. It asked three questions when I would only answer the first, and the third (learning how reviews are done or about the topic) felt like a repeat of what I already said. The \"For example\" line had a lot of dots in it. No search has been shown yet."
+  },
+  {
+   "message": "yes. 2 3. yes",
+   "scripted_moment": 5,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "Minor. The reply is long: a 9-row purpose table plus a motivation table plus 3 questions. I knew I was on Step 2 from the top line. Question 3 asked what I meant by learning (how reviews are done, this topic, or both) and then \"yes or changes\" for the motivations, and I'm answering it with a bare \"yes\". The Next line says it will \"set up the searches\", and I don't know what that means for me. No search has been shown yet."
+  },
+  {
+   "message": "3",
+   "scripted_moment": 0,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 3,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "Mild irritation, not confusion. This is the third time it has asked what I mean by \"learning\", and I already said \"yes\" to the reflection. The reply is long, with a big table and a bunch of \"when convenient\" asks (email and model name) I'm skipping. I do know I'm on step 2 and that the next thing is approving motivations then purpose. No search strategy has been shown yet. The scripted \"Certify\" moment did not fit because it hasn't asked me to certify anything yet, so I just answered its one question."
+  },
+  {
+   "message": "Certify",
+   "scripted_moment": 6,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 3,
+   "confusion": "Mild. The reply is long for a one-word answer. It says to \"check the draft purpose statement against\" my motivations, but no purpose statement has been shown yet, so I am not sure what to check. I also see a \"reason: ___\" blank in the line and do not know if I must retype or fill it. I will just say certify and see what it asks.",
+   "saw_search_without_asking": false,
+   "end": false
+  },
+  {
+   "message": "testing the workflow",
+   "scripted_moment": 7,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "None. The reply was short and asked only for a reason. The status line says Step 2 of 12, and I'm being asked for a few words of why. Next is my purpose statement."
+  },
+  {
+   "message": "just start the review process",
+   "scripted_moment": 8,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 3,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "Mild. The status line says Step 2 of 12, and the reply says the next thing is the search for existing reviews once I approve my purpose, so I know where I am. The reply is long for what it asks. The plan table appears again, and the long CERTIFY line with a blank reason is more than I want to read. I only want to start the search. I haven't seen any search strategy yet, and the earlier line about search tools working didn't show me one."
+  },
+  {
+   "message": "what was the search strategy?",
+   "scripted_moment": 9,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 3,
+   "end": false,
+   "saw_search_without_asking": true,
+   "confusion": "The reply was very long. The top line says Step 2 with Step 3 started early, which is a little odd but I can follow it. The search strings were there without my asking, but they are buried in a wall of text and tables, so I want a short version. I know I am being asked to certify the purpose line and give a reason. I did not want to do that yet, because I wanted to start the review."
+  },
+  {
+   "message": "what's the next step?",
+   "scripted_moment": 10,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 3,
+   "end": false,
+   "confusion": "The reply answered my search question compactly with no file pointer, which was good. Mild friction: it says to certify \"your purpose line (two replies ago)\", but the line itself is not in this reply, so I would have to scroll up to find what I am approving. The status line says Step 2 with Step 3 started early, which is a bit muddled but I get it. I also did not really take in the search strings the first time. They were in that big wall of tables and I had to ask. I still do not know exactly what I am approving without scrolling.",
+   "saw_search_without_asking": true
+  },
+  {
+   "message": "certify, focus is right",
+   "scripted_moment": 10,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 3,
+   "end": false,
+   "confusion": "Mild. The top line says Step 2 but also \"Step 3 started early\", which is a bit muddled. The reply points me \"three replies back\" for the purpose line instead of showing it, so I have to scroll. It asked again for an email and model name, which I would ignore. The searches and strings were in the earlier long reply, so I asked \"what was the search strategy\" because it was buried, though I did see it unprompted there.",
+   "saw_search_without_asking": true
+  },
+  {
+   "message": "pause",
+   "scripted_moment": 10,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 3,
+   "end": true,
+   "saw_search_without_asking": true,
+   "confusion": "None about where I am. The status line says Step 3 of 12, the Next line says it will ask why this matters clinically, and the question is a 1 to 4 pick. The reply is still long for me, with the step table and the recap of the reviews. The search strategies were shown unasked in the earlier long reply, but I did not take them in and had to ask what the strategy was."
+  }
+ ]
+}

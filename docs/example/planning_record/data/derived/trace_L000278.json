@@ -1,0 +1,23 @@
+{
+  "changed": [
+    "NR"
+  ],
+  "steps": [
+    [
+      {
+        "element": "RQ",
+        "flow": 26,
+        "strength": "strong",
+        "meaning": "The need directly informs the question.",
+        "status": "unsettled"
+      },
+      {
+        "element": "RO",
+        "flow": 6,
+        "strength": "weak",
+        "meaning": "The documented need shapes the objective.",
+        "status": "reopened"
+      }
+    ]
+  ]
+}

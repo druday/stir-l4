@@ -1,0 +1,9 @@
+region,A,C,description
+R01,fat,Asian,"fat, with an SGLT2 inhibitor against placebo, no treatment or usual care, in adults without diabetes; population: Asian"
+R02,fat,not Asian,"fat, with an SGLT2 inhibitor against placebo, no treatment or usual care, in adults without diabetes; population: not Asian"
+R03,lean,Asian,"lean, with an SGLT2 inhibitor against placebo, no treatment or usual care, in adults without diabetes; population: Asian"
+R04,lean,not Asian,"lean, with an SGLT2 inhibitor against placebo, no treatment or usual care, in adults without diabetes; population: not Asian"
+R05,water,Asian,"water, with an SGLT2 inhibitor against placebo, no treatment or usual care, in adults without diabetes; population: Asian"
+R06,water,not Asian,"water, with an SGLT2 inhibitor against placebo, no treatment or usual care, in adults without diabetes; population: not Asian"
+R07,function,Asian,"function, with an SGLT2 inhibitor against placebo, no treatment or usual care, in adults without diabetes; population: Asian"
+R08,function,not Asian,"function, with an SGLT2 inhibitor against placebo, no treatment or usual care, in adults without diabetes; population: not Asian"

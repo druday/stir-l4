@@ -1,0 +1,61 @@
+# Data-extraction form, version 1 (provisional, before the search)
+# STATUS: DRAFT shown to Uday on 2026-10-25 (session S3, Step 7, log L000373); Uday answered the two open rows and
+# accepted the other rows as drafted (log L000375): fat - whole-body fat only (row F2); Asian subgroup - race or
+# ethnicity as the study reports it, kept apart from the country where the study was done (rows P3 and S4).
+# CERTIFIED by Uday (solo) on 2026-10-25, session S3, log L000380 (Paper as an Object), reason as given:
+# "covers my outcomes". Changes from here on make version 2 (protocol/extraction_form_v2.yaml); this file is not edited.
+# Built from the certified Research Question (log L000370); rows marked "my suggestion" came from neither Uday nor a FACT.
+version: 1
+status: certified by Uday, solo (log L000380)
+based_on: {research_question: L000370, facts: [L000372, L000237, L000358, L000376], answers: [L000375]}
+every_value:
+  # how each value is kept (Paper as an Object rules)
+  status: [reported, not_reported, conflicting, unknown]
+  keep: [exact supporting passage, location in the paper, text tier (title, abstract, full text, supplement),
+         extractor (model, version, run id), timestamp, optional human override (who, value, reason, time)]
+  units: one tree per paper - study, group (arm), subgroup, outcome at each time point - as deep as the paper goes
+fields:
+  - {id: S1, part: study, record: "PubMed and DOI identifiers; one study key linking every report of the same study",
+     grain: report / study, came_from: "standard study features (core properties file)"}
+  - {id: S2, part: study, record: "design: randomized controlled trial (parallel or crossover) or controlled cohort; how groups were formed; who was blinded",
+     grain: study, came_from: "your question (study types); standard study features"}
+  - {id: S3, part: study, record: "trial registration number; funding source",
+     grain: study, came_from: "standard study features"}
+  - {id: S4, part: study, record: "country where the study was done (also one of the two marks of the Asian subgroup, kept apart from row P3)",
+     grain: dataset, came_from: "your question (any country); Uday's answer 2 c (L000375)"}
+  - {id: P1, part: people, record: "number enrolled and analysed in each group; age; percent women",
+     grain: dataset or arm, came_from: "standard study features"}
+  - {id: P2, part: people, record: "diabetes status: share with prediabetes; if people with diabetes were also enrolled, whether results for those without diabetes are given apart",
+     grain: dataset, came_from: "your question"}
+  - {id: P3, part: people, record: "Asian subgroup: race or ethnicity as the study reports it, kept apart from the country where the study was done (row S4); any results given for Asian participants apart",
+     grain: dataset or arm, came_from: "your question (Asian people as a subgroup); Uday's answer 2 c (L000375)", uses: [L000372]}
+  - {id: P4, part: people, record: "what the drug was given for (the condition)",
+     grain: study, came_from: "your question (whatever the drug is given for)", uses: [L000237]}
+  - {id: P5, part: people, record: "starting weight and body mass index",
+     grain: arm, came_from: "my suggestion"}
+  - {id: D1, part: drug, record: "which SGLT2 inhibitor, dose and treatment time",
+     grain: arm, came_from: "your question (any SGLT2 inhibitor, no minimum time)"}
+  - {id: D2, part: drug, record: "other treatment both groups get (for example usual medicines or a diet)",
+     grain: arm, came_from: "your question (another treatment only when both groups get the same one)"}
+  - {id: C1, part: comparison, record: "placebo, no treatment or usual care, as the study describes it",
+     grain: arm, came_from: "your question"}
+  - {id: O1, part: outcomes, record: "total weight change",
+     grain: outcome, came_from: "my suggestion (needed to tell what share of the loss is fat, muscle or water)"}
+  - {id: F1, part: outcomes, record: "whole-body fat: fat mass, percent body fat",
+     grain: outcome, came_from: "your question", uses: [L000372]}
+  - {id: F2, part: outcomes, record: "fat in particular places: not recorded - whole-body fat only (fat under the skin, around the belly organs or inside organs such as the liver or heart is not recorded)",
+     grain: outcome, came_from: "Uday's answer 1 a (L000375)", uses: [L000372, L000376]}
+  - {id: M1, part: outcomes, record: "lean or fat-free mass",
+     grain: outcome, came_from: "your question", uses: [L000372]}
+  - {id: M2, part: outcomes, record: "muscle itself: muscle mass, area or volume",
+     grain: outcome, came_from: "your question", uses: [L000372]}
+  - {id: W1, part: outcomes, record: "body water: total; outside or inside cells and plasma volume when reported",
+     grain: outcome, came_from: "your question; the parts are my suggestion", uses: [L000372]}
+  - {id: M3, part: outcomes, record: "strength; physical performance, each as the study tests it",
+     grain: outcome, came_from: "your question", uses: [L000372]}
+  - {id: O2, part: outcomes, record: "the share of the weight lost that is fat, lean or water, when the study gives it",
+     grain: outcome, came_from: "my suggestion"}
+  - {id: E1, part: every outcome, record: "measuring method",
+     grain: outcome, came_from: "your question (the measuring method recorded)", uses: [L000358]}
+  - {id: E2, part: every outcome, record: "every time point; for each group the number analysed, the starting value and the change or end value with its spread; the difference between groups with its confidence interval; how missing data were handled",
+     grain: result unit (group x outcome x time point), came_from: "my suggestion, from the standard study features"}

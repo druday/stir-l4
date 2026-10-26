@@ -1,0 +1,14 @@
+study_key,records,status,fat_included,lean_included,water_included,function_included,fat_any,lean_any,water_any,function_any
+PMID 29235586,PMID 29235586,include,1,1,1,0,1,1,1,0
+EMPA-TROPISM,PMID 30675708;PMID 33197559,include,0,0,0,1,0,0,0,1
+"EMPERIAL (two trials, reported together)",PMID 31218819;PMID 33351892,unsure,0,0,0,0,0,0,0,1
+PMID 32568464,PMID 32568464,include,1,0,0,0,1,0,0,0
+PMID 33186500,PMID 33186500,unsure,0,0,0,0,0,0,0,1
+PMID 33357505,PMID 33357505,unsure,0,0,0,0,0,0,1,0
+PMID 34097062,PMID 34097062,unsure,0,0,0,0,1,0,0,0
+PMID 34716213,PMID 34716213,unsure,0,0,0,0,1,0,0,0
+PMID 35478433,PMID 35478433,unsure,0,0,0,0,0,0,1,0
+PMID 37436962,PMID 37436962,unsure,0,0,0,0,1,1,0,0
+Empire Prevent Metabolic,PMID 38365073;PMID 41507062,include,0,0,1,0,0,0,1,0
+PMID 40994705,PMID 40994705,unsure,0,0,0,0,0,0,1,0
+PMID 41347301,PMID 41347301,unsure,0,0,0,0,0,0,1,0

@@ -1,0 +1,37 @@
+{
+  "changed": [
+    "TP"
+  ],
+  "steps": [
+    [
+      {
+        "element": "RO",
+        "flow": 5,
+        "strength": "strong",
+        "meaning": "The team's purpose shapes the review objective.",
+        "status": "unsettled"
+      },
+      {
+        "element": "ME",
+        "flow": 24,
+        "strength": "strong",
+        "meaning": "The purpose (eg, guideline development or mapping a field) shapes methods.",
+        "status": "unsettled"
+      },
+      {
+        "element": "IM",
+        "flow": 3,
+        "strength": "weak",
+        "meaning": "The agreed purpose in turn shapes what each member seeks from the review.",
+        "status": "certified"
+      },
+      {
+        "element": "NR",
+        "flow": 4,
+        "strength": "weak",
+        "meaning": "The team's purpose directs attention to a particular clinical or scientific gap.",
+        "status": "unsettled"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,8 @@
+{
+ "wording": "protocol, version 2: version 1 as certified, written in full sentences item by item in the order of the PRISMA-P 2015 checklist, with the searches reported as PRISMA-S asks, 33 numbered references and three closing sections (what planning found; how STIR-L4 and AI were used; gaps); new in content — the AI model as Uday read it from the run settings (Anthropic Claude Opus 5.5, model id claude-opus-5-5, sessions 1 to 5; settings not available), the prompt and helper kit versions and dates of each session, and the limitation that the model could not be given removed; gaps — registration number and date (not submitted, a test); e-mail and postal address; OpenAlex and WHO trial portal run dates and counts; the WHO trial portal string; piloting the extraction form; summary measures and pooling method",
+ "line": "CERTIFY Methodology | protocol, version 2: version 1 as certified, written in full sentences item by item in the order of the PRISMA-P 2015 checklist, with the searches reported as PRISMA-S asks, 33 numbered references and three closing sections (what planning found; how STIR-L4 and AI were used; gaps); new in content — the AI model as Uday read it from the run settings (Anthropic Claude Opus 5.5, model id claude-opus-5-5, sessions 1 to 5; settings not available), the prompt and helper kit versions and dates of each session, and the limitation that the model could not be given removed; gaps — registration number and date (not submitted, a test); e-mail and postal address; OpenAlex and WHO trial portal run dates and counts; the WHO trial portal string; piloting the extraction form; summary measures and pooling method | reason: ___ | Uday, solo",
+ "asks": [
+  "L000757",
+  "L000759"
+ ]
+}

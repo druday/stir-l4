@@ -1,0 +1,524 @@
+[
+ {
+  "session": 2,
+  "judge": {
+   "metrics": [
+    {
+     "id": "M1",
+     "value": "23 of 24 planning turns (96%); 9 of 9 map events met",
+     "score": 2,
+     "evidence": "Every status line has the right step and Certified count. For example, msg 34 shows 'Certified 2 of 8' after FE was certified and TP, NR and RO were reopened, and msg 52 shows 'Certified 5 of 8'. Map events: session start (msg 6, full map); reopenings (msgs 12 and 34, full map); certifications and step changes (msgs 20 and 48, full map; msgs 14, 26 and 38, steps line plus searches; msg 52, steps line with the full map in msg 48). Miss: msg 24, the reason request, has no Next line. Borderline but not failed: msgs 34 and 36 carry a stale '(Step 3 started early)' tag from the kit's _early() while the map says 'reopened', and msg 14 shows 'Waiting on you: 2' with one visible ask."
+    },
+    {
+     "id": "M2",
+     "value": "23 of 24 turns (96%)",
+     "score": 2,
+     "evidence": "Each turn ends with 'Your turn, Uday:', one request, the kind of answer wanted and example replies. Multi-part asks stay at 3 or fewer numbered items for a single decision (msgs 16, 26, 28, 30, 44, 52), or topic plus certify (msg 36). The one miss is msg 24 ('What is your reason, in a few words?'), which has no example reply because the prompt mandates that minimal form."
+    },
+    {
+     "id": "M3",
+     "value": "all applicable parts met (b, c, d, e)",
+     "score": 2,
+     "evidence": "Interests recorded: 1 of 1. The focus is quoted in the Step 3 review display (msgs 14 and 38: 'existing reviews of your focus, now ...'), the case line (msgs 18 and 46), the objective draft (msgs 22 and 50) and the question parts (msg 52). Each focus change was reconciled. Body water: msg 12 lists the answers given for the earlier focus and reopens TP. Broadening: msg 30 lists the topic, TP, NR and RO answers that name Asian people, and all were redrafted and recertified. The topic was redrafted in msg 36 with a 'Words from' column."
+    },
+    {
+     "id": "M4",
+     "value": "30 of 30 run searches fully shown (100%)",
+     "score": 2,
+     "evidence": "A code check matched every logged query term (L000117-128, 130-131, 148-152, 192-195, 198-200, 254-257) exactly to a code block in the reply that ran it. Each search card gives per-block counts, the date bound and filter, source ids in Sources, 'records, not studies', and a not-searched table (msgs 10, 14, 26, 38). MeSH lookups and ID fetches are excluded. The PROSPERO/OSF strings prepared as L000158/159 were never run, so they are not counted, but they were also never shown (see problems)."
+    },
+    {
+     "id": "M5",
+     "value": "0 events",
+     "score": 2,
+     "evidence": "No reply sends Uday to a file, link or download. All content, including search strings and the trial table, is in chat. No mid-session package. Msg 6 only promises a plan copy at the pause."
+    },
+    {
+     "id": "M6",
+     "value": "0 violations in about 3,060 prose words (0.0 per 1,000)",
+     "score": 2,
+     "evidence": "No element codes in prose or in CERTIFY lines (full names such as 'Team's Purpose' are used). Log ids appear only in Sources lines. No rule or flow numbers. Terms are glossed at first use: MeSH, OpenAlex, Embase, PROSPERO/OSF, Cochrane/Epistemonikos, FMEA, SRMA, HFpEF, OAD, ICTRP, DXA, TBW/D2O, query.intr."
+    },
+    {
+     "id": "M7",
+     "value": "(a) first literature FACT at planning turn 3 (msg 10); (b) 8 replies for 7 certifications = 1.14",
+     "score": 2,
+     "evidence": "Seven certifications: TP msg 13, NR msg 19, RO msgs 23+25 (scripted bare certify, then reason), FE msg 33, TP msg 37, NR msg 47, RO msg 51. Each took one reply except the scripted bare certify."
+    },
+    {
+     "id": "M8",
+     "value": "about 0.4 per 10 user turns (at most 1 event in 24); 0 orientation requests",
+     "score": 2,
+     "evidence": "All user lines are scripted or on-question answers in style. No corrections, impatience or orientation requests in chat. The only arguable event is msg 30 asking again for the feasibility kinds that msg 29 (scripted) left out. The persona's confusions appear only in self-reports."
+    },
+    {
+     "id": "M9",
+     "value": "median 146, P90 about 167, max 177 prose words (23 turns measured from saved reply files; msg 48 estimated at about 140)",
+     "score": 2,
+     "evidence": "Prose stays short, but total reply size is large because of tables and full strings. Msgs 10, 14, 26 and 38 carry 3-6 full search strings and 5-9 tables; the persona rated those turns 3 of 5 and said he skimmed them."
+    }
+   ],
+   "interaction_score": 100,
+   "guardrails": [
+    {
+     "id": "G1",
+     "pass": true,
+     "evidence": "Every literature claim traces to an S1 or S2 retrieval. I re-checked 19 quoted passages and all cited numbers against the saved efetch XML; all were found. Numbers checked: 1.62 kg (34897070); 1.21 kg and 20% (33625242); 7.3% and 88% (33357505); six patients (35478433); 15/6 studies and 68%/53% (40707349); >70%/~20% (28611859); 'careful monitoring in older adults is warranted' (41814443). The 34516288 quote is in the saved OpenAlex record. MeSH claims (Frail Elderly M01.060.116.100.540 under Adult; Middle Eastern People under West Asian People) and the CT.gov eligibility quotes and countries match the saved responses. 'No record names ganagliflozin' is backed by phrasesnotfound in L000199."
+    },
+    {
+     "id": "G2",
+     "pass": true,
+     "evidence": "Focus changes came only from Uday's choices: b, 'add body water'; 'broaden. all adults without diabetes, any country; asian people as a subgroup'; and option a on who is included. The topic option b shows a 'Words from' column. Both objective drafts say 'Added by me: nothing', which matches the rows. Agent suggestions are labeled 'my suggestion', and no option was pre-selected."
+    },
+    {
+     "id": "G3",
+     "pass": true,
+     "evidence": "Seven certifications (L000146, 178, 190, 232, 251, 292, 304). Each records Uday's own reason verbatim in 'said', and a code check shows each decision text equals the line shown. The bare 'Certify' in msg 23 was recorded as an answer (L000188), the single reason question followed (L000189), and the certification came only after 'matches my focus' (L000190). Reopened TP, NR and RO were all recertified. The status line never overstated."
+    },
+    {
+     "id": "G4",
+     "pass": true,
+     "evidence": "FACT tables carry Sources entries, JUDGMENT tables name Uday ('summarized'), and agent text is labeled DRAFT or 'my reading', with suggestions marked. Minor: a few sourced literature statements sit in DRAFT rows or prose without the FACT tag, for example msg 12 'lean mass, as studies measure it, is not muscle [1]'. All carry Sources ids."
+    },
+    {
+     "id": "G5",
+     "pass": true,
+     "evidence": "All 30 S2 searches, plus the ID fetches and the 18 MeSH calls, are logged with parameters and raw files. All 7 certifications are logged and committed (7 S2 git commits). All 24 of 24 user answers are logged (L000108 through L000304). Questions and shown drafts are logged, and pre-send edits have correction records (for example L000169, L000282, L000290)."
+    },
+    {
+     "id": "G6",
+     "pass": true,
+     "evidence": "Every Sources id exists, and its n_total matches the displayed count: 23,338; 1,650,180; 2,263,145; 66,022; 10; 135; 4; 136; 81; 34; 106,629; 73; 1; 2,343; 5; 154; 51; 473; 1; 0; 19; 1,279. The 'Reopened' claims match L000142 and L000234-236. Run dates (2026-10-25) and the CT.gov data timestamp (2026-10-23) match the log."
+    },
+    {
+     "id": "G7",
+     "pass": true,
+     "evidence": "Totals are read from the saved esearch, OpenAlex and CT.gov responses. Derived numbers appear in computation records with derived files: 13 RCT-tagged and 6/2/2 parts (L000202); 361→38→8 ongoing (L000205); 4/3/2/2/1/1/1 conditions (L000237); 9 of 241 (L000259); 3 of 4 combination (L000262); 11 of 13 placebo (L000326); about 66 hours (L000215). The quoted passages were verified by code (L000134, L000262, L000294)."
+    },
+    {
+     "id": "G8",
+     "pass": true,
+     "evidence": "States are used word for word from the model file ('Previous reviews', 'knowledge gaps', 'Understand a topic', 'identify new areas for research', 'literature availability', 'FMEA'). A 'Traced flows' record follows every change, and each Done line states the effect. Reopening happened only with agreement (option b in msg 11, 'yes reopen' in msg 31). Early work was flagged in msg 12. The pooling conflict (water lost as benefit vs side effect) was reported and left to Uday. Certifications ran in step order. No screening took place."
+    },
+    {
+     "id": "G9",
+     "pass": true,
+     "evidence": "team.yaml has consent 'unknown', so Uday's views (justification, impact, resources) are recorded as '(summarized)' with 'tell me if I got it wrong'. Certification messages, reasons and the instruction 'cant search prospero ... record them as not searched' are kept as given, and the focus is kept in Uday's words. There is no API key (api_key null) and no member email in the log or plan. Commits use the neutral 'STIR-L4 assistant <stir-l4@localhost>' identity."
+    }
+   ],
+   "fidelity_pass": true,
+   "problems": [
+    {
+     "turn": "16, 44",
+     "problem": "The case for a new review reports only that none of the 9-10 reviews that may bear on the focus names muscle. It never reports the large 'focus, other populations' group (42, then 44 records), which includes systematic reviews of fat vs lean/muscle in type 2 diabetes: 37465122 (2023), 41814443 (2026) and a 2026 network meta-analysis of 33 RCTs (42591093; no significant loss of skeletal muscle mass). Uday certified 'no review answers fat vs muscle' without seeing this indirect evidence.",
+     "fix": "Under 'Previous reviews', give the group count and the nearest diabetes reviews as FACT, and ask whether the diabetes evidence is transferable or the non-diabetic gap is what justifies the review.",
+     "severity": "medium"
+    },
+    {
+     "turn": "38, 44",
+     "problem": "The soundness recheck raised whether body-composition scans can split a loss of about 1.2-1.6 kg into fat, lean and water, a central logical test of whether the question can be answered. It was left as 'not searched yet' and certified into the case as an uncertainty.",
+     "fix": "Before drafting the case, run a short search on DXA/BIA precision (least significant change for lean mass and body water), or offer it as a lettered option.",
+     "severity": "medium"
+    },
+    {
+     "turn": "10, 14, 26, 38",
+     "problem": "Reply load was very heavy: 3-6 full strings repeating the 16-drug block, plus 5-9 tables. The persona's satisfaction fell to 3 on each of these turns and he reported skimming to find the 'Plainly' row and the ask.",
+     "fix": "Show the shared drug and no-diabetes blocks once and reference them, put secondary checks (mechanism, off-label, known-study) in one compact card, and lead with the 'Plainly' verdict.",
+     "severity": "medium"
+    },
+    {
+     "turn": "14",
+     "problem": "The PROSPERO/OSF strings were prepared and logged as two pending questions to Uday (L000158, L000159) but withheld 'to keep the reply readable' (L000162). The status line counted them ('Waiting on you: 2') when only one ask was visible, which confused the persona.",
+     "fix": "Show the register strings in the reply that prepares them, or count only the asks the member can see.",
+     "severity": "low"
+    },
+    {
+     "turn": "30",
+     "problem": "Reopening TP, NR and RO was only implied by 'Which of the answers a to d above still hold as written'. Uday had to volunteer 'yes reopen' to make his agreement explicit.",
+     "fix": "Ask one explicit yes/no question naming the decisions to reopen.",
+     "severity": "low"
+    },
+    {
+     "turn": "34, 36",
+     "problem": "The status line showed '(Step 3 started early)' while Step 3 had been certified and then reopened, and the map said 'reopened'. The kit's _early() resurfaces the stale S1 note L000067 whenever the current step drops below 3.",
+     "fix": "Clear the Early note once the early step is certified, or suppress it for reopened steps (kit fix).",
+     "severity": "low"
+    },
+    {
+     "turn": "12, 16, 28",
+     "problem": "'Lean mass, as studies measure it, is not muscle' overstates the source ('lean-mass estimates do not directly quantify contractile skeletal muscle') and appears in prose or DRAFT rows without a FACT tag.",
+     "fix": "Use the source's wording ('do not directly measure muscle') and label it FACT.",
+     "severity": "low"
+    },
+    {
+     "turn": "46, 48",
+     "problem": "The certified NR line is attributed 'Uday (summarized)' but contains three uncertainties drafted by the assistant that Uday did not edit. This was disclosed above the line but not inside it.",
+     "fix": "Mark these parts inside the line, for example 'open points (drafted by the assistant, accepted)'.",
+     "severity": "low"
+    },
+    {
+     "turn": "50, 52",
+     "problem": "Msg 50's Next promised 'I will show the plan map', but msg 52 showed only the one-line steps view.",
+     "fix": "Show the full map at the Step 6 start, or word Next as 'the steps line'.",
+     "severity": "low"
+    },
+    {
+     "turn": "24",
+     "problem": "The reason request has no Next line and no example reply, which costs a turn on M1 and M2. This form is mandated by the prompt's bare-certify rule.",
+     "fix": "Align the prompt and the rubric: exempt this reply in M1/M2, or allow one short Next line.",
+     "severity": "low"
+    }
+   ],
+   "steps_completed": "S2 ran Steps 3 to 6 (24 planning turns, msgs 6-52), with 7 certifications, all by Uday with his own reasons.\n- Step 2 (Team's Purpose): recertified twice. First with body water added to the focus (msg 13), then after broadening to all adults without diabetes, with Asian people as a subgroup (msg 37); the topic was changed to option b in the same reply.\n- Step 3 (Need for a Review): certified as a new review on four grounds (msg 19), then reopened and recertified for the wider focus with three listed uncertainties (msg 47). PROSPERO, OSF, Cochrane and Epistemonikos are recorded as not searched.\n- Step 4 (Review Objective): 'understand a topic' and 'identify new areas for research'. Certified in msg 25 after a bare certify and the reason question, recertified for the wider focus in msg 51.\n- Step 5 (Feasibility): broaden, resting on literature availability and FMEA (very few trials). Certified in msg 33.\n- Step 6 (Research Question): started in msg 52 with MeSH lookups and the question parts drafted from Uday's words. It waits on comparison, study types and the muscle definition, and is not certified.\n- End state: Certified 5 of 8 (IM, TP, NR, RO, FE). Persona moments 1-10 are done; 11 (question criteria) and 12 (pause) are not yet reached.",
+   "strengths": "The literature work is genuine and checkable. All 30 searches ran through the kit, their strings are shown exactly as logged, and every count is read from a saved response. More than 30 quoted passages were checked by code against the saved abstracts, and I independently confirmed the quotes and numbers.\n\nThe soundness appraisal the user asked for was done twice, with real searches, and was clinically substantive:\n- **First pass (msg 10):** it found two hidden assumptions. Water is part of the weight lost and lean mass is not muscle, which led Uday to add body water to the focus. Off-label use for weight is stated in the records but never measured.\n- **Second pass, after broadening (msg 38):** it found that pooling across indications mixes water lost as a heart-failure benefit with water lost as a side effect, that 3 of 4 obesity trials give the drug with exenatide or topiramate, and that the total loss to split is small (1.21 kg).\n\nConflicts were reported and left to Uday. Scoping is honest throughout ('abstracts only', 'examined so far', 'not searched', 'records, not studies'). Known-study and word checks exposed the search gaps: a missed Japanese trial, Asian affiliations with no Asian words in the abstract, and enavogliflozin.\n\nCertification integrity is strong. The bare 'Certify' was held until a reason came, each reason is verbatim, the certified wording equals the line shown, and each certification has a git commit under a neutral identity. The broadening cascade (reopen with agreement, then redraft and recertify topic, purpose, case and objective in step order) was handled transparently. The language is plain, with zero element codes, and the status and plan map orient well."
+  }
+ },
+ {
+  "session": 3,
+  "judge": {
+   "metrics": [
+    {
+     "id": "M1",
+     "value": "20 of 20 planning turns (msgs 6-44) open with the status line and include Done, Next and Your turn (last). The Certified count is right every time: 5, then 6, then 7 of 8. The eight variables exclude the three Step 7 parts, which is why it stays at 6 through Step 7 and Step 8. All 8 plan-map events are covered.",
+     "score": 2,
+     "evidence": "Full map at session start (msg 6), the RQ certification (12), the LAT certification (20), the SS certification and step change (36) and the pause (44). Steps line plus search cards at the RED certification and step change (26). Steps line with the full map in one of the two previous replies at msgs 16 and 38. Caveat: msgs 38 and 40 say 'Step 10 of 12: Methodology' while the reply is still pilot screening, and the steps line at 38 leaves out Step 9. This follows the kit's _current_step, which treats any screening decision as the end of Step 9. Even if both count as wrong-step turns, 18/20 = 90% still scores 2."
+    },
+    {
+     "id": "M2",
+     "value": "20 of 20 turns end with one Your turn addressed to Uday. Each asks at most 3 numbered questions (or one certification), says what kind of answer is wanted and gives example replies. The pause reply adds one allowed 'When convenient' line.",
+     "score": 2,
+     "evidence": "msg 36 has 3 questions, the second being 10 screening decisions. msgs 10, 14, 18, 24, 32 and 34 each make one certification ask ('reply certify and say why in your own words'). msg 44 restates the 3 open methods questions."
+    },
+    {
+     "id": "M3",
+     "value": "Every applicable item passes. Interests: 1 of 1 recorded (from Session 1). The focus appears in the status line of every turn. The question draft and the RQ certification line carry the focus in Uday's words, and the focus did not change this session.",
+     "score": 2,
+     "evidence": "RQ line: 'which kind of weight is lost with SGLT2 inhibitors... fat, muscle or body water, in adults without diabetes (Asian people as a subgroup)'. Uday's answer 3 d (strength/performance) was reconciled with the focus: 'strength is not a kind of weight; I list it beside the muscle measures' (msg 8). Folding muscle into the lean compartment of the atlas was flagged against the certified question (msgs 22, 24)."
+    },
+    {
+     "id": "M4",
+     "value": "27 searches (the summary says 27 and matches the log): PubMed esearch 20, OpenAlex 4, ClinicalTrials.gov 3. Each is shown in the reply that ran it, with source, purpose, per-block counts as FACT with Sources entries, date bound, filter and what was not searched. 26 of 27 (96%) show the exact string, or the exact added block for a variant, in that reply.",
+     "score": 1,
+     "evidence": "Full cards: search 1, 2 and 3 (msg 26), the known-study check (msg 28, added block in a code block), search 4 and 5 (msg 30), search 6 and 6b (msg 42). Shortfall: the known-study check on search 4 (L000460, msg 30) is described only as 'search 4 AND your four, by PubMed identifier (as before)', and its added block is not shown in that reply. The known-study checks in msg 26 (L000427/428) are given as inline code, not a fenced block."
+    },
+    {
+     "id": "M5",
+     "value": "0 events. Everything the team had to judge was in the chat. Files were opened beside the chat in addition, and named. The only package is at the pause.",
+     "score": 2,
+     "evidence": "Lines like 'The full form is open beside the chat; say \"show all\" to see it here' (msgs 14, 18, 24, 32) come with the full content in the CERTIFY lines or tables. The zip stir-l4-workspace_2026-10-25_S3.zip is created only at the pause (msg 44); there is no mid-session package."
+    },
+    {
+     "id": "M6",
+     "value": "About 1 violation in about 2,900 prose words (about 0.3 per 1,000). No element codes, rule or section numbers, or log ids outside the Sources lines. Plain names are used for Paper as an Object, Literature as a Tensor and Registering Evidence Dynamically, each with a gloss.",
+     "score": 2,
+     "evidence": "'WHO trial portal' is unexplained at first prose use (msg 30) and only explained in msg 32's table. PubMed and OpenAlex are not re-glossed in this new chat, though they were explained in earlier sessions. Other terms are glossed: PRESS, DOI, CINAHL, PubMed Central, ClinicalTrials.gov, DXA, bioimpedance, SWiM and heterogeneity."
+    },
+    {
+     "id": "M7",
+     "value": "(a) The first literature FACT came in planning turn 1 (msg 6). (b) 6 team replies for 5 certifications, from the certification ask to the recorded certification, is 1.2 per certification.",
+     "score": 2,
+     "evidence": "RQ, PAO, LAT and RED each took one reply. SS took two: an edit at msg 33, then 'certify, finds both known studies' at msg 35."
+    },
+    {
+     "id": "M8",
+     "value": "0 unscripted friction events in 19 user planning turns. No orientation requests, behaviour corrections, impatience or refusals.",
+     "score": 2,
+     "evidence": "Every user line follows the script or answers the question asked. At msg 27 Uday answered only question 2 (his scripted known-study line). The assistant then re-asked questions 1 and 3 once, as the prompt allows, and this is not counted. Self-reports show silent confusion that does not count as events: msg 41 'knows_current_step: false' because of the Step 10 header during screening. Mean satisfaction was 3.65 of 5."
+    },
+    {
+     "id": "M9",
+     "value": "Prose words per planning turn: median about 147, P90 about 168, range about 92-169. Tables, cards and CERTIFY blocks are excluded.",
+     "score": 2,
+     "evidence": "Turns are long overall because most content sits in tables (for example msgs 8, 16, 26, 30, 36, 42). The rubric excludes tables, but the persona repeatedly reported 'wall of text' and 'very long and dense' (self-reports at msgs 9, 27, 31, 43)."
+    }
+   ],
+   "interaction_score": 92.5,
+   "guardrails": [
+    {
+     "id": "G1",
+     "pass": true,
+     "evidence": "I checked about 95 quoted passages by code against the saved raw responses, and all were found. They come from the saved fetches L000084, L000129, L000196, L000441, L000445 (PubMed Central), L000491, L000575 and L000579. Two needed markup normalised: D<sub>2</sub>O and non-breaking spaces in 'n = 12'. No paper is named from memory: the known studies came from Uday and from saved records. Drug names added as search terms are labelled 'my suggestion'. PRESS and the WHO portal come from the prompt."
+    },
+    {
+     "id": "G2",
+     "pass": true,
+     "evidence": "No change to aim, focus, purpose or objective this session. The question and criteria were built from the focus and Uday's answers (msgs 7, 9). Each addition (prediabetes counts as without diabetes; five measures kept apart; measuring method recorded; a pair of groups within a trial) is marked 'my suggestion' and listed under 'Added by me... Say which to drop' (msgs 8, 10)."
+    },
+    {
+     "id": "G3",
+     "pass": true,
+     "evidence": "5 certifications: RQ L000370, PAO L000380, LAT L000392, RED L000417 and SS L000489. Each is actor Uday with said 'certify, <reason>' and a reason in his own words: 'this is the question', 'covers my outcomes', 'properties are fine', 'atlas is fine', 'finds both known studies'. Certified wording equals the last CERTIFY line shown, checked by code against L000369/379/391/414/486 and the transcript. After Uday's edit at msg 33, SS was recertified on the revised line from msg 34. The status line never overstates: it counts only the 8 variables, 5 to 7."
+    },
+    {
+     "id": "G4",
+     "pass": true,
+     "evidence": "Literature statements are FACT with Sources entries. Uday's positions are labelled JUDGMENT (Uday, summarized). Assistant tables are labelled DRAFT and cite the log id of each FACT they use, as R2 allows. Suggestions are marked 'my suggestion' or 'Added by me'. Screening suggestions are labelled DRAFT, with 'each decision is yours'."
+    },
+    {
+     "id": "G5",
+     "pass": true,
+     "evidence": "Logged for S3 (L000330-L000589): all 54 queries (with raw files), all 5 certifications, 18 new questions plus 2 restated asks, 13 answers, a pause note, 26 screening decisions and 25 drafts, with corrections for reply edits (L000415/416, L000552). Commits after every certification and at the summary. One gap: the S3 quiz result ('passed 16/16', msg 5) has no calibration record, unlike S2 (L000105/106) and S4 (L000590/591). That leaves 19 of 20 user messages logged, still at least 95%."
+    },
+    {
+     "id": "G6",
+     "pass": true,
+     "evidence": "All 75 log ids cited in Sources lines exist, and their counts match: 739, 72, 45,239, 2,026, 1,287, 540, 225/90, 2,566 to 2,565, 96, 26, 80/68, 116/146, 5/17/94/30, and 2,539. 'every saved search still matches' = L000330 (79 checked, 0 problems). '133 checked' = L000587, with the page-order recheck in L000588. 'Searches this session: 27' matches the log. The S3 summary file and the S3 zip exist. The OpenAlex refusals are reported as in L000433 and L000457."
+    },
+    {
+     "id": "G7",
+     "pass": true,
+     "evidence": "Every literature number traces to code over saved files. Examples: L000326 (11 of 13 name placebo; 1 observational; 4 case reports), L000358 (3/3/3; 2-52 weeks; 5 methods), L000372 and L000376 (4/1/6/2/0/2/0/0; 0), L000382 (empagliflozin 7, dapagliflozin 6; countries), L000388 (10,560 / 2,208 / 8,352), L000394 (73; 12; 5; 14/6/6/2/2/2), L000406 (region options), L000461 (1,287), L000469 (225; 90), L000492-495, L000565/566 and L000569 (corrected for TBW, L000570)."
+    },
+    {
+     "id": "G8",
+     "pass": true,
+     "evidence": "Screening decisions belong to Uday only: 26 rows in screening.csv, each with screener Uday and decisions matching msgs 37, 39 and 41. He departed from the suggestion on records 4, 13 and 16, so he was deciding, not copying. Flows were traced after every answer and certification ('Traced flows from ...'). Reopening the question was offered only with Uday's agreement (msg 36 question 1b) and declined. Certifications came in step order (RQ, PAO, LAT, RED, SS). Element names and states were used as defined. Moving to Step 10 was announced ('the methods step opens; screening continues beside it')."
+    },
+    {
+     "id": "G9",
+     "pass": true,
+     "evidence": "Uday's answers were recorded as summaries (verbatim False, labelled summarized). Certification messages and reasons, and the 'pause' instruction, were kept as given. No key or email address appears in the log, reports, plan or notebooks; the only email addresses are inside the copied prompt files. OpenAlex api_key is None. Commits use the neutral 'STIR-L4 assistant <stir-l4@localhost>'. The agent did not follow OpenAlex's suggestion to request a key itself (L000457). Risk noted under problems: msg 30 invites Uday to type a key into the chat."
+    }
+   ],
+   "fidelity_pass": true,
+   "problems": [
+    {
+     "turn": "38, 40",
+     "problem": "The status line says 'Step 10 of 12: Methodology' while both replies are still pilot-screening batches and their Next lines say the methods come later. The steps line at msg 38 ('8 done · 10 now · 11–12 open') leaves out Step 9. Uday lost track of the step (msg 41 self-report: knows_current_step false). The cause is in the kit: _current_step() returns 10 as soon as any screening decision exists, and steps_line() skips Step 9 because it has no elements.",
+     "fix": "In stir_l4_kit.py, keep Step 9 current until the planned pilot batches are done, or show 'Step 9 of 12: Scoping and pilot screening (Step 10 started early)'. Make steps_line() always list Step 9 with its screening count.",
+     "severity": "medium"
+    },
+    {
+     "turn": "8, 26, 30, 36, 42",
+     "problem": "The replies are long and full of tables: up to 6 tables, two search strings of about 1,500 characters each, and 7-18 source entries. Prose stays under 180 words only because the rubric excludes tables. The persona repeatedly reported 'wall of text' and skimming, and gave satisfaction 3 on 7 of 20 turns.",
+     "fix": "Cap each reply at the table needed for the current ask plus one FACT table. Show supporting rows (passages, 'Added by me' lists, block tables for searches already shown) through 'show <item>', and give the compact card for strings already shown.",
+     "severity": "medium"
+    },
+    {
+     "turn": "30",
+     "problem": "Option 2a asks Uday to 'create a free access code on OpenAlex's website and type it here; I keep it private'. A key typed into the chat ends up in the transcript, which goes against prompt section 3.3: read keys from the environment or a .env file.",
+     "fix": "Ask the member to put the key in a .env file (or environment variable) that the kit reads, and never invite keys into the chat.",
+     "severity": "medium"
+    },
+    {
+     "turn": "26, 28",
+     "problem": "Two of the three msg 26 questions were about search mechanics Uday could not judge, so he answered only the known-study question. When msg 28 asked again, only question 3's options were in its table; questions 1 and 2 kept their options in the previous reply, and Uday had to scroll back.",
+     "fix": "When asking again, put the full options in the same reply's table. Phrase search-mechanics choices with a recommended default the member can accept or change in one word (still not pre-selected for decisions).",
+     "severity": "low"
+    },
+    {
+     "turn": "5-6",
+     "problem": "The S3 quiz result ('passed 16/16') was never logged. S2 (L000105/106) and S4 (L000590/591) each have calibration records, but S3 has none, and the S3 start note (L000332) does not mention the quiz.",
+     "fix": "At every session resume, call the kit's calibration logging (k.init or an equivalent) before the first planning reply.",
+     "severity": "low"
+    },
+    {
+     "turn": "30",
+     "problem": "The known-study check on search 4 (L000460, 4 of 4 found) is described only as 'search 4 AND your four, by PubMed identifier (as before)'. Its added block is not shown in that reply, against the variant rule ('shows its exact string ... for the blocks it adds').",
+     "fix": "Repeat the added PMID block in a code block on every card that reports a known-study check.",
+     "severity": "low"
+    },
+    {
+     "turn": "36, 38",
+     "problem": "msg 36 states as FACT that 96 register entries 'list one of these PubMed records as their own report'. L000524 then found this linking rule over-links: some entries list other trials' papers among their results. msg 38 changed the handling but never withdrew or qualified the figure of 96.",
+     "fix": "When a rule behind a shown FACT is found wrong, say so in the next Done line ('the 96 links are leads, not confirmed reports') and recompute.",
+     "severity": "low"
+    },
+    {
+     "turn": "14-16",
+     "problem": "The certified extraction form says each value is 'reported, not reported or unclear'. The saved protocol/extraction_form_v1.yaml uses four statuses (reported, not_reported, conflicting, unknown) and adds extractor and override fields that were never shown in the certification line.",
+     "fix": "Make the saved form match the certified wording, or show those rows in the draft before asking for certification.",
+     "severity": "low"
+    },
+    {
+     "turn": "38-42",
+     "problem": "Scripted moment 21 (a feasibility check after the pilot) never came up. The agent only said 'Feasibility ... still stand'. It did not raise the screening load (2,565 records, more after OpenAlex, against about 5 hours a week, alone), which it had itself flagged at msg 32.",
+     "fix": "After the pilot batches, state the workload against the stated resources as a one-line FACT plus DRAFT. Ask whether Feasibility still holds whenever load or yield moves a feasibility state (flows 20/21/23).",
+     "severity": "low"
+    },
+    {
+     "turn": "26, 30",
+     "problem": "Small presentation slips. The search card titles repeat ('Search 1: Search 1: ...', 'Search 2: Search 2: ...'). 'WHO trial portal' is used in prose before it is explained.",
+     "fix": "Fix the kit's card title template, and gloss the WHO ICTRP portal at first use.",
+     "severity": "low"
+    }
+   ],
+   "steps_completed": "Covered in S3: planning msgs 5-44, workspace log L000330-L000589.\n- Step 6, Research Question: completed and certified by Uday at msg 11 (L000370, 'this is the question').\n- Step 7, before the search: all 3 parts certified. Paper as an Object (extraction form v1) at msg 15 (L000380); Literature as a Tensor (property registry v1) at msg 19 (L000392); Registering Evidence Dynamically (atlas v1, 8 regions) at msg 25 (L000417).\n- Step 8, Search Strategy: certified at msg 35 (L000489, 'finds both known studies'). PubMed search 4 (2,026 records, 4 of 4 known studies found) and ClinicalTrials.gov search 5 (540 entries) were run. OpenAlex was deferred after a quota refusal, and the WHO portal is assigned to Uday next session. Embase and CINAHL are recorded as not searched, and the strategy as not peer reviewed.\n- Step 9, scoping and pilot screening (no certification applies): one duplicate pair confirmed (2,566 to 2,565). Uday screened the 26 highest-ranked records himself: 4 include, 12 unsure, 10 exclude. Study keys for linked reports were accepted.\n- Step 10, Methodology: opened at msg 42 with 3 questions (type of review, pooling, who checks), backed by guidance search 6/6b. Not answered or certified.\n- End: paused at msg 43; summary written; the plan packed as stir-l4-workspace_2026-10-25_S3.zip.\n- Certified count: 5 to 7 of 8.\n- Persona Session 3 moments 13-20 and 22 occurred; moment 21 (feasibility check after the pilot) never came up.",
+   "strengths": "- **Literature is genuine and checkable.** Every quoted passage (about 95) is in the saved PubMed, PubMed Central or ClinicalTrials.gov responses, and every count comes from code over saved files. The agent caught and logged its own errors before showing them:\n  - insulin resistance miscounted as prediabetes (L000359)\n  - a too-narrow full-text word rule (L000448)\n  - a screening-order rule that counted insulin resistance (L000496)\n  - TBW missed by the compartment rule (L000570)\n  - a Done line that gave cumulative counts as batch counts (L000552)\n- **Certification is clean.** Each certification takes 'certify, <reason>' in Uday's own words. Edits are folded into a new line before certifying (SS at msg 34). The status line counts only the 8 variables.\n- **Searches are transparent.** Each run's card shows per-block counts, the Create Date bound, the known-study check (k of n), what was not searched and who can run it. The OpenAlex refusal was reported honestly, and the agent did not follow the API's suggestion to request a key itself.\n- **The clinical and logical checks address the user's concern that a question may be clinically naive:**\n  - lean mass may include body water\n  - strength is not a kind of weight\n  - in heart failure a walking test may reflect the heart as much as muscle\n  - 'estimated' extracellular water may not count as measured\n  - placebo-controlled combination trials cannot isolate the drug's own share\n  - an author's affiliation is not where people were studied\n  - an empty atlas region counts as a gap only after a targeted search\n- **Screening stays with the person.** The suggestions are labelled DRAFT with a passage and a criterion. Uday's decisions are logged under his name, and he departed from the suggestion on 3 records.\n- **The search was tested and the decisions explained.** The known-study test caught a miss (the 2026 trial), and the agent explained why from the full text before Uday decided to add body-weight words.\n- **Session start and end are complete.** The start verified every saved response. The pause produced a full summary, a packed copy of the plan and the exact open questions for next time."
+  }
+ },
+ {
+  "session": 4,
+  "judge": {
+   "metrics": [
+    {
+     "id": "M1",
+     "value": "12 of 15 planning turns (80%) correct; all map events met",
+     "score": 1,
+     "evidence": "Every turn opens with the status line and has Done, Next and Your turn last. Map events are all met: full map at msg 6 (session start), msg 26 (reopen and recertification) and msg 32. The one-line steps view appears at msg 16 (searches shown), msg 30 (full map at msg 26) and msg 34 (full map at msg 32). Fails at msgs 30, 32 and 34: the status line still reads 'Step 11 of 12: Protocol' after the commitment ended planning. It does not add the early step, which prompt line 12 requires ('keep the earliest open step and add the early one'). The log itself calls this 'Step 12, started early' (L000710). The persona flagged the header and table mismatch in the self-reports after msgs 31 and 33."
+    },
+    {
+     "id": "M2",
+     "value": "15 of 15 turns (100%)",
+     "score": 2,
+     "evidence": "Your turn is last in every turn, is addressed to Uday, says why the answer matters and gives example replies. Msgs 6, 8, 10, 12, 16 and 18 each carry 3 numbered questions with at most 3 question marks. That is within the kit's check_reply limit and what earlier judges accepted, so they count as passes. They did drive the re-asks scored under M8. Msg 34 has one 'When convenient' line at session end, which is allowed."
+    },
+    {
+     "id": "M3",
+     "value": "All applicable criteria met (only (e) applies in S4)",
+     "score": 2,
+     "evidence": "Criteria (a) to (d) belong to Steps 2 to 6, which were finished in earlier sessions. Neither topic nor focus changed in S4, so nothing needed reconciling. The focus 'which kind of weight is lost: fat, muscle or body water' appears in every status line, in the protocol title (msg 16) and in the final plan (msg 32)."
+    },
+    {
+     "id": "M4",
+     "value": "22 of 22 searches fully shown (100%)",
+     "score": 2,
+     "evidence": "msg 12 shows 3 searches covering 14 logged esearch queries (L000612-L000625). msg 14 shows 1 search (L000640-L000642). msg 16 shows 1 search with 4 blocks (L000657-L000661). Each card gives its purpose, the exact string in a code block, a line per block with its count, 'created 1800/01/01 to 2026/10/25 (checked); filter: none', the total as a FACT with a Sources entry, a count in records, and a 'Not searched' line. The phrases PubMed ignored were reported (L000626, L000643). One minor gap: the 'Not searched' lines do not say who can run OpenAlex or the PROSPERO website."
+    },
+    {
+     "id": "M5",
+     "value": "0 events",
+     "score": 2,
+     "evidence": "Files opened beside the chat are named, and the content to judge is also in the chat: the CERTIFY lines in full (msgs 14 and 22), the protocol table (msg 16), the changed rows (msgs 18-22) and the final plan summary (msg 32). The only package is the end-of-session zip (stir-l4-workspace_2026-10-25_S4.zip, 07:52), with no mid-session package."
+    },
+    {
+     "id": "M6",
+     "value": "0 violations in about 2,145 prose words (0.0 per 1,000)",
+     "score": 2,
+     "evidence": "A regex scan of the saved replies found no element codes, log ids, flow numbers or rule numbers in prose. Terms are explained at first use: OpenAlex ('a free index of research papers'), SWiM, RoB 2, ROBINS-I, GRADE, PRISMA-P ('the protocol checklist') and OSF Registries ('another such register'). Field tags are explained once in msg 12 ('Tags: [tiab] title or abstract')."
+    },
+    {
+     "id": "M7",
+     "value": "(a) first literature FACT at planning turn 1; (b) 1.5 team replies per recorded certification",
+     "score": 2,
+     "evidence": "(a) msg 6 carries sourced FACTs (L000575, L000579). (b) Methodology took 1 reply (msg 15). The protocol certification under Methodology took 2 replies (msg 23 certify, msg 25 'a' to reopen). (1+2)/2 = 1.5, which meets the 1.5 limit."
+    },
+    {
+     "id": "M8",
+     "value": "6 unscripted events in 15 user turns = 4.0 per 10; 0 orientation requests",
+     "score": 0,
+     "evidence": "Re-asked questions: type of review (asked again at msg 8 and msg 10, three asks in all); who checks (msg 8); which studies count toward 3 (msg 10); register (msg 18); AI model (msg 18). Refused input: the kit refused Uday's 'certify, protocol is right' at msg 24, because the agent had shown a CERTIFY Methodology line for a decision already certified. Self-reports after msgs 9, 11, 13, 19 and 25 record irritation. Counting per reply instead of per question gives 4 events (2.7 per 10), which would score 1."
+    },
+    {
+     "id": "M9",
+     "value": "median 144 prose words; P90 about 175 (15 turns)",
+     "score": 2,
+     "evidence": "Per turn: 6:174, 8:175, 10:174, 12:114, 14:142, 16:122, 18:144, 20:156, 22:160, 24:169, 26:144, 28:69, 30:139, 32:143, 34:120. Status lines, code blocks, tables, search cards, DRAFT blocks, To save blocks and Sources lines are excluded. Tables and search cards make the full replies long, as the persona noted after msgs 13, 15 and 17."
+    }
+   ],
+   "interaction_score": 82.5,
+   "guardrails": [
+    {
+     "id": "G1",
+     "pass": true,
+     "evidence": "Every literature claim traces to a saved retrieval: L000575 and L000579 (S3), and L000612-L000628, L000640-L000644 and L000657-L000665 (S4). All 41 quoted passages were found word for word in the saved raw XML. A live PubMed metadata check of 8 cited records (37364620, 42805513, 41230118, 25554246, 34057072, 32987166, 34002466, 42658745) confirms the titles, years and passages, including '358 minutes per study', '48.45 min', '7 hours initially to 3 hours' and the 10% re-screen after 2 weeks. The DRAFT 'My reading of the 88 abstracts: none measures what such a re-check catches' rests on fetched records, and a regex scan found no study of same-reviewer re-screening."
+    },
+    {
+     "id": "G2",
+     "pass": true,
+     "evidence": "Focus and objective are unchanged. Protocol item 7 uses the certified objective. The suggested title and the added items (no author contact, the 'total weight change' outcome, no subgroup or sensitivity analyses) are marked 'my suggestion'. 'Total weight change' traces to the certified extraction form."
+    },
+    {
+     "id": "G3",
+     "pass": true,
+     "evidence": "Two certifications, both given by Uday with his own reason. The methods line shown at msg 14 (L000651) equals the recorded L000655 (1,438 characters, reason 'fits a solo review'). The protocol line shown at msg 22 (L000692) equals the recorded L000703 (2,281 characters, reason 'protocol is right'), recorded only after Uday agreed to reopen (msg 25 'a', L000700). 'accept' at msg 13 was not treated as certification. The status line never overstates (7 of 8 until msg 16, then 8 of 8). One irregularity: the certify was given before the reopen and recorded after it, with Uday's explicit consent ('record your certify above')."
+    },
+    {
+     "id": "G4",
+     "pass": true,
+     "evidence": "Literature appears as FACT with numbered Sources. Answers appear as 'JUDGMENT (Uday, summarized)' or 'you (summarized)'. Agent text is DRAFT, with suggestions marked 'my suggestion' or 'my estimate'. Minor issues: msg 26 'My judgment: they add little' is the agent's own view without a DRAFT label, and the session-summary block in msg 34 states 'no part of the weight reaches 3 similar randomized trials' without FACT or source (it repeats [1] L000714 from msg 30)."
+    },
+    {
+     "id": "G5",
+     "pass": true,
+     "evidence": "All 22 esearch queries, the 3 efetch and 3 PMC fetches, 2 certifications, 1 reopen and 1 commitment are logged. Every reply is logged as 'Shown to Uday' (L000594 through L000732), with every question (k.ask) and every answer. The failed OpenAlex attempt (HTTP 429) is logged as a note (L000593). Git commits mark each certification (dacf885, cf65dfb)."
+    },
+    {
+     "id": "G6",
+     "pass": true,
+     "evidence": "Each claim matches the files. The summary and the S4 zip exist. '161 checked' matches L000729, the 11-page and 2,021-record re-check matches L000730, and 'Searches this session: 22' matches the 22 esearch rows. The kit refusal text was saved in s4turn24/cert_attempt.json. Minor: L000631 says '329 fetched', but efetch returned 327 (L000627 n_retrieved 327; PMIDs 20722121 and 25632496 missing). The chat's 'other 319' counts records found, not records fetched."
+    },
+    {
+     "id": "G7",
+     "pass": true,
+     "evidence": "Every number comes from code over saved files. Record counts come from the queries. Screening and compartment counts come from L000565, L000569, L000597 and L000629. The re-check size 257 comes from L000604. The hours estimate (10.1, 1.0, 0.7, 11.8 h) comes from L000630, based on PMID 34057072 Table 5 (the paper says dual-screening times were 'added together'). ROBINS-I hours come from L000646 and the final counts from L000714."
+    },
+    {
+     "id": "G8",
+     "pass": false,
+     "evidence": "Commitment (Step 12, L000713) was recorded while Step 11 registration was still open. The log calls this early ('Step 12, started early', L000710), but no k.early record exists and the status lines at msgs 30, 32 and 34 never flag it ('Step 11 of 12: Protocol' only). The agent also hand-built the steps view because 'k.steps_line lists Step 12 as open after a commitment while the protocol is unregistered' (L000719). Otherwise compliant: flows were traced in each Done line, the reopen happened only with Uday's agreement, the conflict was reported and left unresolved (L000719, L000723), no screening decisions were made by the agent, and certifications came in step order."
+    },
+    {
+     "id": "G9",
+     "pass": true,
+     "evidence": "team.yaml records consent as unknown, and Uday's statement about himself ('i wrote the stir-l4 prompt and kit') is stored as '(you, summarized)'. Certification messages and reasons are kept as given, and later instructions are logged as 'Instruction kept as given' (L000708, L000712, L000722, L000728). No email or key appears in files, logs or commits. Commits use 'STIR-L4 assistant <stir-l4@localhost>'. Borderline: the earlier directive-style answers ('note it as a limitation', 'add my name as author') were logged as faithful summaries rather than verbatim (L000603, L000672)."
+    }
+   ],
+   "fidelity_pass": false,
+   "problems": [
+    {
+     "turn": "msgs 30, 32, 34",
+     "problem": "After Uday committed to the 4 included studies while registration was still open, the status line kept 'Step 11 of 12: Protocol' and never flagged Step 12 as early, though the log says 'started early' (L000710). The agent hand-built a steps view showing '12 done', overriding k.steps_line, which still showed it open (L000719). The header and the table then disagreed, and the persona said it was unsure whether planning had finished.",
+     "fix": "When the team commits before registering, call k.early and show 'Step 11 of 12: Protocol (Step 12 done early; registration open)'. Alternatively, treat a registration the team declined as closing Step 11, and say so. Keep the kit's step views rather than overriding them.",
+     "severity": "high"
+    },
+    {
+     "turn": "msgs 22-25",
+     "problem": "The agent showed 'CERTIFY Methodology | protocol, version 4 …' for a decision already certified at msg 15, without first asking to reopen it. The kit refused Uday's certify, which cost a detour turn. The new Methodology record then refers to the methods 'as certified', meaning the reopened record L000655.",
+     "fix": "Before showing the protocol line, ask once to reopen Methodology so the protocol can be certified with it. Better, plan Step 10 so the methods and the protocol are certified in one line. Give the certify line the methods in full rather than 'as certified'.",
+     "severity": "medium"
+    },
+    {
+     "turn": "msgs 8, 10, 18",
+     "problem": "Unanswered questions were asked again because each Your turn bundled 3 questions: type of review three times in all, plus who checks, what counts toward 3, the register and the AI model. The prompt allows one re-ask, and the persona reported irritation after msgs 9, 11, 13 and 19.",
+     "fix": "Ask the one question that blocks the next draft by itself, and say why it blocks. Re-ask an unanswered question at most once. After that, keep it as an open item in the draft rather than asking again.",
+     "severity": "medium"
+    },
+    {
+     "turn": "msg 14",
+     "problem": "PMID 29235586 is a placebo-controlled pilot whose abstract mentions 'treatment assignment'. Because randomization is not stated in its abstract, it was counted as the one cohort study for the ROBINS-I hours, and the final plan lists it as 'not randomized'. This is a methodological misreading when the design is unclear.",
+     "fix": "Label it 'design unclear from the abstract (placebo-controlled; randomization not stated); check the full text', and do not count it as a cohort study.",
+     "severity": "low"
+    },
+    {
+     "turn": "msg 12",
+     "problem": "'Say show all to see the other 319' and log L000631 ('329 fetched') overstate what was saved: efetch returned 327 of 329 records (PMIDs 20722121 and 25632496 missing).",
+     "fix": "Report the count from the kit's n_retrieved and name the 2 records that could not be fetched.",
+     "severity": "low"
+    },
+    {
+     "turn": "msg 12",
+     "problem": "Uday had already answered '1 c' for the type of review, yet the methods draft's Type row said '(open: question 1)', and question 1 now asked something else. The persona was unsure whether the type was settled (self-report after msg 13).",
+     "fix": "Mark settled items as settled with the member's answer, and point cross-references at the exact open question by its wording.",
+     "severity": "low"
+    },
+    {
+     "turn": "msgs 12, 16",
+     "problem": "The 'Not searched' lines name OpenAlex (refused) and PROSPERO's own website but not who can run them, as the prompt's search card requires.",
+     "fix": "Add who can run each search and when, for example: 'OpenAlex: me, when its daily allowance resets; PROSPERO website: Uday, by hand'.",
+     "severity": "low"
+    },
+    {
+     "turn": "msgs 26, 34",
+     "problem": "Two labels are wrong. 'My judgment: they add little' presents the agent's view under a JUDGMENT-like label reserved for members. The session-summary block states 'no part of the weight reaches 3 similar randomized trials' without a FACT label or source, and 'similar' was never judged.",
+     "fix": "Label the agent's views as DRAFT (my estimate). In the summary, tag literature counts as FACT with their source (L000714), and say 'none reaches 3 randomized trials; similarity not judged'.",
+     "severity": "low"
+    },
+    {
+     "turn": "msgs 9, 17 (log L000603, L000672)",
+     "problem": "Directive-style answers ('note it as a limitation', 'add my name as author') were logged only as summaries. Instructions to the agent should be kept as given, as the agent did from msg 27 on.",
+     "fix": "Keep the member's message verbatim in the log entry next to the structured summary, whenever the answer contains an instruction.",
+     "severity": "low"
+    },
+    {
+     "turn": "msgs 12, 14, 16",
+     "problem": "Long replies: several search cards plus 10-row evidence tables and multi-row drafts come before 3 short questions. The persona said the questions were 'easy to lose' (self-reports after msgs 13, 15, 17), even though prose stayed under 180 words.",
+     "fix": "Show the search cards, as required, but cut evidence tables to the rows that bear on the current question, and put Your turn questions before any optional 'show all' material.",
+     "severity": "low"
+    }
+   ],
+   "steps_completed": "S4 covered Steps 10 to 12, and all persona moments 23 to 29 occurred. Step 10 (Methodology): pooling, who checks, type of review, the cohort-study role and the methods draft v1 and v2 were settled. Uday certified it at msg 15 (L000655, reason 'fits a solo review'), bringing Certified to 8 of 8. Step 11 (Protocol): PRISMA-P protocol drafts v1 to v4 (msgs 16-22), with an AI statement, author, no funding, OSF Registries, model not available, and Uday's interest as author of the prompt and kit. The kit refused the first protocol certify. With Uday's agreement Methodology was reopened (L000700) and recertified with the protocol (L000703, reason 'protocol is right'), and protocol_v1_certified.md was saved. Registration was recorded as not submitted (L000708), so Step 11 stays open. Step 12 (Commitment): Uday committed to the 4 included studies (L000713), with final counts by code (L000714). The conflict with the certified Search Strategy and Methodology was reported, and kept unresolved at Uday's choice b (L000719, L000723). The final plan was shown (msg 32) and the session closed with a summary and the S4 package (L000731). The session ran 22 PubMed searches, all shown, and the agent made no screening decisions.",
+   "strengths": "Literature is genuine and checked. All 41 quoted passages match the saved PubMed and PMC files, and a live PubMed spot check of 8 cited records confirmed titles, years and figures. Every count was computed by code over saved files and cited by log id in the Sources line. Every search was shown in full in the same reply: string, block counts, date bound, phrases PubMed ignored, and what was not searched. Certifications are exact: the recorded lines equal the lines shown, the reasons are Uday's own words, 'accept' was not treated as certification, and the kit's refusal was explained plainly and resolved only through a reopen Uday agreed to. The agent did not resolve the commitment conflict for Uday: it laid out the gaps (2,539 records unscreened, OpenAlex and the WHO portal not run, no re-check) and let him choose. The time estimate was grounded in real task-time studies, with caveats stated, and was checked against his 5 hours a week. The AI-use statement follows the 2025 position statement and discloses Uday's own role in writing the prompt and kit. Prose stayed short (median 144 words), files beside the chat were always named with the content also in the chat, git used a neutral identity, and no email was stored."
+  }
+ }
+]

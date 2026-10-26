@@ -1,0 +1,1 @@
+{"header":{"type":"esearch","version":"0.3"},"esearchresult":{"count":"334369","retmax":"0","retstart":"0","idlist":[],"translationset":[],"querytranslation":"(\"screening\"[Title] OR \"selection\"[Title] OR \"screener*\"[Title] OR \"reviewer*\"[Title] OR \"single-reviewer\"[Title]) AND 1800/01/01:2026/10/25[Date - Create]"}}

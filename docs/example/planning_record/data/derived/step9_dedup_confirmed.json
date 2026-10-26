@@ -1,0 +1,28 @@
+{
+ "rule": "step9-dedup-1",
+ "confirmed_by_answer": "L000505",
+ "before": 2566,
+ "after": 2565,
+ "confirmed": [
+  {
+   "kept": "PMID 25166023",
+   "linked": [
+    "PMID 25268802"
+   ],
+   "pub_types": {
+    "PMID 25268802": [
+     "Journal Article",
+     "Multicenter Study",
+     "Randomized Controlled Trial",
+     "Research Support, Non-U.S. Gov't",
+     "Published Erratum"
+    ],
+    "PMID 25166023": [
+     "Journal Article",
+     "Randomized Controlled Trial",
+     "Research Support, Non-U.S. Gov't"
+    ]
+   }
+  }
+ ]
+}

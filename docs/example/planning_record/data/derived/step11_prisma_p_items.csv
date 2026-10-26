@@ -1,0 +1,27 @@
+item,section,topic,wording
+1a,ADMINISTRATIVE INFORMATION,Title Identification,Identify the report as a protocol of a systematic review
+1b,ADMINISTRATIVE INFORMATION,Update,"If the protocol is for an update of a previous systematic review, identify as such"
+2,ADMINISTRATIVE INFORMATION,Registration,"If registered, provide the name of the registry (e.g., PROSPERO) and registration number"
+3a,ADMINISTRATIVE INFORMATION,Authors Contact,"Provide name, institutional affiliation, and e-mail address of all protocol authors; provide physical mailing address of corresponding author"
+3b,ADMINISTRATIVE INFORMATION,Contributions,Describe contributions of protocol authors and identify the guarantor of the review
+4,ADMINISTRATIVE INFORMATION,Amendments,"If the protocol represents an amendment of a previously completed or published protocol, identify as such and list changes; otherwise, state plan for documenting important protocol amendments"
+5a,ADMINISTRATIVE INFORMATION,Support Sources,Indicate sources of financial or other support for the review
+5b,ADMINISTRATIVE INFORMATION,Sponsor,Provide name for the review funder and/or sponsor
+5c,ADMINISTRATIVE INFORMATION,Role of sponsor/funder,"Describe roles of funder(s), sponsor(s), and/or institution(s), if any, in developing the protocol"
+6,INTRODUCTION,Rationale,Describe the rationale for the review in the context of what is already known
+7,INTRODUCTION,Objectives,"Provide an explicit statement of the question(s) the review will address with reference to participants, interventions, comparators, and outcomes (PICO)"
+8,METHODS,Eligibility criteria,"Specify the study characteristics (e.g., PICO, study design, setting, time frame) and report characteristics (e.g., years considered, language, publication status) to be used as criteria for eligibility for the review"
+9,METHODS,Information sources,"Describe all intended information sources (e.g., electronic databases, contact with study authors, trial registers, or other grey literature sources) with planned dates of coverage"
+10,METHODS,Search strategy,"Present draft of search strategy to be used for at least one electronic database, including planned limits, such that it could be repeated"
+11a,METHODS,Study records Data management,Describe the mechanism(s) that will be used to manage records and data throughout the review
+11b,METHODS,Selection process,"State the process that will be used for selecting studies (e.g., two independent reviewers) through each phase of the review (i.e., screening, eligibility, and inclusion in meta-analysis)"
+11c,METHODS,Data collection process,"Describe planned method of extracting data from reports (e.g., piloting forms, done independently, in duplicate), any processes for obtaining and confirming data from investigators"
+12,METHODS,Data items,"List and define all variables for which data will be sought (e.g., PICO items, funding sources), any pre-planned data assumptions and simplifications"
+13,METHODS,Outcomes and prioritization,"List and define all outcomes for which data will be sought, including prioritization of main and additional outcomes, with rationale"
+14,METHODS,Risk of bias in individual studies,"Describe anticipated methods for assessing risk of bias of individual studies, including whether this will be done at the outcome or study level, or both; state how this information will be used in data synthesis"
+15a,METHODS,Data Synthesis,Describe criteria under which study data will be quantitatively synthesized
+15b,METHODS,Data Synthesis,"If data are appropriate for quantitative synthesis, describe planned summary measures, methods of handling data, and methods of combining data from studies, including any planned exploration of consistency (e.g., I 2 , Kendall’s tau)"
+15c,METHODS,Data Synthesis,"Describe any proposed additional analyses (e.g., sensitivity or subgroup analyses, meta-regression)"
+15d,METHODS,Data Synthesis,"If quantitative synthesis is not appropriate, describe the type of summary planned"
+16,METHODS,Meta-bias(es),"Specify any planned assessment of meta-bias(es) (e.g., publication bias across studies, selective reporting within studies)"
+17,METHODS,Confidence in cumulative evidence,"Describe how the strength of the body of evidence will be assessed (e.g., GRADE)"

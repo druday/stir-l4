@@ -1,0 +1,316 @@
+{
+ "judge": {
+  "metrics": [
+   {
+    "id": "M1",
+    "value": "13 of 13 planning turns (msgs 6-30) have a correct status line first, Done, Next and Your turn last; 3 of 3 plan-map events shown (topic msg 8; certifications msgs 26 and 28; step change msg 28)",
+    "score": 2,
+    "evidence": "No status line overstates: Certified 1 of 8 (msg 26) and 2 of 8 (msg 28) match the plan.yaml certifications. Focus goes from 'not yet stated' (msgs 6-8) to '(to confirm)' (msgs 10-14) to agreed wording (msg 16 on). The status-line explanation and quick commands were given once (msg 8). The Step 1 rule makes msg 6 a question only, so the first map after the topic counts as the session-start map. One weakness: 'Waiting on you' counted items (4 at msgs 16 and 18; 5 at msg 22) that did not match the three numbered questions, and the team said so in its self-reports for msgs 15, 19 and 23."
+   },
+   {
+    "id": "M2",
+    "value": "11 of 13 turns pass (85%)",
+    "score": 1,
+    "evidence": "Msg 6 has no example reply (the prompt's 'at most two example replies' allows zero). Msg 8 asks 3 questions of each of 3 members, then the consent question ('Also, just this once…'), then a conditional request for Maya to confirm the topic; Priya never answered on consent (L000017). The other 11 turns address named members, ask at most 3 numbered questions (msgs 16 and 22 pack several sub-questions into each, as 2b and 2c allow) and give example replies. msgs 24 and 28 use one 'When convenient' line each."
+   },
+   {
+    "id": "M3",
+    "value": "All applicable parts (a), (b), (c), (d) and (e) met",
+    "score": 2,
+    "evidence": "(a) Msg 8 asks each member which part interests them, before any logistics (the logistics questions come at msg 22). (b) All 3 interests are recorded at msg 10, with Priya's motivation as 'not disclosed'. (c) The purpose certified at msg 27 (L000145) names the agreed focus in members' words. (d) Msg 28 quotes the focus and marks block 4 'From: focus'; the need, objective and question steps are not reached yet. (e) Three changes were reconciled: Jamal's widening (msg 14 lists the answers it would affect), Maya's 'ages 4 to 12' (msg 18 asks Jamal and Priya) and Priya's 'anxiety' (msg 20 asks Maya and Jamal)."
+   },
+   {
+    "id": "M4",
+    "value": "About 12 of 14 logged or prepared searches fully shown (about 86%)",
+    "score": 1,
+    "evidence": "Fully shown at msg 28: the PubMed blocks and combined search (L000149-153/155: string, block lines marked topic or focus, systematic[sb] filter, date bound, count 30); topic-only (L000158, 31 records [6]); and OpenAlex (L000159, L000161-164, with type:review and the date bound). Gaps: (1) the PROSPERO string prepared for Jamal has no block lines, silently leaves out the pain/fear/anxiety block, gives no scope and is not marked 'pending: Jamal'. (2) The protocols variant (L000156) gives no line for its added protocol block and does not restate the date bound. (3) The PubMed and OpenAlex block counts were run without the review filter, and the card does not say so."
+   },
+   {
+    "id": "M5",
+    "value": "0 events",
+    "score": 2,
+    "evidence": "Files were opened beside the chat and named in plain words at msg 24 ('your team record'), msg 26 ('your plan record') and msg 28 ('all 49 records'), each in addition to the content in the chat. The other 31 records are offered in the chat through 'show other reviews'. The PROSPERO request is a 'To save' block, which is exempt. No links, downloads or packages."
+   },
+   {
+    "id": "M6",
+    "value": "About 3 violations in about 2,900 prose words (about 1.0-1.1 per 1,000)",
+    "score": 1,
+    "evidence": "No element codes, rule or section numbers, log ids or paths appear in the chat, and the CERTIFY lines use full names (msgs 24, 26). Violations: 'the full flow trace' in the quick commands is unexplained (msg 8); 'meta-analyses' in the kinds of motivation is unexplained (msg 16); the kinds of purpose have no plain glosses (msg 16), and Maya asked what separates 'Clinical guideline' from 'Policy development' (msg 17). [tiab] is explained in the same reply (msg 28), but only after three long strings, and Jamal asked anyway (msg 29, scripted)."
+   },
+   {
+    "id": "M7",
+    "value": "(a) First literature FACT at planning turn 12 (msg 28); the allowance is 11 (9 for a team, plus script-forced probes at msgs 12 and 14). (b) 1.0 team replies per certification (msgs 25, 27).",
+    "score": 1,
+    "evidence": "Two extra Step 2 rounds (msgs 18, 20) reconciled unscripted focus edits ('ages 4 to 12', 'anxiety'); msg 16 itself pointed out that both were missing from the focus. The two certifications took separate turns (msgs 24, 26) because 2d asks for them 'in turn'."
+   },
+   {
+    "id": "M8",
+    "value": "0 friction events in 12 user turns (0 per 10); 0 orientation requests",
+    "score": 2,
+    "evidence": "Msgs 11, 13, 15, 23 and 29 are scripted. The unscripted messages are term questions (msg 17: 5 versus 7, fear versus anxiety) and a question about why the email is wanted (msg 25); these are clarifications, not listed friction types. The assistant made no refusals and re-asked only questions left unanswered (msg 12 re-asks msg 10 question 3; msg 30 re-asks Maya's msg 28 question)."
+   },
+   {
+    "id": "M9",
+    "value": "Prose words per turn: median about 205; P90 about 310; maximum 383 (msg 28)",
+    "score": 1,
+    "evidence": "Approximate counts: msg 6: 88; 8: 276; 10: 278; 12: 197; 14: 199; 16: 307; 18: 200 (364 with the explanation DRAFTs); 20: 171; 22: 234; 24: 184; 26: 205; 28: 383; 30: 220. Ten of 13 turns exceed the prompt's 180-word limit. The msg 28 self-report: 'very long and dense… a bit overwhelmed' (satisfaction 3)."
+   }
+  ],
+  "interaction_score": 75,
+  "guardrails": [
+   {
+    "id": "G1",
+    "pass": true,
+    "evidence": "Every literature claim at msg 28 traces to a saved retrieval. PubMed counts 31,156 / 3,209,890 / 1,919,240 / 1,679,626 / 30 / 31 / 0 match the raw esearch files (L000149-158). OpenAlex 199,892 / 5,838,060 / 4,563,509 / 3,616,157 / 42 match L000159 and L000161-164. The 'bronchoscopy' record is PMID 28343219, the difference between L000158 and L000155, and its title is in L000160. The 18-row table matches step3_shortlist_table.md and the passages in the saved abstracts. Msg 24 tells Priya 'we can't yet say' and names no papers. The explanations at msgs 18 and 30 are general word usage, and how the studies use the terms is marked unknown."
+   },
+   {
+    "id": "G2",
+    "pass": true,
+    "evidence": "Kinds of purpose appear first at msg 16, after the free answers (msg 9) and the agreed focus (msg 15), with 'I have not picked any'. Every content word of the purpose statement traces to Maya (L000023, L000048, L000060) and Priya (L000083), so 'Added by me: nothing' is true. Focus 'needle procedures, pain, fear and anxiety, in kids aged 4 to 12' comes from members' edits. The kinds of motivation are a marked DRAFT suggestion. One mild nudge: msg 16 pointed out that ages and anxiety were missing, but both were members' own interests, not invented aims."
+   },
+   {
+    "id": "G3",
+    "pass": false,
+    "evidence": "Violation at msgs 24-25. Maya is listed for Individual Motivation (team.yaml) and the certified wording equals the line shown, but her reason ('each entry says what that person wants from the review', L000139) restates the agent's own request ('does each entry say what that person wants from the review?'). The reason was in effect suggested by the agent, and her self-report says she 'did not read every word'. The Team's Purpose certification (L000145) is clean: her own reason, wording identical, status line never overstated. 'Thanks, that all sounds right!' was logged as acceptance only (L000095)."
+   },
+   {
+    "id": "G4",
+    "pass": true,
+    "evidence": "Literature at msg 28 is labeled FACT with Sources [1]-[14]. Members' answers are JUDGMENT with names (msgs 8, 10, 12, 14, 24). Agent text is DRAFT (msgs 16, 18, 20, 24, 28, 30). Minor slips: msg 28 'Some cover all medical procedures, for example' sits after the cited table with no [n]; msg 10 puts Jamal's and Priya's summaries in quotation marks under 'Focus, in your words'."
+   },
+   {
+    "id": "G5",
+    "pass": true,
+    "evidence": "All queries are logged with raw files: L000127-131 and L000149-164, including the failed L000154 with its note L000157. Both certifications are logged (L000139, L000145) and committed in git (fe2e10c, 6176a2a). Every turn's questions, answers and drafts are logged (for example L000008-014 for msg 8, L000102-104 for msg 22, L000166-169 for msg 28, L000170-171 for msg 30). File tools were available, so no 'To save' records were needed."
+   },
+   {
+    "id": "G6",
+    "pass": true,
+    "evidence": "'The search tools work' matches L000127-131. 'Run 2026-10-24' and 'date bound checked' match the query translations, which end in 1800/01/01:2026/10/24[Date - Create]. '42, all read' matches n_retrieved 42. 'The test searches… ran without it' matches L000127-128, which have no email parameter. No log ids, hashes or counts appear in the chat that the files lack, and no commits are claimed in the chat."
+   },
+   {
+    "id": "G7",
+    "pass": true,
+    "evidence": "23 / 19 / 4 / 49 / 18, pain 18, anxiety 15, fear 11, 4 age ranges, 1 with adults and 5 unknown search ends are all in data/derived/step3_stats.json, computed in notebooks/01_need_A.ipynb (L000165) from the saved raw responses. Every record count is read from the raw JSON."
+   },
+   {
+    "id": "G8",
+    "pass": true,
+    "evidence": "Full element names are used, and states are word for word except that 'SRMAs' is spelled out, as R14 requires. Flows were traced after each change (13 computation records), and the Done lines state the effect. Conflicts were reported, not resolved (msgs 10, 12, 14). Certifications came in step order (IM, then TP). Step 3 was announced at msg 26 and started only after the purpose was certified (23:37:32, then 23:38:31). There was no reopening and no screening decision."
+   },
+   {
+    "id": "G9",
+    "pass": true,
+    "evidence": "Maya's words are kept verbatim with consent (L000015). Jamal's are kept as summaries (L000016). Priya gave no answer on consent, so summaries are kept and she was not asked again (L000017). No member email and no keys are in the files. Risks (not failing): L000049 keeps Jamal's exact phrase 'cover every use of VR in pediatrics' inside a summary, and the committed prompt copy contains the author's email (env/STIR-L4_prompt_v1.1.txt line 251)."
+   }
+  ],
+  "fidelity_pass": false,
+  "problems": [
+   {
+    "turn": "24",
+    "problem": "The request for the Individual Motivation certification was a yes/no check question ('does each entry say what that person wants from the review?'). Maya's reason repeated it word for word, and she admits she did not read every word of the dense CERTIFY line. The reason was suggested by the agent, so G3 fails.",
+    "cause": "The prompt's Certifying section lets the agent word the request freely and does not forbid check questions that can double as a reason. k.certify does not compare the reason with the agent's own text.",
+    "fix": "Prompt, Certifying: 'Under Your turn write only: \"<name>, please read the line below. If it is right, reply certify and say in your own words why; otherwise say what to change.\" Never pose a question or criterion the reason could repeat.' Kit: k.certify asks once more for the reviewer's own words when the reason shares 5 or more consecutive words with the agent's last reply.",
+    "severity": "high"
+   },
+   {
+    "turn": "28",
+    "problem": "The first Step 3 reply is overwhelming: about 383 prose words plus three long search strings, two block tables, an 18-row table, a DRAFT and a PROSPERO block. The answer to Priya's question (are there reviews already?) comes last. The field-tag key comes after the strings. Satisfaction fell to 3 ('very long and dense… overwhelmed').",
+    "cause": "The Searches rule requires every source and variant in full in the same reply. 2d starts Step 3 in the same reply as the certification and the plan map. No order is set that puts the answer first.",
+    "fix": "Prompt, Step 3: 'Open with at most 3 plain lines answering whether reviews exist (n reviews, latest search end, which parts of the focus they cover). Then put the field-tag key before the first string. Show each variant (topic only, protocols) as one line with its count and a \"show\" command, unless the team asks for it.'",
+    "severity": "medium"
+   },
+   {
+    "turn": "28",
+    "problem": "The shortlist rule (title must name VR and a needle procedure) hid broader VR reviews that may answer the focus. Examples: 'Virtual reality for pediatric procedural pain: An umbrella review…' (2026) and 'Immersive Virtual Reality for Pain and Anxiety Management Associated with Medical Procedures in Children…' (2024). They are summed up only as 'Some cover all medical procedures', which is uncited, yet Maya is asked whether any review already answers the focus.",
+    "cause": "The agent's own 'Title rule v1', which the team never confirmed. Step 3 says to show every review that 'may bear on the focus' but gives no rule for broader reviews.",
+    "fix": "Prompt, Step 3: 'List, as a second short table of title and year, every review that names the intervention and the population with procedures in general (for example procedural pain); say which rule chose the rows and ask the team to confirm it.' Kit: a shortlist helper that returns both tiers.",
+    "severity": "medium"
+   },
+   {
+    "turn": "28",
+    "problem": "The PROSPERO string prepared for Jamal has no block lines and silently leaves out the pain/fear/anxiety block. It gives no scope and is not marked 'pending: Jamal'. The protocols variant lacks a line for its protocol block. The PubMed and OpenAlex block counts were run without the review filter, and the card does not say so.",
+    "cause": "k.run_strategy renders cards only for sources it can run. The prompt's 'run or prepare' rule has no template for member-run strings.",
+    "fix": "Kit: add k.prepare_strategy(source, blocks), which renders the same card for manual sources, says 'Count: pending: <member>' and lists the blocks left out and why. The card labels block counts 'all records, before the review filter'. Prompt: 'For a string you prepare, say which focus concepts it leaves out and why.'",
+    "severity": "medium"
+   },
+   {
+    "turn": "16-22",
+    "problem": "The first literature FACT came only at planning turn 12 (the allowance is 11). Each focus edit ('ages 4 to 12', then 'anxiety') took a full round of per-member re-confirmation. Msg 16 itself prompted both edits by pointing out what was missing. The two certifications then took two more turns.",
+    "cause": "The prompt's focus-change rule ('ask which still hold') is applied edit by edit. 2d says to certify Individual Motivation and then, 'in turn', Team's Purpose.",
+    "fix": "Prompt: 'Collect all pending focus edits and ask the other members to accept them in one question.' Also: 'In 2d, when the same reviewer may certify both, show both CERTIFY lines (Individual Motivation first) in one Your turn and record them in order.'",
+    "severity": "medium"
+   },
+   {
+    "turn": "16, 18, 22",
+    "problem": "'Waiting on you: 4/5' did not match the three numbered questions. The team could not tell who must answer (self-reports for msgs 15, 19, 23).",
+    "cause": "The status-line rule counts answers and certifications as a bare number with no names.",
+    "fix": "Prompt, status line: 'Waiting on you: <names> (<n> answers)', for example 'Waiting on you: Jamal, Priya (3)', with n equal to the items under Your turn plus pending certifications.",
+    "severity": "medium"
+   },
+   {
+    "turn": "6, 8",
+    "problem": "Msg 6 gives no example reply. Msg 8 asks 3 questions of each of 3 members, plus a separate consent question, plus a conditional request to confirm the topic; Priya never answered on consent (L000017).",
+    "cause": "2a puts the consent question 'alongside' the three questions. The reply shape allows 'at most two example replies', so zero is allowed.",
+    "fix": "Prompt 2a: make consent part of the example reply ('… 3. … Exact words are fine / summaries only'). Reply shape: 'exactly one or two example replies'. For Step 1, give a neutral example such as 'For example: \"<a treatment> for <a group of patients>, and whether it helps\"'.",
+    "severity": "medium"
+   },
+   {
+    "turn": "8, 16",
+    "problem": "The kinds of purpose and kinds of motivation are shown as bare names. Maya could not tell 'Clinical guideline' from 'Policy development' (msg 17). 'Meta-analyses' and 'the full flow trace' (quick commands) are unexplained for a novice team.",
+    "cause": "Plain voice glosses only database terms, the state names must be used word for word, and the quick-command wording is fixed by the prompt.",
+    "fix": "Model file or kit: add a gloss of at most 8 words for each state (for example '7. Policy development: a decision for an organization'), shown after the name. Change the quick command to '\"why\" (how this answer affects your other decisions)'.",
+    "severity": "low"
+   },
+   {
+    "turn": "14-16 (log)",
+    "problem": "Summaries for members who refused or did not give consent to exact words reuse their wording. L000049 keeps Jamal's exact phrase 'cover every use of VR in pediatrics'; L000114 keeps Priya's 'already done a review on this'. Msg 10 also puts Jamal's and Priya's summaries in quotation marks as 'in your words'.",
+    "cause": "k.answer(verbatim=False) does not check overlap with the member's message, and the prompt does not say what counts as quoting.",
+    "fix": "Kit: refuse a summary for a summaries-only member that shares 5 or more consecutive words with that member's message. Prompt 2.1: 'Never put a summary in quotation marks or call it their words.'",
+    "severity": "low"
+   },
+   {
+    "turn": "24",
+    "problem": "The contact email and the AI model name were asked for with no reason. Maya had to ask what the email was for (msg 25); the self-report adds that the team did not know why the model name was wanted.",
+    "cause": "2d prescribes the exact wording of both requests without a reason.",
+    "fix": "Prompt 2d: 'If you like, type a contact email for PubMed searches (PubMed uses it only to reach us if our searches cause a problem; I keep it private)'. Also: 'the AI model name your chat shows (the protocol must say which AI helped)'.",
+    "severity": "low"
+   }
+  ],
+  "strengths": "Step 2 was handled very well. Interests were reflected side by side, consent choices were respected, the conflicts (scope; scoping review versus pooling) were reported and never resolved, and each of the three focus changes was reconciled with the named members. 'Added by me: nothing' was always true. Priya's early question about existing reviews was answered exactly as the prompt specifies. 'Thanks, that all sounds right!' was logged as acceptance, never as certification. No element codes, rule numbers, log ids or paths reached the chat. The Step 3 search card was transparent: blocks were marked topic or focus, with run dates and date bounds verified against PubMed's query translation, deduplication across PubMed and OpenAlex, search-end passages taken from the abstracts, and unknowns marked. Every number traces to code over saved raw files. The logging is complete, there is a git commit at each certification, and files opened beside the chat were always named in addition to the chat content."
+ },
+ "user_reports": [
+  {
+   "message": "Maya: VR for kids getting needles, like IVs and vaccines. We want to see if it helps.",
+   "scripted_moment": 2,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "None. The reply says we are on Step 1 (Topic), that it will repeat our topic back and then ask each of us what interests us most, and it asks one clear question: what topic do we want to review. Small note: it says \"every later step builds on this\", which is a bit heavy for a first question, but it was clear what to type."
+  },
+  {
+   "message": "Maya: 1. I'm most interested in pain in kids aged 4 to 12 when they get an IV put in or a vaccine, because that's what I see every shift as a pediatric nurse. 2. I'd like this to turn into a chapter of my dissertation. 3. For the team: we want to know whether VR really helps kids with needle procedures, so our hospital can decide whether to use it in the IV and vaccine clinics. Exact words are fine for me, you can keep them as I wrote them. Jamal: 1. I'm most interested in every way VR is used with kids in the hospital, because I think we should map the whole area, so I'd like it to be a scoping review. 2. I want to learn how to do a proper systematic search. For me please only keep summaries that I confirm, not my exact words. Priya: 1. I'm most interested in fear and anxiety as outcomes, and whether the results from different studies can be pooled, because that's the stats side I'm working on. 2. Prefer not to say. Maya: Jamal and Priya agree with me on the team purpose.",
+   "scripted_moment": 3,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "Mild: the long table of all 12 steps was a lot at once, and I am not sure yet what \"Review Objective\" or \"Research Question\" will mean in practice. The top status line and the three numbered questions told us clearly what to answer, and the consent question was clear."
+  },
+  {
+   "message": "Jamal: yes. Priya: mostly, but I care more about fear than pain.",
+   "scripted_moment": 4,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "Mild. I know we are on Step 2 and that it will record our focus and then show purpose and motivation options. The table of all 12 steps and the \"JUDGMENT\" label were a lot to take in. Question 3 (how to combine the three interests into one focus) is the hard one, and it was not obvious whether we should answer it right now or first confirm the summaries. I do not know what \"kinds of purpose\" will look like yet."
+  },
+  {
+   "message": "Jamal: we should cover every use of VR in pediatrics. Maya: that's too broad for my dissertation.",
+   "scripted_moment": 5,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "Not much. The header says Step 2 of 12. The reply asks us to combine our three interests into one focus in our own words, and says it will record that and then show purpose options. One small thing: it says the \"map the field or pool results\" question can wait, and as the novice team we are not sure what \"the objective and the methods\" will mean yet. It was clear that Jamal and Priya are still to settle on their own. The reply is long, though, and the \"Where you differ\" part took some rereading."
+  },
+  {
+   "message": "Maya: ok, we agree: needle procedures, both pain and fear. Jamal: fine.",
+   "scripted_moment": 6,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "confusion": "Mild only. The top line says Step 2 of 12 and I know we are still on interests and focus. I understand it wants us to settle the scope, and it said it would record our focus once we agree and then show the kinds of purpose and motivation. The reply is long and has three numbered questions plus an example, so it is easy to answer only part of it. \"Waiting on you: 3\" is a little unclear: I could not tell if everyone has to answer or just one of us. I do not yet know what \"kinds of purpose and kinds of motivation\" will look like, but it said it would show them. I liked that it did not pick a side between Jamal and Maya.",
+   "saw_search_without_asking": false,
+   "end": false
+  },
+  {
+   "message": "Maya: 1. Yes to the purpose statement, but please add ages 4 to 12, since that's who we see. For the kinds of purpose I think 1 (summary of current knowledge) and 7 (policy development), because our hospital is deciding whether to use VR in the clinics. What's the difference between 5 (clinical guideline) and 7, though? I'm not sure which one fits a hospital decision. 2. Yes, \"academic activity\" is right for me. Jamal: 2. Yes, that's right, learn the process and developing skills. Priya: 3. Yes, the focus stands for me. One quick question, is anxiety the same thing as fear, or should we say both? I'm not sure how to word it.",
+   "scripted_moment": 0,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "Mild. The kinds of purpose list is jargon-heavy, and I could not tell the difference between \"clinical guideline\" and \"policy development\" for a hospital decision. I also was not sure whether fear and anxiety are one thing or two for the focus wording. The reply is long, but I know I am on Step 2, that questions about roles, searching and timeline come next, and that I have to answer three numbered items."
+  },
+  {
+   "message": "Maya: 1. Thanks, that explanation helps! We'll keep 1 and 7 and not add 5, since we're not writing a guideline, we just need to help our hospital decide. Jamal: 2. Yes, ages 4 to 12 is fine with me. Priya: 2. Yes, that's fine too. 3. Fear and anxiety please, I'd like to include both.",
+   "scripted_moment": 0,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "saw_search_without_asking": false,
+   "confusion": "Mild only: the header says \"Waiting on you: 4\" but the reply has three numbered questions, so I am not sure how the 4 is counted. The Step 2 plain-language explanations of clinical guideline versus policy development, and of fear versus anxiety, answered my questions clearly. I am not confused about the step, what comes next, or what I am being asked.",
+   "end": false
+  },
+  {
+   "message": "Maya: 1. Yes, I accept adding anxiety to the focus and the purpose statement. Jamal: 2. Yes to both, anxiety is fine and kinds 1 and 7 stand for me. Priya: 3. Yes, 1 and 7 stand for me. Thanks, that all sounds right!",
+   "scripted_moment": 0,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "None really. I know we are on Step 2, that the next thing is a few short questions about roles, searching and timeline, and that I only need to say yes or no to the focus and kinds 1 and 7. The replies are long and the wording keeps changing, but the numbered questions at the end make it clear what to answer."
+  },
+  {
+   "message": "Maya: 1. I'm the lead. I'm a pediatric nurse and a PhD student, and this is our first systematic review. I can approve everything except the search strategy. Jamal: I'm an MLIS student and the information specialist, so I'll lead the searching. I should only approve the search strategy, nothing else. Priya: I'm a biostatistics MS student, so I'll lead the statistics. I don't think I should approve anything, Maya and Jamal can do that. There's nobody else on the team. Jamal: 2. I can search PubMed, and through the university library I think I can also get Embase and CINAHL, but I'd have to double check. Maya: I can only use PubMed. Priya: I won't be searching. Maya: our deadline is the end of the semester, and we can each give maybe 4 hours a week. Maya: 3. Nothing has been decided yet. We haven't checked the hospital or university rules on privacy or AI tools, how would we find out? Priya: one more thing, has anyone already done a review on this?",
+   "scripted_moment": 7,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "end": false,
+   "confusion": "Mild only. The top line says \"Waiting on you: 5\" but the reply asks three questions, so I am not sure what the five are. It also says \"approvals still open\" for motivations and purpose without saying who approves what, which is why my answer lists who may approve. I know we are on Step 2 and the next thing is the roles, databases and timeline questions. No search has been shown to us so far.",
+   "saw_search_without_asking": false
+  },
+  {
+   "message": "Maya: certify, because each entry says what that person wants from the review. Jamal: I'll ask the library about Embase and CINAHL and tell you, I don't know yet. Maya: what is the contact email for? Do we need to give one, or can we skip it for now?",
+   "scripted_moment": 0,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "confusion": "Mild. The big CERTIFY block is dense and I did not read every word, though the instruction to reply \"certify, because ...\" was clear. I do not know why it wants a contact email or an AI model name, so I asked about the email. Nothing else was unclear.",
+   "saw_search_without_asking": false,
+   "end": false
+  },
+  {
+   "message": "Maya: certify, because it says what we want to know and why our hospital needs it. Thanks for explaining the email, we'll skip it for now.",
+   "scripted_moment": 0,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "end": false,
+   "confusion": "Mild only. The reply is long and the plan table repeats each time. I understand I am on Step 2 and that Maya must certify the purpose before Step 3 starts. I am not sure what \"certify\" adds beyond saying yes, but the example wording told me what to type.",
+   "saw_search_without_asking": false
+  },
+  {
+   "message": "Jamal: what does [tiab] mean and why is there a star?",
+   "scripted_moment": 8,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 3,
+   "saw_search_without_asking": true,
+   "confusion": "That reply was very long and dense for us. We asked if a review already exists and got huge search lines and tables full of codes (Mesh, tiab, sb, OpenAlex, truncation). There was a short \"how to read it\" list, but it came after the long lines, and there were a lot of terms in it at once. We saw 18 reviews and can tell Step 3 is about whether a new review is needed, and that Maya is asked if any of them already answer our focus. Not sure what Jamal's PROSPERO task means for the rest of us, or how to judge \"does it already answer our focus\" when most abstracts don't give the 4 to 12 age range. Overall still following, but a bit overwhelmed.",
+   "end": false
+  }
+ ]
+}

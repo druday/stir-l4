@@ -1,0 +1,38 @@
+[
+ {
+  "pmid": "38219335",
+  "passage": "in 65 participants with type 2 diabetes and high risk of cardiovascular disease",
+  "suggestion": "exclude",
+  "criterion": "population: everyone in the treatment trial has type 2 diabetes; people without diabetes appear only in a separate cross-sectional comparison, untreated; plasma volume estimated"
+ },
+ {
+  "pmid": "38365073",
+  "passage": "but without diabetes or established HF … randomized 1:1 to 180 days treatment with empagliflozin 10 mg daily or placebo",
+  "suggestion": "unsure",
+  "criterion": "a plan (protocol) with no results of its own, like record 4, which Uday marked unsure; it plans the trial of record 41507062 (estimated extracellular volume) and a second trial on physical capacity; one study key with 41507062 suggested"
+ },
+ {
+  "pmid": "39361103",
+  "passage": "Participants received an empagliflozin placebo (daily) plus a topiramate placebo",
+  "suggestion": "exclude",
+  "criterion": "another treatment only when both groups get the same one: topiramate goes with empagliflozin to one group only (as records 2 and 3); it stays a known study for testing the search"
+ },
+ {
+  "pmid": "40994705",
+  "passage": "three identical trials examining patients with T2D with and without CKD and non-diabetic CKD … We measured body composition",
+  "suggestion": "unsure",
+  "criterion": "studies that also enrol people with diabetes only if those without are reported apart: one of three crossover trials is in kidney disease without diabetes; whether its results are given apart, the full text decides; outcomes: body composition, extracellular water"
+ },
+ {
+  "pmid": "41347301",
+  "passage": "Patients at Cardiovascular Risk With or Without Type 2 Diabetes … Secondary outcomes included: blood pressure, body fluid composition",
+  "suggestion": "unsure",
+  "criterion": "studies that also enrol people with diabetes only if those without are reported apart; read in the full text; outcomes: body fluid composition (extracellular fluid)"
+ },
+ {
+  "pmid": "41507062",
+  "passage": "we recruited non-diabetic patients with body mass index (BMI) >28kg/m2 and risk of HF … randomised 1:1 to 180-days empagliflozin 10 mg or placebo",
+  "suggestion": "include",
+  "criterion": "meets the question by title and abstract (adults without diabetes; randomised against placebo; estimated extracellular volume, body water outside cells, a primary endpoint); how the volume was estimated is read in the full text; epicardial (heart) fat is not body fat"
+ }
+]

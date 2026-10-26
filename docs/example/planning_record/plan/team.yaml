@@ -1,0 +1,24 @@
+members:
+- name: Uday
+  motivation:
+    interest: 'which kind of weight is lost: fat or muscle (summarized)'
+    seeks: to learn (summarized)
+    expertise: null
+    states:
+    - Learn the process
+    - personal or institutional curiosity
+    - academic activity
+    disclosed: true
+  role: solo
+  can_certify:
+  - all
+  sources: []
+  consent: unknown
+  solo: true
+sources:
+- PubMed
+- OpenAlex
+deadlines: protocol in about 3 months from 2026-10-25 (summarized)
+resources: Uday alone, screening alone; about 5 hours a week; no funding (summarized)
+rules: not given
+decisions_made: []

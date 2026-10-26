@@ -1,0 +1,145 @@
+# STIR-L4 model specification, version 1.0 (Supplementary File 4).
+# Consistent with Figure 1 and Tables 1 and 2 of the paper; flow meanings are given here in full
+# (Table 1 abridges them).
+# Use it unchanged; check by code that it reproduces section 1.3 of the prompt.
+version: "1.0"
+elements:
+  - id: IM
+    name: "Individual Motivation"
+    kind: variable
+    cluster: C1
+    definition: "What each member seeks from the review"
+    state_space: ["Learn the process", "developing skills", "academic activity", "career advancement", "personal or institutional curiosity", "expertise in SRMAs", "part of a research initiative", "networking and collaboration"]
+    more_than_one_state_may_apply: true
+    inputs:
+      asked: "What each member seeks; conflicts with the agreed purpose"
+      retrieved: null
+      drafted: null
+      certified: "The disclosed motivations"
+  - id: TP
+    name: "Team's Purpose"
+    kind: variable
+    cluster: C1
+    definition: "The end on which the team agrees"
+    state_space: ["Summary of current knowledge", "research gaps", "finding the right question", "direction for future work", "clinical guideline", "resolving conflicts", "policy development", "quantitative analysis"]
+    more_than_one_state_may_apply: true
+    inputs:
+      asked: "The agreed end; the decision the review must inform"
+      retrieved: null
+      drafted: "A purpose statement"
+      certified: "The purpose"
+  - id: NR
+    name: "Need for a Review"
+    kind: variable
+    cluster: C2
+    decision: A
+    definition: "The justification for undertaking the review"
+    state_space: ["Previous reviews", "knowledge gaps", "clinical justification", "impact analysis"]
+    more_than_one_state_may_apply: true
+    inputs:
+      asked: "Clinical justification; expected impact"
+      retrieved: "Existing and registered reviews and their search end dates"
+      drafted: "The case for a new review or an update"
+      certified: "That a gap exists or an update is warranted"
+  - id: RO
+    name: "Review Objective"
+    kind: variable
+    cluster: C2
+    definition: "What the review should achieve"
+    state_space: ["Understand a topic", "compare interventions", "summarize available evidence", "measure evidentiary trust", "evaluate quality of evidence", "question a clinical decision", "identify new areas for research", "update a previous SRMA"]
+    more_than_one_state_may_apply: true
+    inputs:
+      asked: "Which objective applies (eg, update a previous SRMA)"
+      retrieved: null
+      drafted: "The wording of the objective"
+      certified: "The objective"
+  - id: FE
+    name: "Feasibility"
+    kind: variable
+    cluster: C2
+    decision: B
+    definition: "Whether the review can be completed"
+    state_space: ["Requirements clarity", "literature availability", "resource availability", "FMEA"]
+    more_than_one_state_may_apply: true
+    inputs:
+      asked: "Resources; requirements clarity; risks (FMEA)"
+      retrieved: "Record counts per candidate query and date range; ongoing studies"
+      drafted: "A feasibility summary"
+      certified: "Go, narrow, broaden or defer"
+  - id: RQ
+    name: "Research Question"
+    kind: variable
+    cluster: C3
+    decision: C
+    definition: "The answerable form of the objective"
+    state_space: ["Context", "framework (eg, PICO)", "outcomes", "inclusion and exclusion criteria"]
+    more_than_one_state_may_apply: true
+    inputs:
+      asked: "Context; framework; outcomes; eligibility criteria"
+      retrieved: "Controlled vocabulary (eg, MeSH) for each concept"
+      drafted: "The question in a framework (eg, PICO) with eligibility criteria"
+      certified: "The question and criteria"
+  - id: SS
+    name: "Search Strategy"
+    kind: variable
+    cluster: C4
+    decision: D
+    definition: "The plan for retrieving records"
+    state_space: ["Databases", "keywords", "filters", "citation chaining"]
+    more_than_one_state_may_apply: true
+    inputs:
+      asked: "Accessible sources; acceptable filters"
+      retrieved: "Per-source strings with counts; yield of each variant; retrieval of known studies"
+      drafted: "Boolean strings for each source"
+      certified: "The strategy and stopping rule"
+  - id: LU
+    name: "Literature Universe"
+    kind: stock
+    cluster: C4
+    definition: "All records in any indexed source that could be considered; grows as research is published"
+  - id: RU
+    name: "Review Universe"
+    kind: stock
+    cluster: C4
+    definition: "Studies provisionally identified through scoping and pilot screening; the final included set is determined during review execution"
+  - id: ME
+    name: "Methodology"
+    kind: variable
+    cluster: C5
+    decision: E
+    definition: "The methods the team adopts"
+    state_space: ["Type of review", "databases", "rigor", "quantitative analysis"]
+    more_than_one_state_may_apply: true
+    inputs:
+      asked: "Type of review; rigor; whether to pool"
+      retrieved: "Guidance for the question type (eg, PROBAST, CHARMS)"
+      drafted: "The methods section of the protocol"
+      certified: "Methods, protocol, registration"
+flows:
+  - {id: 1, from: IM, to: TP, type: feed-forward, class: influence, strength: strong, meaning: "Members' motivations and expertise shape the team's shared purpose."}
+  - {id: 2, from: TP, to: IM, type: feedback, class: influence, strength: moderate, meaning: "When an undisclosed individual motivation conflicts with the team's purpose, the purpose pushes back on it; unresolved, the conflict delays early planning."}
+  - {id: 3, from: TP, to: IM, type: feed-forward, class: influence, strength: weak, meaning: "The agreed purpose in turn shapes what each member seeks from the review."}
+  - {id: 4, from: TP, to: NR, type: feed-forward, class: influence, strength: weak, meaning: "The team's purpose directs attention to a particular clinical or scientific gap."}
+  - {id: 5, from: TP, to: RO, type: feed-forward, class: influence, strength: strong, meaning: "The team's purpose shapes the review objective."}
+  - {id: 6, from: NR, to: RO, type: feed-forward, class: influence, strength: weak, meaning: "The documented need shapes the objective."}
+  - {id: 7, from: FE, to: TP, type: feedback, class: influence, strength: moderate, meaning: "A severe feasibility shortfall can force the team to revisit its purpose."}
+  - {id: 8, from: RU, to: ME, type: feed-forward, class: influence, strength: moderate, meaning: "The size and composition of the Review Universe constrain methods (eg, whether meta-analysis is possible)."}
+  - {id: 9, from: RO, to: RQ, type: feed-forward, class: influence, strength: strong, meaning: "The objective is made answerable as a research question."}
+  - {id: 10, from: RQ, to: LU, type: feed-forward, class: influence, strength: strong, meaning: "Through its framework and eligibility criteria, the question delimits the relevant region of the Literature Universe, bounding what the Review Universe can hold."}
+  - {id: 11, from: RQ, to: SS, type: feed-forward, class: influence, strength: strong, meaning: "The question drives the search (concepts, terms, filters)."}
+  - {id: 12, from: SS, to: LU, type: feed-forward, class: record, strength: moderate, meaning: "The strategy is executed against bibliographic sources."}
+  - {id: 13, from: LU, to: SS, type: feedback, class: record, strength: moderate, meaning: "Returned records and yields refine terms, sources and filters."}
+  - {id: 14, from: RO, to: SS, type: feed-forward, class: influence, strength: moderate, meaning: "The objective sets the breadth of the search (eg, new review or update; systematic or scoping)."}
+  - {id: 15, from: SS, to: RO, type: feedback, class: influence, strength: moderate, meaning: "What searching reveals (too much, too little, an unexpected framing) refines the objective and, through it, the question."}
+  - {id: 16, from: RO, to: FE, type: feed-forward, class: influence, strength: moderate, meaning: "The objective determines what must be feasible."}
+  - {id: 17, from: FE, to: RO, type: feedback, class: influence, strength: weak, meaning: "Feasibility constraints reshape the objective (narrow, broaden, re-scope or defer)."}
+  - {id: 18, from: RO, to: ME, type: feed-forward, class: influence, strength: weak, meaning: "The objective informs methods (eg, type of review)."}
+  - {id: 19, from: SS, to: RU, type: feed-forward, class: record, strength: strong, meaning: "Executing the strategy and applying eligibility criteria move selected records into the Review Universe."}
+  - {id: 20, from: RU, to: SS, type: feedback, class: record, strength: moderate, meaning: "The emerging Review Universe (eg, known relevant studies missed, off-target records) refines the strategy."}
+  - {id: 21, from: RU, to: FE, type: feedback, class: influence, strength: strong, meaning: "The realized volume and nature of eligible evidence revise feasibility."}
+  - {id: 22, from: FE, to: ME, type: feed-forward, class: influence, strength: weak, meaning: "Time, resources and access constrain methodological choices (eg, rapid-review shortcuts)."}
+  - {id: 23, from: ME, to: FE, type: feedback, class: influence, strength: strong, meaning: "Methodological demands (eg, dual screening, meta-analysis, certainty grading) consume resources and feed back to feasibility."}
+  - {id: 24, from: TP, to: ME, type: feed-forward, class: influence, strength: strong, meaning: "The purpose (eg, guideline development or mapping a field) shapes methods."}
+  - {id: 25, from: IM, to: ME, type: feed-forward, class: influence, strength: strong, meaning: "Members' expertise and incentives shape which methods are adopted (eg, meta-analytic skill)."}
+  - {id: 26, from: NR, to: RQ, type: feed-forward, class: influence, strength: strong, meaning: "The need directly informs the question."}
+  - {id: 27, from: RQ, to: ME, type: feed-forward, class: influence, strength: strong, meaning: "The question type determines methods (eg, a prediction-model question calls for prediction-model appraisal tools)."}

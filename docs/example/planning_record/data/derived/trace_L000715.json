@@ -1,0 +1,76 @@
+{
+  "changed": [
+    "RU"
+  ],
+  "steps": [
+    [
+      {
+        "element": "FE",
+        "flow": 21,
+        "strength": "strong",
+        "meaning": "The realized volume and nature of eligible evidence revise feasibility.",
+        "status": "certified"
+      },
+      {
+        "element": "ME",
+        "flow": 8,
+        "strength": "moderate",
+        "meaning": "The size and composition of the Review Universe constrain methods (eg, whether meta-analysis is possible).",
+        "status": "certified"
+      },
+      {
+        "element": "SS",
+        "flow": 20,
+        "strength": "moderate",
+        "meaning": "The emerging Review Universe (eg, known relevant studies missed, off-target records) refines the strategy.",
+        "status": "certified"
+      }
+    ],
+    [
+      {
+        "element": "TP",
+        "flow": 7,
+        "strength": "moderate",
+        "meaning": "A severe feasibility shortfall can force the team to revisit its purpose.",
+        "status": "certified"
+      },
+      {
+        "element": "LU",
+        "flow": 12,
+        "strength": "moderate",
+        "meaning": "The strategy is executed against bibliographic sources.",
+        "status": null
+      },
+      {
+        "element": "RO",
+        "flow": 15,
+        "strength": "moderate",
+        "meaning": "What searching reveals (too much, too little, an unexpected framing) refines the objective and, through it, the question.",
+        "status": "certified"
+      }
+    ],
+    [
+      {
+        "element": "RQ",
+        "flow": 9,
+        "strength": "strong",
+        "meaning": "The objective is made answerable as a research question.",
+        "status": "certified"
+      },
+      {
+        "element": "IM",
+        "flow": 3,
+        "strength": "weak",
+        "meaning": "The agreed purpose in turn shapes what each member seeks from the review.",
+        "status": "certified"
+      },
+      {
+        "element": "NR",
+        "flow": 4,
+        "strength": "weak",
+        "meaning": "The team's purpose directs attention to a particular clinical or scientific gap.",
+        "status": "certified"
+      }
+    ]
+  ]
+}

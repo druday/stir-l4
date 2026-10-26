@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use STIR-L4, the prompt or the helper kit, please cite the STIR-L4 paper below. Please also send the authors refinements: valid suggestions and specific improvements to the framework, the prompt or its architecture."
+title: "STIR-L4 prompt kit"
+version: "1.0"
+date-released: "2026-10-26"
+license: [MIT, CC-BY-4.0]
+authors:
+  - family-names: Singh
+    given-names: Uday P.
+  - family-names: Walji
+    given-names: Muhammad
+  - family-names: Fenton
+    given-names: Susan
+  - family-names: Jiang
+    given-names: Xiaoqian
+contact:
+  - family-names: Singh
+    given-names: Uday P.
+    email: uday.pratapsingh@uth.tmc.edu
+preferred-citation:
+  type: generic
+  title: "Planning systematic reviews with large language models: a systems thinking approach"
+  authors:
+    - family-names: Singh
+      given-names: Uday P.
+    - family-names: Walji
+      given-names: Muhammad
+    - family-names: Fenton
+      given-names: Susan
+    - family-names: Jiang
+      given-names: Xiaoqian
+  notes: "Manuscript in preparation; the citation will be updated on publication."

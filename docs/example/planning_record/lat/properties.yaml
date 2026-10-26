@@ -1,0 +1,146 @@
+# Property registry (Literature as a Tensor), version 1, before the search
+# STATUS: DRAFT shown to Uday on 2026-10-25 (session S3, Step 7, log L000384). Uday answered the three open items and
+# accepted the other rows as drafted (log L000386): T1 - weeks as reported, not grouped, never crossed; P6 - Asian
+# countries are East, Southeast and South Asia, and also Iran; crossings - part of the weight x measuring method x what
+# the drug was given for, and also the two Asian marks (P5, P6).
+# CERTIFIED by Uday (solo) on 2026-10-25, session S3, log L000392 (Literature as a Tensor), reason as given:
+# "properties are fine". Changes from here on make version 2; this version is not edited.
+# Built from the core properties file (lat/STIR-L4_core_properties_v1.0.csv, called "standard features" in the chat),
+# limited to the certified Research Question (log L000370) and the certified data-extraction form (log L000380).
+# Rows marked "my suggestion" came from neither Uday nor a FACT. FACTS cited by log id.
+version: 1
+status: certified by Uday, solo (log L000392)
+based_on: {research_question: L000370, extraction_form: L000380, core_file: lat/STIR-L4_core_properties_v1.0.csv,
+           facts: [L000382, L000383, L000237, L000358, L000372], answers: [L000386]}
+every_count_states_its_grain: true
+properties:
+  # ---- every report and study (core properties)
+  - {id: B1, name: Record identifiers and study key, type: entity set, grain: report; study,
+     levels: "PMID, DOI, PMCID; one review-assigned key per study linking all its reports, with the linkage basis",
+     came_from: core (Record identifiers; Study key)}
+  - {id: B2, name: Publication, type: date and entity set, grain: report,
+     levels: "year; journal; language (ISO 639-1); first author's affiliation country (ISO 3166-1 alpha-3, kept apart from P6)",
+     came_from: core (Publication date; Venue; Language; Author affiliation country)}
+  - {id: B3, name: Publication type, type: categorical, grain: report,
+     levels: [PubMed publication types as indexed, conference abstract, thesis, report], came_from: core}
+  - {id: B4, name: Funding, type: categorical, grain: study,
+     levels: [public, charity, industry, mixed, none stated, not reported], came_from: core}
+  - {id: B5, name: Competing interests, type: categorical, grain: report,
+     levels: [declared, none declared, not reported], came_from: core}
+  - {id: B6, name: Registration, type: entity set, grain: study,
+     levels: "registry and number; registered before the start: yes / no / not reported", came_from: core}
+  - {id: D1, name: Design, type: categorical, grain: study,
+     levels: [randomized parallel, randomized crossover, randomized cluster, prospective cohort, retrospective cohort,
+              secondary analysis of trial data],
+     came_from: "core (Primary study design; Data collection timing), limited to the certified question",
+     uses: [L000382]}
+  - {id: D2, name: How groups were formed, type: categorical, grain: study,
+     levels: [random with method described, random with method not described, not random, not reported],
+     sub_fields: [allocation concealment described (yes/no)], came_from: core (Allocation method)}
+  - {id: D3, name: Who was blinded, type: entity set, grain: study,
+     levels: [participants, care providers, outcome assessors, data analysts, open label, not reported],
+     came_from: "core (Blinded roles); the roles for prediction models left out"}
+  - {id: D4, name: Sites and study period, type: numeric and date, grain: dataset,
+     levels: "single centre / several centres / not reported; start and end dates", came_from: core}
+  - {id: D5, name: Data source (cohorts), type: categorical, grain: dataset,
+     levels: [trial data, cohort, registry, health records, insurance claims, other, not reported],
+     sub_fields: [named datasets and linkage], came_from: core (Data source type; Named datasets and linkage)}
+  # ---- people
+  - {id: P1, name: Number of people, type: numeric, grain: arm,
+     levels: "enrolled, analysed, lost; analysis set: all randomized / modified / per protocol / complete case",
+     came_from: core (Sample size)}
+  - {id: P2, name: Age and sex, type: numeric, grain: arm,
+     levels: "mean or median age; age group: adult / older adult / mixed; percent women", came_from: core}
+  - {id: P3, name: Diabetes status, type: categorical, grain: study,
+     levels: [without diabetes only, some or all with prediabetes, "with and without diabetes, those without given apart"],
+     came_from: certified question}
+  - {id: P4, name: What the drug was given for, type: categorical, grain: study,
+     levels: [overweight or obesity, fatty liver, heart failure, prediabetes or insulin resistance, kidney disease,
+              polycystic ovary syndrome, other, not reported],
+     came_from: "certified form; levels from the titles of the trial records (rule step5-rule-3)", uses: [L000237]}
+  - {id: P5, name: Asian participants (race or ethnicity as reported), type: categorical, grain: arm,
+     levels: [results for Asian participants given apart, "share given, no separate results", race or ethnicity not reported],
+     came_from: certified form (row P3)}
+  - {id: P6, name: Country where people were studied, type: entity set, grain: dataset,
+     levels: "ISO 3166-1 alpha-3, as the study reports it",
+     asian_mark: {levels: ["yes", "no", partly, not reported],
+                  rule: "yes if every country where people were studied is on the list; partly if some are; no if none
+                         is; not reported if the study does not say where",
+                  countries: "East, Southeast and South Asia, and also Iran (Uday, L000386); which countries make up each
+                              region is my suggestion",
+                  list: {East Asia: [China, Hong Kong, Macao, Taiwan, Japan, North Korea, South Korea, Mongolia],
+                         Southeast Asia: [Brunei, Cambodia, Indonesia, Laos, Malaysia, Myanmar, Philippines, Singapore,
+                                          Thailand, Timor-Leste, Vietnam],
+                         South Asia: [Afghanistan, Bangladesh, Bhutan, India, Maldives, Nepal, Pakistan, Sri Lanka],
+                         added by Uday: [Iran]}},
+     came_from: "core (Country of data collection); certified form (row S4); Asian countries: Uday (L000386)",
+     uses: [L000382]}
+  - {id: P7, name: Setting, type: categorical, grain: dataset,
+     levels: [outpatient, inpatient, community, other, not reported], came_from: core (Care setting)}
+  # ---- drug and comparison
+  - {id: T0, name: SGLT2 inhibitor, type: entity set, grain: arm,
+     levels: "each drug as the study names it; dose (mg); how often", came_from: "certified question; core (Intervention)",
+     uses: [L000382]}
+  - {id: T1, name: Treatment time, type: numeric with unit, grain: arm,
+     levels: "weeks as reported, not grouped (Uday, L000386), counted while a comparison group lasts (my suggestion);
+              never crossed",
+     came_from: "certified question (no minimum); core (Follow-up duration)", uses: [L000358, L000383]}
+  - {id: T2, name: Other treatment both groups get, type: categorical, grain: arm,
+     levels: [none, diet or exercise advice, medicines for the condition, other, not reported],
+     came_from: "certified form; levels my suggestion", uses: [L000383]}
+  - {id: C1, name: Comparison, type: categorical, grain: arm,
+     levels: [placebo, usual care, no treatment], came_from: "core (Comparator type), limited to the certified question"}
+  # ---- outcomes
+  - {id: O1, name: Part of the weight, type: categorical, grain: outcome,
+     levels: [total weight, whole-body fat, lean or fat-free mass, muscle itself, "body water: total",
+              "body water: outside cells", "body water: inside cells", "body water: plasma volume", strength,
+              physical performance, "share of the loss that is fat, lean or water"],
+     came_from: certified form}
+  - {id: O2, name: Measuring method, type: categorical, grain: outcome,
+     levels: [DXA, magnetic resonance, bioimpedance, computed tomography, tracer dilution, air displacement,
+              tape or skinfolds, named strength or performance test, other, not reported],
+     came_from: "certified form; core (Outcome ascertainment); DXA, magnetic resonance and bioimpedance from the 5 abstracts
+                 that name a method (rule step6-rule-3); the rest my suggestion", uses: [L000358]}
+  - {id: O3, name: Primary outcome, type: categorical, grain: outcome, levels: [declared primary, not declared primary],
+     came_from: core}
+  - {id: O4, name: Results given, type: entity set, grain: result unit (arm x outcome x time point),
+     levels: "per group: change or end value with its spread; difference between groups with its confidence interval",
+     came_from: core (Performance or effect measures reported)}
+  - {id: O5, name: Missing data, type: categorical, grain: dataset,
+     levels: [complete case, single imputation, multiple imputation, model-based, not reported], came_from: core}
+  - {id: O6, name: Checklist and data sharing, type: categorical, grain: report,
+     levels: "checklist: CONSORT / STROBE / other / none; data: public / on request / not available / not stated",
+     came_from: core (Reporting guideline cited; Data and code availability)}
+left_out:
+  # core properties that do not fit the certified question (my suggestion; Uday may keep any)
+  - {name: Number of outcome events, why: "for yes-or-no outcomes; every outcome here is a measurement"}
+  - {name: Outcome type, why: "every outcome here is a measurement (continuous)"}
+  - {name: Eligibility criteria flags, why: "covered by P3 and P4"}
+  - {name: Data modality, why: prediction models}
+  - {name: Prediction or diagnostic model study type, why: prediction models}
+  - {name: Model or algorithm class, why: prediction models}
+  - {name: Predictor counts, why: prediction models}
+  - {name: Validation type(s) performed, why: prediction models}
+  - {name: Performance domains reported at validation, why: prediction models}
+  - {name: Clinical implementation status reported, why: prediction models}
+  - {name: Validation-to-development relatedness (derived field), why: prediction models}
+crossings:
+  chosen_by: Uday (L000386), option b
+  grain: study x outcome
+  axes:
+    - {property: O1}
+    - {property: O2}
+    - {property: P4}
+    - {property: P5}
+    - {property: P6, levels_from: asian_mark}
+  study_level: "P5 is recorded per group and P6 per dataset; in the crossing a study takes the level its groups or
+                datasets give, and when they differ, P5 takes 'results for Asian participants given apart' over 'share
+                given, no separate results' over 'race or ethnicity not reported' (my suggestion)"
+  structural_zeros:
+    # combinations impossible by construction (my suggestion); kept in the table and marked, never counted as gaps
+    - {if: {O2: [named strength or performance test]}, then_only: {O1: [strength, physical performance]}}
+    - {if: {O1: [strength, physical performance]},
+       then_only: {O2: [named strength or performance test, other, not reported]}}
+  not_crossed: ["T1 (Uday, L000386)", "every other property, which can filter a table but is not an axis"]
+  rules: every combination of levels kept, including empty ones; an empty combination is reported as a gap only
+    after a targeted, logged search and a known-item check

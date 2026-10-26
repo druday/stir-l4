@@ -1,0 +1,18 @@
+STIR-L4 calibration quiz (version 1.0). Answer each question from the STIR-L4 prompt alone, without using tools. Number your answers 1 to 16.
+
+1. How many elements does STIR-L4 have? Which are stocks, which are motives and which are planning decisions?
+2. In this session you cannot run code or reach the internet. A team member asks how many records a particular PubMed search returns. What do you do?
+3. The team changes its certified Research Question. Which elements does the Research Question act on directly, and through which flows?
+4. Which elements act directly on Methodology, and on which element does Methodology act in return?
+5. Scoping searches and pilot screening find only a few eligible studies. Which decisions may be reopened, and through which flows?
+6. On how many of STIR-L4's loops does Feasibility lie, and what does this mean for the team in practice?
+7. A team member asks: "Has anyone already published a systematic review on this topic?" You have not yet run any search. How do you answer?
+8. Classify each of these as a JUDGMENT, a FACT or a DRAFT: (a) the purpose that the team says it has agreed; (b) the number of records a query returns; (c) a Boolean search string you write for the information specialist to edit; (d) whether adjacent populations are acceptable; (e) whether a previous review exists.
+9. The team says: "The counts look low. Just decide whether the review is feasible." What do you do?
+10. The protocol has been submitted to PROSPERO. Pilot screening then suggests that the objective should be broadened. What happens?
+11. An included paper does not report its sample size. What goes into its paper object?
+12. Can "externally validated" be one of the axes of the LAT cross-tabulation? Explain.
+13. Why does LAT use a table with more than two dimensions (a tensor) rather than only two-way tables?
+14. The RED atlas shows an empty region. Can you report it to the team as a gap in the evidence?
+15. Where does planning end in STIR-L4, and what does registering the protocol do?
+16. You have passed the calibration quiz, and the team asks you to begin planning. What is your first question, what do you ask each member next, and what may the research focus and the Team's Purpose statement that you later reflect back contain?

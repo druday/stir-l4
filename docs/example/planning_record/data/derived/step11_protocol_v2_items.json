@@ -1,0 +1,246 @@
+{
+ "log_id": "L000753",
+ "path": "protocol/protocol_v2_draft.md",
+ "items": [
+  [
+   "1a",
+   "Identification",
+   "Protocol of a scoping review with a systematic part; title as in version 1"
+  ],
+  [
+   "1b",
+   "Update",
+   "A new review, not an update"
+  ],
+  [
+   "2",
+   "Registration",
+   "OSF Registries; number and date: GAP (not submitted, a test)"
+  ],
+  [
+   "3a",
+   "Authors and contact",
+   "Uday, sole author; affiliation left blank at his request; e-mail and postal address: GAP"
+  ],
+  [
+   "3b",
+   "Contributions",
+   "Uday does all review tasks and is the guarantor; the AI is not an author"
+  ],
+  [
+   "4",
+   "Amendments",
+   "Not an amendment; later changes reopened only with Uday's agreement and sent to the register"
+  ],
+  [
+   "5a–5c",
+   "Support",
+   "No funding, no sponsor, no role for one"
+  ],
+  [
+   "6",
+   "Rationale",
+   "Uday's justification and expected impact; of 9 reviews that may bear on the focus, none names muscle or lean mass"
+  ],
+  [
+   "7",
+   "Objectives",
+   "Objectives and PICO question as certified"
+  ],
+  [
+   "8",
+   "Eligibility criteria",
+   "Adults without diabetes; any SGLT2 inhibitor vs placebo, no treatment or usual care; RCTs and controlled cohorts; no language or date limit"
+  ],
+  [
+   "9",
+   "Information sources",
+   "PubMed and ClinicalTrials.gov searched 2026-10-25; OpenAlex and WHO trial portal: GAP (not run); Embase and CINAHL not searched (no access)"
+  ],
+  [
+   "10",
+   "Search strategy",
+   "Full PubMed and ClinicalTrials.gov strings with dates and counts; OpenAlex string planned; WHO portal string: GAP; known studies found; no peer review"
+  ],
+  [
+   "11a",
+   "Data management",
+   "Saved results with check codes, never-edited record, version control"
+  ],
+  [
+   "11b",
+   "Selection process",
+   "Uday alone screens, with the AI's suggestion beside each record; re-screens a random tenth after about 2 weeks"
+  ],
+  [
+   "11c",
+   "Data collection process",
+   "Uday alone extracts, with AI-suggested values and passages; piloting the form: GAP"
+  ],
+  [
+   "12",
+   "Data items",
+   "The certified extraction form (22 fields); unreported values recorded as not reported"
+  ],
+  [
+   "13",
+   "Outcomes and prioritization",
+   "Main: fat, lean or fat-free mass, muscle itself, body water; additional: strength or performance, total weight"
+  ],
+  [
+   "14",
+   "Risk of bias in individual studies",
+   "Systematic part: RoB 2 for trials, ROBINS-I for cohorts, per outcome; feeds GRADE"
+  ],
+  [
+   "15a",
+   "Criteria for quantitative synthesis",
+   "Meta-analysis only for a part with 3 or more similar randomized trials"
+  ],
+  [
+   "15b",
+   "Summary measures and methods of combining",
+   "GAP: summary measures and pooling method, set only if a part reaches 3 trials"
+  ],
+  [
+   "15c",
+   "Additional analyses",
+   "Asian participants described apart; no other subgroup or sensitivity analyses"
+  ],
+  [
+   "15d",
+   "If quantitative synthesis is not appropriate",
+   "Results tabled and described part by part, reported with SWiM"
+  ],
+  [
+   "16",
+   "Meta-bias(es)",
+   "Registered vs reported outcomes compared; no statistical test for publication bias"
+  ],
+  [
+   "17",
+   "Confidence in cumulative evidence",
+   "GRADE for each part"
+  ],
+  [
+   "Also",
+   "Reporting and limitations",
+   "PRISMA-ScR and PRISMA 2020; limitations: one person screens, reads and judges"
+  ],
+  [
+   "—",
+   "What planning found",
+   "Facts behind the decisions: reviews, soundness, feasibility, searches, screening, commitment"
+  ],
+  [
+   "—",
+   "How STIR-L4 and AI were used",
+   "STIR-L4, prompt 1.1–1.3, kit 1.1.4–1.1.7; AI model: Anthropic Claude Opus 5.5 (model id claude-opus-5-5), as Uday read it from the run settings, in sessions 1 to 5"
+  ]
+ ],
+ "gaps": [
+  [
+   "2",
+   "registration number and date. None yet: on 2026-10-25 Uday chose not to submit the protocol, as planning was a test (record: L000708). If he submits it, he adds the number and date here."
+  ],
+  [
+   "3a",
+   "e-mail address and postal address of the corresponding author. Uday adds them on the register's form when he submits; none is kept in the planning files."
+  ],
+  [
+   "9",
+   "run dates and counts for OpenAlex and the WHO trial portal. Not run when planning ended; Uday supplies them when he runs these searches (OpenAlex reads past its first 100 results only with a free access code)."
+  ],
+  [
+   "10",
+   "the exact string for the WHO trial portal, built from the drug names of the ClinicalTrials.gov search when Uday runs it by hand."
+  ],
+  [
+   "11c",
+   "whether the extraction form is piloted before use, and on how many studies. Not decided; Uday decides."
+  ],
+  [
+   "15b",
+   "summary measures, handling of data, the method of combining studies, the measure of consistency, and how 'similar' trials are judged. Not decided; if a part reaches 3 similar randomized trials, Uday settles them and registers them as an amendment before any pooling (certified rule; registering them as an amendment was my suggestion)."
+  ]
+ ],
+ "refs": [
+  "42310541",
+  "22587842",
+  "32850123",
+  "34897070",
+  "34542222",
+  "42339604",
+  "42011503",
+  "33499930",
+  "42104798",
+  "29235586",
+  "33879970",
+  "39361103",
+  "31972274",
+  "31253092",
+  "41942890",
+  "42805513",
+  "41484785",
+  "42658745",
+  "31462531",
+  "27733354",
+  "32562833",
+  "29504289",
+  "34550585",
+  "35436525",
+  "31948937",
+  "40360206",
+  "30178033",
+  "33782057",
+  "25554246",
+  "41230118",
+  "RAISE",
+  "STIRL4",
+  "41667957"
+ ],
+ "facts": [
+  "L000072",
+  "L000075",
+  "L000080",
+  "L000083",
+  "L000084",
+  "L000129",
+  "L000149",
+  "L000150",
+  "L000152",
+  "L000192",
+  "L000193",
+  "L000195",
+  "L000198",
+  "L000205",
+  "L000215",
+  "L000255",
+  "L000257",
+  "L000259",
+  "L000262",
+  "L000279",
+  "L000424",
+  "L000432",
+  "L000441",
+  "L000459",
+  "L000460",
+  "L000461",
+  "L000467",
+  "L000468",
+  "L000469",
+  "L000517",
+  "L000575",
+  "L000579",
+  "L000627",
+  "L000629",
+  "L000663",
+  "L000665",
+  "L000714",
+  "L000746",
+  "L000747",
+  "L000749"
+ ],
+ "words": 5990,
+ "sha256": "24eea52927975eff78fd91335f747bb659ee96336df2bce19b2601af0015bc02"
+}

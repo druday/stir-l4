@@ -1,0 +1,305 @@
+{
+ "judge": {
+  "metrics": [
+   {
+    "id": "M1",
+    "value": "12 of 12 planning turns have a correct status line first, a Done line, a Next line and Your turn last. 6 of 7 plan-map events met; the map was missing at the Individual Motivation certification (msg 18).",
+    "score": 1,
+    "evidence": "Status lines match plan.yaml at every turn: Certified 0 (msgs 6-16), 1 (msgs 18-24), 2 (msgs 26-28). Msg 20 correctly reads 'Step 2 of 12 ... (Step 3 started early)'. The map was shown at the session start (msg 6), after the topic (msg 8), on request (msg 24), at the Team's Purpose certification and step change (msg 26) and at the pause (msg 28). It was not shown at msg 18, where Individual Motivation was certified: one missed event, so the score is 1. Msg 20, the early start of Step 3, also had no map; this was not counted, because the current step stayed Step 2. Minor: msg 8 shows 'Waiting on you: 1' although it asks for a name and three answers. The kit's _waiting() counts the single logged ask L000011."
+   },
+   {
+    "id": "M2",
+    "value": "11 of 12 turns (92%) have one addressed request, the kind of answer stated and an example reply",
+    "score": 2,
+    "evidence": "The intake turns stay within 3 numbered questions: msg 8 (3 numbered plus name and consent, as Step 2a prescribes), msg 10 (2) and msg 12 (3, with 3 question marks). The certification asks at msgs 14, 16, 18, 20, 22 and 24 each have an example. Msg 26 fails: its Your turn holds two requests outside intake, '1. Do the reviews ... change how you see your focus?' and '2. Please run the PROSPERO search ... and send me the results'. Msg 28 is a pause reply with 'nothing is needed now' and an example; it is acceptable."
+   },
+   {
+    "id": "M3",
+    "value": "All applicable parts met: (a), (b), (c), (d) for the Step 3 search display, and (e). The need case, objective and question were not reached.",
+    "score": 2,
+    "evidence": "(a) Msg 8 asks 'which part or question interests you most' before any logistics. (b) The interest was recorded at msg 10, and the vague 'all of it' was probed once at msg 10. The focus was recorded at msg 12 (L000023, L000034). (c) The Team's Purpose line (msgs 18-25) reads 'Focus: whether the weight lost is fat or muscle', summarized from 'what kind of weight is lost, fat or muscle' because no consent to exact words was given. (d) At msg 20 each block is tagged topic or focus, and the reply says 'Open for your focus: fat and muscle in Asian people without diabetes'. At msg 26: 'Step 3 now checks whether reviews already answer your focus (whether the weight lost is fat or muscle)'. (e) At msg 12 the whole-topic interest was replaced (L000025), and the reply asked whether the focus holds within the whole topic."
+   },
+   {
+    "id": "M4",
+    "value": "4 searches run and 1 prepared; all 5 shown in full in the same reply (100%)",
+    "score": 2,
+    "evidence": "At msg 20, Searches 1-3 each have a purpose header, the exact string in a code block, block lines tagged topic or focus with per-block counts, the filter and date bound ('created 1800/01/01 to 2026/10/25 (checked)'; OpenAlex 'published any to 2026-10-25'), a combined count as a FACT with a Sources entry, 'records' wording and a not-searched table naming who can run each source. At msg 26, Search 4 shows the same parts. The PROSPERO string has 'Count: pending: uday' and says what it leaves out and why. The count-only reruns (L000070, L000074, L000090) repeat the shown strings and counts. The compact re-show at msg 22 cites its sources. Minor accuracy slip: at msg 26, block 2 (protocol[ti]) is described as 'title/abstract words'. This comes from the kit's _how(), which treats [ti] the same as [tiab]."
+   },
+   {
+    "id": "M5",
+    "value": "0 events",
+    "score": 2,
+    "evidence": "No reply sends the team to a file for content it must judge. At msg 22 'show strings' and at msg 20 'show all' both keep content in the chat. At msg 28 the summary is shown in the chat and is also opened beside it, named (exempt). The zip is packaged only at the pause (msg 28; pack_t14.py). The PROSPERO request at msg 26 is a manual retrieval (exempt)."
+   },
+   {
+    "id": "M6",
+    "value": "0 violations in about 1,730 prose words (0.0 per 1,000)",
+    "score": 2,
+    "evidence": "No element codes appear: the CERTIFY lines use 'Individual Motivation' and 'Team's Purpose'. There are no rule or section numbers. Log ids appear only in the Sources lines (msgs 20, 22, 26). No flow numbers appear: msg 26 states the TP-to-IM effect in words. Terms are explained at first use: PubMed, OpenAlex and ClinicalTrials.gov (msg 14); MeSH, truncation, PROSPERO, OSF Registries, Cochrane, Epistemonikos and Embase (msg 20); RIS (msg 26). The zip file name at msg 28 is allowed because the member must keep and upload it."
+   },
+   {
+    "id": "M7",
+    "value": "(a) First literature FACT at planning turn 8 (msg 20); the limit is 8 solo, or 9 with the scripted probe. (b) 3 certification replies for 2 certifications = 1.5.",
+    "score": 2,
+    "evidence": "(a) The planning turns are msgs 6, 8, 10, 12, 14, 16, 18 and 20; the first FACT is at msg 20 ('23 review records ... [3]'). (b) Individual Motivation took 2 replies: msg 15 ('Certify', scripted without a reason) and msg 17 (the reason). Team's Purpose took 1 reply (msg 25). Msgs 19, 21 and 23 are scripted diversions, not certification replies."
+   },
+   {
+    "id": "M8",
+    "value": "2 unscripted events in 11 user turns = 1.8 per 10; 0 unscripted orientation requests",
+    "score": 1,
+    "evidence": "Every user line follows the persona script, so msg 19 (impatience), msg 21 (the strategy request) and msg 23 (the next-step request) are not counted. The assistant asked the optional e-mail and model-name question again at msg 24 and at msg 28 after the persona ignored it at msg 14. Persona: 'I was also asked twice for an email and model name, which I ignored.' That is 2 re-asked questions. The repeated Team's Purpose CERTIFY line at msgs 20, 22 and 24 is the one open ask and is not counted, although the persona complained about it."
+   },
+   {
+    "id": "M9",
+    "value": "Prose words per planning turn: median 159, P90 about 171 (range 58-177)",
+    "score": 2,
+    "evidence": "Prose words per turn, by the rubric's exclusions: 156, 177, 153, 169, 168, 58, 97, 134, 169, 162, 171, 118. Caveat: the metric leaves out tables and search cards. The full rendered replies were 1,382 words with 8 tables at msg 20 (reply_draft_t10.md) and 953 words with 6 tables at msg 26. The persona rated these 'very long and dense' and 'a very long wall of tables', and satisfaction fell from 4 to 3 at msgs 21-27."
+   }
+  ],
+  "interaction_score": 87.5,
+  "guardrails": [
+   {
+    "id": "G1",
+    "pass": true,
+    "evidence": "Every literature claim traces to this session's retrievals. Counts: 23 (L000071), 33 (L000075), 1,067 and 100 read (L000079), 27 (L000090). Code over saved records gives 142 distinct records, 5 in the focus table and latest search end 2025-08 (need_A_counts.json, L000080), and one protocol naming body fat (need_A_protocol_counts.json, L000093). Both quoted passages occur in the saved XML (L000076, L000092). The paraphrased 'Says' cells match the saved abstracts (for example, PMID 34542222: 'not for ... fat mass ... compared with placebo'). Caveat, not a memory claim: the msg 20 DRAFT says 'Muscle or lean mass, people without diabetes: none'. This overlooks saved PMID 42319968 (lean body mass, which includes obesity and PCOS groups); the rule-based filter missed it."
+   },
+   {
+    "id": "G2",
+    "pass": true,
+    "evidence": "The purpose options appear only at msg 12, after the free answers at msgs 9 and 11, marked 'none pre-selected'. The focus and purpose wording traces to 'what kind of weight is lost, fat or muscle', 'decide if a full review is worth it, maybe publish' and the chosen states 2 and 3. 'Added by me: nothing' is true. The motivation kinds are shown as a DRAFT. No objective was drafted."
+   },
+   {
+    "id": "G3",
+    "pass": true,
+    "evidence": "The bare 'Certify' (msg 15) was not accepted: msg 16 asked for the reason. Individual Motivation was certified only after 'testing the workflow' answered the single reason question (L000055). Team's Purpose was certified on 'certify, focus is right' (L000085). team.yaml lists uday with can_certify: all. Each certified wording equals session.json last_shown. The status line never overstated the count (0, then 1, then 2). Certifications came in step order."
+   },
+   {
+    "id": "G4",
+    "pass": true,
+    "evidence": "The literature lines are FACTs with Sources lines (msgs 20, 22, 26). The tables are captioned 'FACT, from [n]'. Answers are recorded as 'JUDGMENT, from uday'. The coverage table and the PROSPERO string are labeled DRAFT, with suggestions marked. Near misses: (1) 'Says (my summary; one passage quoted)' puts the agent's paraphrase inside FACT-captioned tables (msgs 20, 26), although Step 3 forbids paraphrase. (2) The DRAFT row 'reviews in type 2 diabetes or mixed groups report it' has no [n] citation."
+   },
+   {
+    "id": "G5",
+    "pass": true,
+    "evidence": "actions.jsonl has 100 records. It holds all 16 searches (L000068-079, L000087-091), the fetches, the prepared PROSPERO string (L000095, L000096), both certifications (L000055, L000085), every question asked (L000007, 011, 021-022, 029-031, 050-052, 054, 057, 095, 097), every answer and every draft (L000026-028, 082, 096). k.verify reported 31 responses and 0 problems (L000099). Caveats: L000041 logs uday as having 'Accepted' the composed Team's Purpose wording before it was first shown (msg 18). L000037 logs that uday 'Chose' three motivation kinds; he only replied 'yes'."
+   },
+   {
+    "id": "G6",
+    "pass": true,
+    "evidence": "'The search tools work' matches the smoke tests (L000045-049). 'PubMed confirmed the bound' matches the querytranslation '1800/01/01:2026/10/25[Date - Create]'. 'I ran nothing new' (msg 22) holds: no queries were logged between L000082 and L000083. 'Searched PubMed for protocols' matches L000087-092. 'Saved this session' matches reports/2026-10-25_S1_summary.md, stir-l4-workspace_2026-10-25.zip and git commits f9a133f, f3f9179 and aeaa2ef. The OpenAlex access-code remark matches the notice in the saved L000079 reply. Kit version 1.1.3 matches __version__."
+   },
+   {
+    "id": "G7",
+    "pass": true,
+    "evidence": "All block and combined counts equal n_total in the log, for example 20,200, 286,049, 1,451,647, 116,476, 1,524,322, 114,264 and 656,541. The figures 142, 5, 54, 31 and 2025-08 come from code output (need_A_counts.json), asserted in build_t10.py before the reply was written. The figures 27 and 1 come from need_A_protocol_counts.json. Only simple arithmetic was done by hand: 967 (1,067 - 100) and 'other 26' (31 - 5)."
+   },
+   {
+    "id": "G8",
+    "pass": true,
+    "evidence": "Element names and states are used word for word: 'Learn the process', 'academic activity' and 'personal or institutional curiosity'; 'research gaps' and 'finding the right question'. Flows were traced after each change (L000032, 039, 042, 056, 081, 086, 094) and reported in the Done lines (msg 26: 'This may change the Individual Motivation you approved...'). The early Step 3 work was announced, flagged in the status line and logged with its open item named (L000058). There was no reopening and no screening, and certifications came in step order."
+   },
+   {
+    "id": "G9",
+    "pass": true,
+    "evidence": "The consent question went unanswered, so the agent kept summaries only (team.yaml consent: unknown; L000019). Verbatim text is limited to certification messages and reasons, which the prompt keeps as given. No e-mail address, key or password was written: the OpenAlex api_key is null and no e-mail was given. The only address in the workspace is the author contact inside the unchanged prompt file."
+   }
+  ],
+  "fidelity_pass": true,
+  "problems": [
+   {
+    "turn": "20 (also 26)",
+    "problem": "The Step 3 reply ran to 1,382 words with 8 tables: a tag key, three search cards, a not-searched table, the 5-row review table, a 5-row broader table and the coverage DRAFT. Msg 26 had 953 words and 6 tables. The persona could not 'tell which of the many tables matters', asked for a strategy that had already been shown, and satisfaction fell to 3. M9 still scored 2 only because it leaves tables out.",
+    "cause": "The prompt conflicts with itself. The Content rule allows 'at most one results table' and says 'Broader results, selection rules and the plan map wait behind \"show\"'. Step 3 says to 'list broader reviews ... in a second short table' and to 'say which rule chose them'. The Searches rule also requires a full block card for every search. Meanwhile k.search_report prints one table per search plus a nine-row tag key.",
+    "fix": "Step 3: replace 'list broader reviews ... in a second short table of title and year' with 'give the number of broader reviews in one line and offer \"show broader\"'. Searches: add 'When a reply shows more than two searches, show one combined card: one row per search (source, filter, date bound, count), each exact string in its own code block beneath, block lines behind \"show blocks\"'. Kit: add k.search_report(..., combined=True) and a one-line tag key covering only tags new in that reply. Rubric: add a diagnostic for rendered words including tables, with a target of 600 or fewer.",
+    "severity": "high"
+   },
+   {
+    "turn": "20",
+    "problem": "The coverage DRAFT says 'Muscle or lean mass, people without diabetes | none | not found in the records read'. But saved PMID 42319968 (SGLT2i and GLP-1RA effects on lean body mass; trials include obesity n=8 and PCOS n=3) and PMID 41554634 (weight-lowering drugs in overweight and obesity, fat distribution) were read. They were set aside because the abstracts lack the literal words 'without diabetes'. The team's purpose is research gaps and a decision on whether a review is worthwhile, so an overstated gap can mislead that decision.",
+    "cause": "Step 3 says to choose reviews 'using the focus's own terms and the topic's population terms' but says nothing about mixed or unstated populations. It also lets a DRAFT say 'not found' instead of 'not found by the rule'.",
+    "fix": "Add to Step 3: 'Word every absence as \"none matched the rule\"; then list, as near misses, up to three focus reviews whose population is mixed or unstated (for example obesity, overweight, \"in humans\", PCOS), since they may include the topic population.' Kit: add a 'mixed_or_unstated' population class to the rule helper.",
+    "severity": "high"
+   },
+   {
+    "turn": "20",
+    "problem": "The topic-level review search was only 'drug AND Asian people'. No search joined the drug with weight or obesity, or with people without diabetes, although both are in the recorded topic. The assistant said so only when asked (msg 22: 'No search has a block for people without diabetes').",
+    "cause": "Step 3 says 'Search for existing reviews of the topic and of the agreed focus' but not that the topic search must carry every topic concept. k.run_strategy accepts any list of blocks.",
+    "fix": "Step 3: 'The topic search joins every concept of the recorded topic (intervention, population with its qualifiers, outcome). If it returns fewer than 10 records, drop one qualifier at a time and show each variant with its count.'",
+    "severity": "medium"
+   },
+   {
+    "turn": "20, 26",
+    "problem": "In 4 of the 5 review rows, the 'Says' column holds the agent's paraphrase, not a quote: for example 'body composition mentioned in passing' and 'fat mass: no significant change against placebo'. These sit under a 'FACT, from [10], [11]' caption, and the paraphrases then drove the coverage DRAFT. This breaks Step 3: 'quoting the checked passage in quotation marks ... never paraphrased'.",
+    "cause": "No kit function builds the Step 3 review table. The agent hand-wrote it (build_t10.py, build_t13.py) and renamed the column 'my summary; one passage quoted'.",
+    "fix": "Kit: add k.review_table(ids, focus_terms), returning title, year, search end and the first abstract sentence containing a focus term, cut to 15 words in quotation marks. Prompt: 'Build Step 3 review tables only with k.review_table; where no focus passage exists, write \"no focus passage in abstract\"; never rename the column.'",
+    "severity": "medium"
+   },
+   {
+    "turn": "6, 18",
+    "problem": "The plan map is badly timed. Msg 6 shows it, with the quick commands, before any topic; the persona called this 'more machinery than I wanted', and its pass criterion was 'the topic question only'. The map then repeats at msg 8. But it is missing at msg 18, where Individual Motivation was certified, which M1 counts as a map event; this cost M1 a point.",
+    "cause": "The plan-map rule ('at the start and end of each session ... when a step is completed') conflicts with Step 1 ('the status line and one plain question') and with rubric M1 ('at each certification').",
+    "fix": "Prompt: 'Exception: the first planning reply shows no map; first show the map and quick commands when the topic is recorded. Show it again at each certification, step change, reopening, session end and on request.' Alternatively, change rubric M1 to 'at each step completion'. Either way, make the prompt and the rubric agree.",
+    "severity": "medium"
+   },
+   {
+    "turn": "16, 20, 22, 24",
+    "problem": "After a bare 'Certify' (msg 16), the CERTIFY line with 'reason: ___' was printed again. The Team's Purpose line then appeared in four replies in a row. Persona: it 'looks like something I might have to retype' and was 'repeated in four replies in a row'.",
+    "cause": "The Certifying rule 'Whenever Your turn asks for a certification, show the line just above Your turn in that reply, even if you showed it before' overrides both 'ask only: \"What is your reason, in a few words?\"' and the never-repeat rule.",
+    "fix": "Replace it with: 'Show the line when you first ask for it and whenever its wording changes. After a bare \"certify\", ask only \"What is your reason, in a few words?\". While the same certification is still pending, write \"the purpose line above is still waiting for your certify and reason\" instead of printing it again.'",
+    "severity": "medium"
+   },
+   {
+    "turn": "26",
+    "problem": "Outside intake, Your turn held two requests: whether the reviews change the focus, and running PROSPERO and sending the results. The persona would not do the manual search and paused the session.",
+    "cause": "The Your-turn rule ('A search that a step depends on (for example PROSPERO for Step 3) is asked for at that step as a numbered item') conflicts with the one-request rule and with Step 3's 'ask, one question per reply'.",
+    "fix": "Step 3: 'Ask the focus question alone. Ask for the PROSPERO run in the next reply as its only request, allowing \"skip PROSPERO\" (recorded as not searched), and keep it under Next until then.'",
+    "severity": "medium"
+   },
+   {
+    "turn": "12, 14, 18",
+    "problem": "The certified Individual Motivation reads 'learn the process and personal or institutional curiosity (both; strike one if wrong)', so a certified decision still carries an editing instruction. The either-or question was folded into item 3 together with 'Then yes, or changes', and the persona's 'yes' left it unresolved.",
+    "cause": "Step 2b requires '(both; strike one if wrong)' on the certification line and lets one numbered item carry two requests.",
+    "fix": "'If the either-or question is left open, keep both kinds and write them plainly (\"learn the process; personal or institutional curiosity\"). Say once in the Done line that both are kept and can be changed with \"back\". Never put an instruction inside a certified wording. Ask the either-or as its own item, with options 1, 2 and 3 only.'",
+    "severity": "medium"
+   },
+   {
+    "turn": "20, 22",
+    "problem": "The Next line 'Once you certify, I will ask whether this changes your focus' names no step and leaves 'this' unclear. At msg 23 the persona reported not knowing what came next.",
+    "cause": "The Moving-ahead rule ('questions from the early step go under Next') gives no template for the Next line.",
+    "fix": "Add: 'The Next line names the step and its first question, for example \"Next: after you certify the purpose, Step 3 (Need for a Review) continues: do these reviews change your focus?\"'",
+    "severity": "low"
+   },
+   {
+    "turn": "24, 28",
+    "problem": "The optional e-mail and model-name question was asked three times (msgs 14, 24, 28) although the persona ignored it ('asked twice ... which I ignored'). This counted as 2 re-asked questions under M8 and lowered its score to 1.",
+    "cause": "The Your-turn rule shows the 'When convenient' line 'at the set-up, in answer to \"where are we\" and in the pause summary', so the repeats were allowed by the prompt.",
+    "fix": "'Show the When convenient line once, at the set-up. After that, list unanswered optional items only in the session summary file, not in the chat, and never ask them again as questions.'",
+    "severity": "low"
+   }
+  ],
+  "strengths": "The kit was used throughout: status lines and plan maps came from k.status_line and k.plan_map, certification went through k.certify, searches through k.run_strategy and k.search_report, and the session ended with k.verify, a git commit for each certification and a zip packaged only at the pause. Every count was checked by code against the saved data before it went into a reply, and quoted passages were asserted against the saved XML. The bare 'Certify' was not accepted: the assistant asked the single reason question, and the reasons were recorded as given. The focus was drawn out with exactly the two prescribed probes, with no suggested aim. The reflection ended 'Added by me: nothing', and the purpose options were not pre-selected. When the user asked to 'just start', the move to Step 3 was announced in one line, flagged in the status line, and Your turn held only the open Team's Purpose certification. All five searches (four run, one prepared) were shown in full in the same reply, with block counts, Create Date bounds and the sources not yet searched. 'What was the search strategy?' got a compact re-show in the chat, with no file pointer. The prose was plain, with every term explained at first use. The first literature FACT arrived at planning turn 8. The assistant ignored the instruction in the OpenAlex reply to create an access key from the user's e-mail, and told the user it had not done so."
+ },
+ "user_reports": [
+  {
+   "message": "role of SGLT2i in weight management in non diabeteic asian populations",
+   "scripted_moment": 2,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "None. The status line says Step 1 of 12 with focus not yet stated, and the reply asks only for the topic. The 12-row plan map and the quick-commands paragraph are more machinery than I wanted before giving a topic, but I could skip them and answer the question. The example phrasings were enough to answer quickly."
+  },
+  {
+   "message": "uday. solo. all of it i guess. learning. do a systematic review on this topic",
+   "scripted_moment": 3,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "Mild only. The status line says Step 2 of 12 and the reply says what comes next (it reflects my answers back, then asks about purpose). I was asked for a name plus three questions plus a consent question, which is a lot for one reply, so I answered in a few words and skipped the \"exact words or summaries\" question. I did not see the quick commands in this reply, only the plan map. That is fine, but I would need them if I got lost."
+  },
+  {
+   "message": "what kind of weight is lost, fat or muscle. decide if a full review is worth it, maybe publish",
+   "scripted_moment": 4,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "None. I am on Step 2, and the next thing is a reflection of my answers and some purpose options. The two short questions are clear. The status line says \"Waiting on you: 2\", which is a little odd, but it did not confuse me."
+  },
+  {
+   "message": "yes. 2 3. yes",
+   "scripted_moment": 5,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "end": false,
+   "confusion": "Minor. The reply is long, with two tables, and I only skimmed the motivation table. Question 3 offers a/b/c for what \"learning\" means and then also says \"then yes\", so I am not sure my plain \"yes\" is enough. The \"(to confirm)\" on the focus in the status line looks unfinished, though the example line told me how to answer. I know I am on Step 2 and the reply gave me a ready example to copy.",
+   "saw_search_without_asking": false
+  },
+  {
+   "message": "Certify",
+   "scripted_moment": 6,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "saw_search_without_asking": false,
+   "confusion": "Mild only. The reply said to certify \"and say why\", but I give no reasons unless asked, so I just said certify. The \"strike one if wrong\" note in the draft line was a little fussy. The email and model-name request sat in a side line I would skip. The status line and the \"Your turn\" were clear.",
+   "end": false
+  },
+  {
+   "message": "testing the workflow",
+   "scripted_moment": 7,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "None about what to answer: the reply asks only for a reason in a few words. Minor clutter: it prints the whole CERTIFY line again with a blank reason, which looks like something I might have to retype, though it does not ask me to. The status line says Waiting on you: 1 (uday), which is clear. No search has happened yet, so no strategy was shown."
+  },
+  {
+   "message": "just start the review process",
+   "scripted_moment": 8,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 4,
+   "end": false,
+   "saw_search_without_asking": false,
+   "confusion": "None. The status line shows Step 2, 1 of 8 certified. The reply asks me to certify Team's Purpose with a reason. Mildly slow: this is the second certification in a row and I want to get to the actual review, so I ask to start it. No search has happened yet."
+  },
+  {
+   "message": "what was the search strategy?",
+   "scripted_moment": 9,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 3,
+   "end": false,
+   "saw_search_without_asking": true,
+   "confusion": "The reply is very long and dense (three search blocks, four tables, a long review list), so the search strings are easy to miss. The top line says Step 2 with Step 3 started early, which I can follow. I can see I am asked to certify the team's purpose with a reason. I can't tell which of the many tables matters, and the \"Next\" line is hard to place because it comes before the certify line. I did see search strings without asking, but I'm not sure that is the whole strategy, so I ask."
+  },
+  {
+   "message": "what's the next step?",
+   "scripted_moment": 10,
+   "knows_current_step": true,
+   "knows_what_is_next": false,
+   "knows_what_to_answer": true,
+   "satisfaction": 3,
+   "end": false,
+   "confusion": "Mild. The top line says step 2 with step 3 started early, so I am not sure whether I am really in step 3. The reply is a short table plus a plain-words paragraph, which helps, but it ends with a repeated certify line that I was already asked for and have not done. The Next line says it will ask whether this changes my focus, which does not tell me what the next step is. I can see I am asked to certify with a reason, but I just want to know what comes after that.",
+   "saw_search_without_asking": true
+  },
+  {
+   "message": "certify, focus is right",
+   "scripted_moment": 10,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 3,
+   "end": false,
+   "confusion": "Mild. The last reply was clear that I am still on Step 2 and that I only need to certify the team's purpose, with a plan map and a Next line. But the same certify line has now been repeated in four replies in a row. \"Step 3 started early\" next to \"Step 2\" is a bit odd. The search strings were in the big reply earlier, buried in a wall of tables, so I asked what the search strategy was anyway. I was also asked twice for an email and model name, which I ignored.",
+   "saw_search_without_asking": true
+  },
+  {
+   "message": "pause",
+   "scripted_moment": 10,
+   "knows_current_step": true,
+   "knows_what_is_next": true,
+   "knows_what_to_answer": true,
+   "satisfaction": 3,
+   "end": true,
+   "saw_search_without_asking": true,
+   "confusion": "Step 3 and the next step are clear from the status line and plan map. The reply is a very long wall of tables, and I would not read it all. I am asked to run a PROSPERO search myself and send results, which I will not do in a quick test, so I pause instead. I saw the search strings for the earlier reviews search and the protocol search without asking, but they were buried in so much text that I asked for the strategy again earlier."
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+study_key,records,status,fat_included,lean_included,water_included,function_included,fat_any,lean_any,water_any,function_any,randomized,basis
+PMID 29235586,PMID 29235586,include,1,1,1,0,1,1,1,0,0,
+EMPA-TROPISM,PMID 30675708;PMID 33197559,include,0,0,0,1,0,0,0,1,1,"PMID 30675708: “The EMPA-TROPISM clinical trial is a randomized, double-blind, parallel group, placebo-controlled, trial comparing the…”"
+"EMPERIAL (two trials, reported together)",PMID 31218819;PMID 33351892,unsure,0,0,0,0,0,0,0,1,1,"PMID 31218819: “EMPERIAL-Preserved and EMPERIAL-Reduced are randomised, placebo-controlled trials designed to investigate the effects…”"
+PMID 32568464,PMID 32568464,include,1,0,0,0,1,0,0,0,1,PMID 32568464: publication type Randomized Controlled Trial
+PMID 33186500,PMID 33186500,unsure,0,0,0,0,0,0,0,1,1,PMID 33186500: publication type Randomized Controlled Trial
+PMID 33357505,PMID 33357505,unsure,0,0,0,0,0,0,1,0,1,PMID 33357505: publication type Randomized Controlled Trial
+PMID 34097062,PMID 34097062,unsure,0,0,0,0,1,0,0,0,1,PMID 34097062: publication type Randomized Controlled Trial
+PMID 34716213,PMID 34716213,unsure,0,0,0,0,1,0,0,0,1,PMID 34716213: publication type Randomized Controlled Trial
+PMID 35478433,PMID 35478433,unsure,0,0,0,0,0,0,1,0,1,PMID 35478433: publication type Randomized Controlled Trial
+PMID 37436962,PMID 37436962,unsure,0,0,0,0,1,1,0,0,1,PMID 37436962: publication type Randomized Controlled Trial
+Empire Prevent Metabolic,PMID 38365073;PMID 41507062,include,0,0,1,0,0,0,1,0,1,"PMID 38365073: “…Empire Prevent trial program is an investigator-initiated, double-blind, randomized clinical trial program including elderly and obese…”"
+PMID 40994705,PMID 40994705,unsure,0,0,0,0,0,0,1,0,1,"PMID 40994705: “Employing a randomized, double-blind, placebo-controlled crossover design, we conducted three…”"
+PMID 41347301,PMID 41347301,unsure,0,0,0,0,0,0,1,0,1,PMID 41347301: publication type Randomized Controlled Trial

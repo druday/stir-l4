@@ -1,0 +1,16 @@
+{
+  "changed": [
+    "LU"
+  ],
+  "steps": [
+    [
+      {
+        "element": "SS",
+        "flow": 13,
+        "strength": "moderate",
+        "meaning": "Returned records and yields refine terms, sources and filters.",
+        "status": "unsettled"
+      }
+    ]
+  ]
+}
